@@ -21,7 +21,7 @@ var hfc = require('fabric-client');
 var helper = require('./helper.js');
 var logger = helper.getLogger('instantiate-chaincode');
 
-var instantiateChaincode = async function(peers, channelName, chaincodeName, chaincodeVersion, functionName, chaincodeType, args, username, org_name, upgrade) {
+var instantiateChaincode = async function(peers, channelName, chaincodeName, chaincodeVersion, functionName, chaincodeType, args, username, org_name, upgrade, endorsementPolicy) {
 	logger.debug('\n\n============ Instantiate chaincode on channel ' + channelName +
 		' ============\n');
 	var error_message = null;
@@ -36,6 +36,7 @@ var instantiateChaincode = async function(peers, channelName, chaincodeName, cha
 			logger.error(message);
 			throw new Error(message);
 		}
+		await channel.initialize();
 		var tx_id = client.newTransactionID(true); // Get an admin based transactionID
 		                                       // An admin based transactionID will
 		                                       // indicate that admin identity should
@@ -50,16 +51,17 @@ var instantiateChaincode = async function(peers, channelName, chaincodeName, cha
 			chaincodeType: chaincodeType,
 			chaincodeVersion: chaincodeVersion,
 			args: args,
-			txId: tx_id
+			txId: tx_id,
+            "endorsement-policy":endorsementPolicy
 		};
 
 		if (functionName)
 			request.fcn = functionName;
 		let results;
 		if (upgrade){
-            results = await channel.sendUpgradeProposal(request, 60000); //instantiate takes much longer
+            results = await channel.sendUpgradeProposal(request, 600000); //instantiate takes much longer
         }else{
-            results = await channel.sendInstantiateProposal(request, 60000); //instantiate takes much longer
+            results = await channel.sendInstantiateProposal(request, 600000); //instantiate takes much longer
         }
 
 		// the returned object has both the endorsement results
@@ -102,7 +104,7 @@ var instantiateChaincode = async function(peers, channelName, chaincodeName, cha
 						let message = 'REQUEST_TIMEOUT:' + eh.getPeerAddr();
 						logger.error(message);
 						eh.disconnect();
-					}, 60000);
+					}, 300000);
 					eh.registerTxEvent(deployId, (tx, code, block_num) => {
 						logger.info('The chaincode instantiate transaction has been committed on peer %s',eh.getPeerAddr());
 						logger.info('Transaction %s has status of %s in blocl %s', tx, code, block_num);

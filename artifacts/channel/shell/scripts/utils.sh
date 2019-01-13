@@ -19,9 +19,9 @@ verifyResult () {
 # Set OrdererOrg.Admin globals
 setOrdererGlobals() {
         export CORE_PEER_LOCALMSPID="OrdererMSP"
-        export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
-        export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp
-        export ORDERER_CA=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+        export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+        export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp
+        export ORDERER_CA=/opt/fabric-sdk-node/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 }
 
 setGlobals () {
@@ -32,8 +32,8 @@ setGlobals () {
 	echo "ORG=========================>${ORG}"
 	if [ $ORG -eq 1 ] ; then
 		export CORE_PEER_LOCALMSPID="Org1MSP"
-		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
-		export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+		export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
 		if [ $PEER -eq 0 ]; then
 			export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
 		else
@@ -41,8 +41,8 @@ setGlobals () {
 		fi
 	elif [ $ORG -eq 2 ] ; then
 		export CORE_PEER_LOCALMSPID="Org2MSP"
-		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
-		export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+		export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
 		if [ $PEER -eq 0 ]; then
 			export CORE_PEER_ADDRESS=peer0.org2.example.com:8051
 		else
@@ -51,8 +51,8 @@ setGlobals () {
 
 	elif [ $ORG -eq 3 ] ; then
 		export CORE_PEER_LOCALMSPID="Org3MSP"
-		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt
-		export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp
+		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt
+		export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp
 		if [ $PEER -eq 0 ]; then
 			export CORE_PEER_ADDRESS=peer0.org3.example.com:9051
 		else
@@ -61,8 +61,8 @@ setGlobals () {
 
 	elif [ $ORG -eq 4 ] ; then
 		export CORE_PEER_LOCALMSPID="Org4MSP"
-		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt
-		export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp
+		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt
+		export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp
 		if [ $PEER -eq 0 ]; then
 			export CORE_PEER_ADDRESS=peer0.org4.example.com:10051
 		else
@@ -71,8 +71,8 @@ setGlobals () {
     #create peer env according to org
 	elif [ $FLAG -eq 1 ]; then
 	    export CORE_PEER_LOCALMSPID="Org${ORG}MSP"
-		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org${ORG}.example.com/peers/peer0.org${ORG}.example.com/tls/ca.crt
-		export CORE_PEER_MSPCONFIGPATH=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/peerOrganizations/org${ORG}.example.com/users/Admin@org${ORG}.example.com/msp
+		export CORE_PEER_TLS_ROOTCERT_FILE=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org${ORG}.example.com/peers/peer0.org${ORG}.example.com/tls/ca.crt
+		export CORE_PEER_MSPCONFIGPATH=/opt/fabric-sdk-node/artifacts/channel/crypto-config/peerOrganizations/org${ORG}.example.com/users/Admin@org${ORG}.example.com/msp
 		if [ $PEER -eq 0 ]; then
 			export CORE_PEER_ADDRESS=peer0.org${ORG}.example.com:$[ORG -1 + 7]051
 		fi
@@ -135,7 +135,7 @@ installChaincode () {
 	setGlobals $PEER $ORG 1
 	VERSION=${3:-1.0}
         set -x
-	peer chaincode install -n example -v ${VERSION} -l ${LANGUAGE} -p ${CC_SRC_PATH} >&log.txt
+	peer chaincode install -n trace -v ${VERSION} -l ${LANGUAGE} -p ${CC_SRC_PATH} >&log.txt
 	res=$?
         set +x
 	cat log.txt
@@ -185,7 +185,7 @@ upgradeChaincode () {
         fi
     done
     set -x
-    peer chaincode upgrade -o orderer1.example.com:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n example -v ${VERSION} -c '{"Args":["init"]}' -P "${endorser}"
+    peer chaincode upgrade -o orderer1.example.com:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n trace -v ${VERSION} -c '{"Args":["init"]}' -P "${endorser}"
     res=$?
 	set +x
     cat log.txt
@@ -289,7 +289,7 @@ chaincodeInvoke () {
 	PEER=$1
 	ORG=$2
 	ORDERER_NAME=$3
-export ORDERER_CA=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer${ORDERER_NAME}.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+export ORDERER_CA=/opt/fabric-sdk-node/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer${ORDERER_NAME}.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 echo ${ORDERER_CA}
 	setGlobals $PEER $ORG 1
 	# while 'peer chaincode' command can get the orderer endpoint from the peer (if join was successful),

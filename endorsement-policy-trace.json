@@ -1,0 +1,26 @@
+{
+     "identities": [
+       { "role": { "name": "member", "mspId": "Org1MSP" }},
+       { "role": { "name": "member", "mspId": "Org2MSP" }},
+       { "role": { "name": "member", "mspId": "Org3MSP" }},
+       { "role": { "name": "member", "mspId": "Org4MSP" }},
+       { "role": { "name": "member", "mspId": "Org5MSP" }},
+       { "role": { "name": "member", "mspId": "Org6MSP" }},
+       { "role": { "name": "member", "mspId": "Org7MSP" }},
+       { "role": { "name": "member", "mspId": "Org8MSP" }},
+       { "role": { "name": "member", "mspId": "Org9MSP" }}
+     ],
+     "policy": {
+       "1-of": [
+         { "signed-by": 0 },
+         { "signed-by": 1 },
+         { "signed-by": 2 },
+         { "signed-by": 3 },
+         { "signed-by": 4 },
+         { "signed-by": 5 },
+         { "signed-by": 6 },
+         { "signed-by": 7 },
+         { "signed-by": 8 }
+       ]
+     }
+}

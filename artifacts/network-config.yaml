@@ -87,6 +87,36 @@ channels:
         ledgerQuery: true
         eventSource: true
 
+      peer0.org5.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org6.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org7.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org8.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org9.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
     # [Optional]. what chaincodes are expected to exist on this channel? The application can use
     # this information to validate that the target peers are in the expected state by comparing
     # this list with the query results of getInstalledChaincodes() and getInstantiatedChaincodes()
@@ -121,7 +151,7 @@ organizations:
     # this way. The SDK should allow applications to set the org admin identity via APIs, and only use
     # this route as an alternative when it exists.
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/98b9e475a5f82a39c7cc041b08c37ed1015c26b0dec8c700b5693f3e6398bee2_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/62aac158c206208a4193988a596664d7db37411eb6831ed4b2f7a9fd26441a98_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
 
@@ -137,7 +167,7 @@ organizations:
     certificateAuthorities:
       - ca-org2
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/01eed46fff5f93bb1014e16a5c23d5804d1bc3c44a7eaa9734d317d4bb455343_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/78449f772ca6057c2454f8bd40d3f710b02218a30a97f9586a4883e7d846cf2f_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem
 
@@ -153,7 +183,7 @@ organizations:
     certificateAuthorities:
       - ca-org3
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/keystore/2d4e8c8113a1de632dfd2c6c4d3004e85c91660bd787826bac0aa1d80a82c071_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/keystore/1ab49d36bfd2cfc96b3a0a99d72be09d748616ad99bd746db91339d1b82baecf_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/signcerts/Admin@org3.example.com-cert.pem
 
@@ -169,9 +199,91 @@ organizations:
     certificateAuthorities:
       - ca-org4
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/keystore/ef606d7b125791b7a75959137e8b1eb2f440cf9e15f431c8f509b035e81c0f96_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/keystore/60af01fc4a17523a17ae260d29ae29e19c318d703d39c1ba13f547de9890c045_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/signcerts/Admin@org4.example.com-cert.pem
+
+
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+  Org5:
+    mspid: Org5MSP
+    peers:
+      - peer0.org5.example.com
+    certificateAuthorities:
+      - ca-org5
+    adminPrivateKey:
+      path: artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/keystore/a039334850c55e300e177cd1d0e89a12970f43dac8c5288d4483bf333300a35e_sk
+    signedCert:
+      path: artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/signcerts/Admin@org5.example.com-cert.pem
+
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+  Org6:
+    mspid: Org6MSP
+    peers:
+      - peer0.org6.example.com
+    certificateAuthorities:
+      - ca-org6
+    adminPrivateKey:
+      path: artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/keystore/7bddd64b4007ef92dc18ff7f41a372981d5f556366e4802191990a7c847b7a06_sk
+    signedCert:
+      path: artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/signcerts/Admin@org6.example.com-cert.pem
+
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+  Org7:
+    mspid: Org7MSP
+    peers:
+      - peer0.org7.example.com
+    certificateAuthorities:
+      - ca-org7
+    adminPrivateKey:
+      path: artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/keystore/393c6384bc5770a7e499451c2b09438ad85f6ed76eb1cf968807ba9431f0910c_sk
+    signedCert:
+      path: artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/signcerts/Admin@org7.example.com-cert.pem
+
+
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+  Org8:
+    mspid: Org8MSP
+    peers:
+      - peer0.org8.example.com
+    certificateAuthorities:
+      - ca-org8
+    adminPrivateKey:
+      path: artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/keystore/7848b285955a52de2aad3ffb126727b9832ff8629c4da26411de0bd5d53a1ca9_sk
+    signedCert:
+      path: artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/signcerts/Admin@org8.example.com-cert.pem
+
+  # the profile will contain public information about organizations other than the one it belongs to.
+  # These are necessary information to make transaction lifecycles work, including MSP IDs and
+  # peers with a public URL to send transaction proposals. The file will not contain private
+  # information reserved for members of the organization, such as admin key and certificate,
+  # fabric-ca registrar enroll ID and secret, etc.
+  Org9:
+    mspid: Org9MSP
+    peers:
+      - peer0.org9.example.com
+    certificateAuthorities:
+      - ca-org9
+    adminPrivateKey:
+      path: artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/keystore/fa2a61fb0dcae03589c4dfc2d0416e902ab1a014ab28340eda41a07623b16468_sk
+    signedCert:
+      path: artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/signcerts/Admin@org9.example.com-cert.pem
 
 #
 # List of orderers to send transaction and channel create/update requests to. For the time
@@ -186,7 +298,6 @@ orderers:
     # they will be passed in as-is to gRPC client constructor
     grpcOptions:
       ssl-target-name-override: orderer2.example.com
-      grpc-max-send-message-length: 15
 
     tlsCACerts:
       path: artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/ca.crt
@@ -198,7 +309,6 @@ orderers:
     # they will be passed in as-is to gRPC client constructor
     grpcOptions:
       ssl-target-name-override: orderer1.example.com
-      grpc-max-send-message-length: 15
 
     tlsCACerts:
       path: artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/ca.crt
@@ -243,6 +353,46 @@ peers:
       ssl-target-name-override: peer0.org4.example.com
     tlsCACerts:
       path: artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt
+
+  peer0.org5.example.com:
+    url: grpcs://127.0.0.1:11051
+    eventUrl: grpcs://127.0.0.1:11053
+    grpcOptions:
+      ssl-target-name-override: peer0.org5.example.com
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/ca.crt
+
+  peer0.org6.example.com:
+    url: grpcs://127.0.0.1:12051
+    eventUrl: grpcs://127.0.0.1:12053
+    grpcOptions:
+      ssl-target-name-override: peer0.org6.example.com
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/ca.crt
+
+  peer0.org7.example.com:
+    url: grpcs://127.0.0.1:13051
+    eventUrl: grpcs://127.0.0.1:13053
+    grpcOptions:
+      ssl-target-name-override: peer0.org7.example.com
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/ca.crt
+
+  peer0.org8.example.com:
+    url: grpcs://127.0.0.1:14051
+    eventUrl: grpcs://127.0.0.1:14053
+    grpcOptions:
+      ssl-target-name-override: peer0.org8.example.com
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/ca.crt
+
+  peer0.org9.example.com:
+    url: grpcs://127.0.0.1:15051
+    eventUrl: grpcs://127.0.0.1:15053
+    grpcOptions:
+      ssl-target-name-override: peer0.org9.example.com
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/ca.crt
 
 #
 # Fabric-CA is a special kind of Certificate Authority provided by Hyperledger Fabric which allows
@@ -302,3 +452,63 @@ certificateAuthorities:
         enrollSecret: adminpw
     # [Optional] The optional name of the CA.
     caName: ca.org4.example.com
+
+  ca-org5:
+    url: https://127.0.0.1:11054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org5.example.com/ca/ca.org5.example.com-cert.pem
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    # [Optional] The optional name of the CA.
+    caName: ca.org5.example.com
+
+  ca-org6:
+    url: https://127.0.0.1:12054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org6.example.com/ca/ca.org6.example.com-cert.pem
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    # [Optional] The optional name of the CA.
+    caName: ca.org6.example.com
+
+  ca-org7:
+    url: https://127.0.0.1:13054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org7.example.com/ca/ca.org7.example.com-cert.pem
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    # [Optional] The optional name of the CA.
+    caName: ca.org7.example.com
+
+  ca-org8:
+    url: https://127.0.0.1:14054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org8.example.com/ca/ca.org8.example.com-cert.pem
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    # [Optional] The optional name of the CA.
+    caName: ca.org8.example.com
+
+  ca-org9:
+    url: https://127.0.0.1:15054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: artifacts/channel/crypto-config/peerOrganizations/org9.example.com/ca/ca.org9.example.com-cert.pem
+    registrar:
+      - enrollId: admin
+        enrollSecret: adminpw
+    # [Optional] The optional name of the CA.
+    caName: ca.org9.example.com

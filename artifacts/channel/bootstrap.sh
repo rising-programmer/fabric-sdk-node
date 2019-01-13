@@ -13,7 +13,7 @@
 # npm install --registry=https://registry.npm.taobao.org
 
 ## Default configurations
-export VERSION=1.1.0
+export VERSION=1.4.0
 export CA_VERSION=${VERSION}
 export ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')")
 export THIRD_PARTY_IMAGE_VERSION=0.4.7

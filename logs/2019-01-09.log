@@ -1,0 +1,1581 @@
+[2019-01-09 08:31:17.986] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 08:31:18.005] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org2.example.com"]}
+[2019-01-09 08:31:18.261] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"error executing chaincode: transaction returned with failure: cannot retrieve package for chaincode supervision/v2, error open /var/hyperledger/production/chaincodes/supervision.v2: no such file or directory"}]
+[2019-01-09 08:31:18.261] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 08:33:11.978] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 08:33:11.984] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 08:33:12.114] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 08:33:12.116] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"version":1,"timestamp":null,"response":{"status":200,"message":"OK","payload":{"type":"Buffer","data":[]}},"payload":{"type":"Buffer","data":[10,32,64,231,24,150,162,157,17,233,192,228,112,11,10,30,219,42,151,224,221,182,71,120,113,105,123,116,219,6,179,246,80,13,18,150,1,10,128,1,18,40,10,4,108,115,99,99,18,32,10,17,10,11,115,117,112,101,114,118,105,115,105,111,110,18,2,8,5,10,11,10,5,116,114,97,99,101,18,2,8,27,18,35,10,11,115,117,112,101,114,118,105,115,105,111,110,18,20,10,18,10,12,115,117,112,101,114,118,105,115,105,111,110,49,18,2,8,6,18,47,10,5,116,114,97,99,101,18,38,26,36,10,7,112,108,97,110,116,115,51,26,25,123,34,105,100,34,58,34,51,34,44,34,115,101,114,105,97,108,78,111,34,58,34,49,34,125,26,3,8,200,1,34,12,18,5,116,114,97,99,101,26,3,118,49,53]},"endorsement":{"endorser":{"type":"Buffer","data":[10,7,79,114,103,49,77,83,80,18,170,6,45,45,45,45,45,66,69,71,73,78,32,67,69,82,84,73,70,73,67,65,84,69,45,45,45,45,45,10,77,73,73,67,75,68,67,67,65,99,54,103,65,119,73,66,65,103,73,81,73,50,74,109,83,55,74,90,110,117,85,109,68,82,43,119,52,82,114,102,55,122,65,75,66,103,103,113,104,107,106,79,80,81,81,68,65,106,66,122,77,81,115,119,10,67,81,89,68,86,81,81,71,69,119,74,86,85,122,69,84,77,66,69,71,65,49,85,69,67,66,77,75,81,50,70,115,97,87,90,118,99,109,53,112,89,84,69,87,77,66,81,71,65,49,85,69,66,120,77,78,85,50,70,117,73,69,90,121,10,89,87,53,106,97,88,78,106,98,122,69,90,77,66,99,71,65,49,85,69,67,104,77,81,98,51,74,110,77,83,53,108,101,71,70,116,99,71,120,108,76,109,78,118,98,84,69,99,77,66,111,71,65,49,85,69,65,120,77,84,89,50,69,117,10,98,51,74,110,77,83,53,108,101,71,70,116,99,71,120,108,76,109,78,118,98,84,65,101,70,119,48,120,79,68,69,121,77,84,107,119,78,122,77,52,77,106,108,97,70,119,48,121,79,68,69,121,77,84,89,119,78,122,77,52,77,106,108,97,10,77,71,111,120,67,122,65,74,66,103,78,86,66,65,89,84,65,108,86,84,77,82,77,119,69,81,89,68,86,81,81,73,69,119,112,68,89,87,120,112,90,109,57,121,98,109,108,104,77,82,89,119,70,65,89,68,86,81,81,72,69,119,49,84,10,89,87,52,103,82,110,74,104,98,109,78,112,99,50,78,118,77,81,48,119,67,119,89,68,86,81,81,76,69,119,82,119,90,87,86,121,77,82,56,119,72,81,89,68,86,81,81,68,69,120,90,119,90,87,86,121,77,67,53,118,99,109,99,120,10,76,109,86,52,89,87,49,119,98,71,85,117,89,50,57,116,77,70,107,119,69,119,89,72,75,111,90,73,122,106,48,67,65,81,89,73,75,111,90,73,122,106,48,68,65,81,99,68,81,103,65,69,90,82,49,102,100,113,55,48,51,49,84,110,10,87,71,55,85,122,109,100,119,85,119,77,120,75,106,79,112,77,70,90,109,88,118,72,106,74,108,55,55,101,85,55,90,111,87,80,81,73,49,90,85,71,69,109,89,51,84,70,83,97,117,67,81,106,79,119,90,49,98,88,83,53,68,71,111,10,68,119,78,67,105,114,108,74,122,113,78,78,77,69,115,119,68,103,89,68,86,82,48,80,65,81,72,47,66,65,81,68,65,103,101,65,77,65,119,71,65,49,85,100,69,119,69,66,47,119,81,67,77,65,65,119,75,119,89,68,86,82,48,106,10,66,67,81,119,73,111,65,103,85,77,113,98,66,83,98,105,69,100,82,108,66,77,73,119,104,97,74,83,82,108,43,113,112,56,110,55,99,74,74,121,114,113,83,78,103,107,106,115,69,90,52,119,67,103,89,73,75,111,90,73,122,106,48,69,10,65,119,73,68,83,65,65,119,82,81,73,104,65,73,104,108,112,73,106,68,82,81,88,106,89,98,83,86,82,69,86,71,51,69,71,49,101,47,120,108,108,43,67,52,113,109,106,101,77,101,119,77,83,52,50,76,65,105,65,68,88,67,71,84,10,70,85,105,68,109,116,43,78,56,119,76,49,70,79,71,56,122,66,110,86,121,76,99,89,76,101,79,116,115,50,55,65,107,53,76,73,86,81,61,61,10,45,45,45,45,45,69,78,68,32,67,69,82,84,73,70,73,67,65,84,69,45,45,45,45,45,10]},"signature":{"type":"Buffer","data":[48,68,2,32,81,176,89,164,232,30,95,21,190,64,17,246,250,61,6,215,13,77,5,143,227,187,69,133,130,220,147,226,121,8,218,137,2,32,33,2,248,150,106,179,210,102,160,6,33,212,179,83,73,21,231,42,45,57,185,12,110,86,189,78,49,82,122,156,211,39]}}},{"code":2,"metadata":{"_internal_repr":{}},"details":"error executing chaincode: transaction returned with failure: cannot retrieve package for chaincode supervision/v2, error open /var/hyperledger/production/chaincodes/supervision.v2: no such file or directory"}]
+[2019-01-09 08:33:12.118] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 08:35:51.038] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 08:35:51.038] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org1.example.com"]}
+[2019-01-09 08:35:51.098] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 08:35:51.099] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D �_�xPX��}�@Z`��|���:�|�|��I ZA8ڥ4e6� |[�'�s� ��3�HY����X
+[2019-01-09 08:35:53.390] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 08:35:53.391] [INFO] invoke-chaincode - Transaction 630bd3d2ef7c40cad267fdbc6bdf3647fd4d78f7fd6e14934ea9584af6fbc6f0 has status of VALID in blocl 29
+[2019-01-09 08:35:53.391] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 08:35:53.391] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 08:35:53.391] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 630bd3d2ef7c40cad267fdbc6bdf3647fd4d78f7fd6e14934ea9584af6fbc6f0
+[2019-01-09 11:30:44.251] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:30:44.253] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 11:30:44.269] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:30:44.419] [ERROR] Helper - Failed to get registered user: doc with error: Error: Calling enrollment endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:7054]
+[2019-01-09 11:30:44.445] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:30:44.446] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 11:30:44.450] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:30:44.501] [ERROR] Helper - Failed to get registered user: Barry with error: Error: Calling enrollment endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:8054]
+[2019-01-09 11:30:44.525] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:30:44.525] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 11:30:44.532] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:30:44.581] [ERROR] Helper - Failed to get registered user: Selina with error: Error: Calling enrollment endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:9054]
+[2019-01-09 11:30:44.603] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:30:44.603] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 11:30:44.610] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:30:44.655] [ERROR] Helper - Failed to get registered user: Randy with error: Error: Calling enrollment endpoint failed with error [Error: connect ECONNREFUSED 127.0.0.1:10054]
+[2019-01-09 11:30:44.682] [ERROR] app - -------->>>>>> error {"name":"UnauthorizedError","message":"jwt malformed","code":401,"status":401,"inner":{"name":"JsonWebTokenError","message":"jwt malformed"}}
+[2019-01-09 11:31:40.852] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 11:31:40.853] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 11:31:44.619] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:31:44.619] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 11:31:44.843] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:31:45.135] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:31:45.444] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:31:45.444] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 11:31:45.453] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:31:45.634] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:31:45.887] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:31:45.887] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 11:31:45.892] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:31:46.043] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:31:46.327] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:31:46.327] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 11:31:46.333] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:31:46.482] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:31:46.742] [INFO] app -  ------>>>>>> new request for /channels
+[2019-01-09 11:31:46.742] [INFO] app - ------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[2019-01-09 11:31:46.744] [INFO] app - <<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:31:51.952] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:31:51.953] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[2019-01-09 11:31:51.961] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:31:51.962] [INFO] Join-Channel - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:31:52.057] [INFO] console - "peer0.org1.example.com"
+[2019-01-09 11:31:52.384] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:7053 mychannel
+[2019-01-09 11:31:52.386] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:31:52.388] [INFO] Join-Channel - Successfully joined peers in organization Org1 to the channel:mychannel
+[2019-01-09 11:31:52.407] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:31:52.407] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[2019-01-09 11:31:52.407] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:31:52.407] [INFO] Join-Channel - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:31:52.444] [INFO] console - "peer0.org2.example.com"
+[2019-01-09 11:31:52.721] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:8053 mychannel
+[2019-01-09 11:31:52.721] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:31:52.723] [INFO] Join-Channel - Successfully joined peers in organization Org2 to the channel:mychannel
+[2019-01-09 11:31:52.742] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:31:52.742] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[2019-01-09 11:31:52.742] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:31:52.742] [INFO] Join-Channel - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:31:52.771] [INFO] console - "peer0.org3.example.com"
+[2019-01-09 11:31:53.091] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:9053 mychannel
+[2019-01-09 11:31:53.091] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:31:53.093] [INFO] Join-Channel - Successfully joined peers in organization Org3 to the channel:mychannel
+[2019-01-09 11:31:53.115] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:31:53.115] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"]}
+[2019-01-09 11:31:53.115] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:31:53.115] [INFO] Join-Channel - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:31:53.159] [INFO] console - "peer0.org4.example.com"
+[2019-01-09 11:31:53.456] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:10053 mychannel
+[2019-01-09 11:31:53.457] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:31:53.459] [INFO] Join-Channel - Successfully joined peers in organization Org4 to the channel:mychannel
+[2019-01-09 11:31:53.478] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:31:53.478] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:31:53.479] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:31:53.551] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:31:53.551] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:31:53.551] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:31:53.570] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:31:53.570] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:31:53.571] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:31:53.649] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:31:53.649] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:31:53.649] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:31:53.681] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:31:53.682] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:31:53.683] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:31:53.781] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:31:53.782] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:31:53.782] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:31:53.801] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:31:53.802] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:31:53.802] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:31:53.861] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:31:53.861] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:31:53.862] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:31:53.888] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 11:31:53.888] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"args":[]}
+[2019-01-09 11:31:55.716] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:31:55.716] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:31:55.717] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:31:55.717] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:31:55.717] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+tracev0escc"vscc*J 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ ��&������K�V S��I?���e?� (3mnv�FOZ8� ��&h�a�N聀Zi��k�: hcl�S��1^�V�= dKD�ȣð&:[7���WBR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0E! �c (�u�m��p)���H�I�ԗ��_g�Ex� $J���=��+Oad�2/�S�rب�ao�
+[2019-01-09 11:32:01.513] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 11:32:01.514] [INFO] instantiate-chaincode - Transaction 3950dbe35458aa148314b67f1b69f926d842ea09961487b7332481e3a6c2724a has status of VALID in blocl 1
+[2019-01-09 11:32:01.514] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 11:32:01.514] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 11:32:01.514] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 11:32:01.538] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:32:01.539] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:32:01.539] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:32:01.579] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:32:01.579] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:32:01.579] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:32:01.597] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:32:01.597] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:32:01.597] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:32:01.636] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:32:01.636] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:32:01.637] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:32:01.656] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:32:01.656] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:32:01.657] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:32:01.689] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:32:01.689] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:32:01.690] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:32:01.708] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:32:01.708] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:32:01.708] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:32:01.744] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:32:01.744] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:32:01.744] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:32:01.765] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 11:32:01.766] [INFO] app - ------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3}]}]}},"args":[]}
+[2019-01-09 11:32:29.659] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:32:29.661] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:32:29.662] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:32:29.662] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:32:29.662] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+supervisionv0escc"vscc*P 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ du����+�V��V�Pe��w��L�?$���v�: `1v�r�R[�`�������ְMZ*���g��%��: {.��zYv"�4�~>�"�Vs;�Z�@�cA�BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D SU���r����-��/�U��+wGmK����! ����w*caøԊ�(��6��w1��5:�	
+[2019-01-09 11:32:31.921] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 11:32:31.922] [INFO] instantiate-chaincode - Transaction 962bfa05adef0f960281afe71d2aebc40bba05bf904cd8bb02a3fd090b765b8a has status of VALID in blocl 2
+[2019-01-09 11:32:31.922] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 11:32:31.923] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 11:32:31.923] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 11:39:41.674] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:39:41.674] [INFO] app - ------->>>>>> request params {"username":"do","orgName":"Org4"}
+[2019-01-09 11:39:41.689] [INFO] Helper - User do was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:39:41.717] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org4', affiliations: [ [Object] ] } ]
+[2019-01-09 11:39:54.115] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 11:39:54.116] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com"]}
+[2019-01-09 11:40:24.147] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"error executing chaincode: failed to execute transaction: timeout expired while executing transaction"}]
+[2019-01-09 11:40:24.147] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 11:41:11.293] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 11:41:11.293] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 11:41:42.348] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"error executing chaincode: failed to execute transaction: timeout expired while executing transaction"},{"version":1,"timestamp":null,"response":{"status":200,"message":"OK","payload":{"type":"Buffer","data":[]}},"payload":{"type":"Buffer","data":[10,32,110,85,242,85,175,89,112,226,79,22,0,109,78,228,69,4,140,235,93,62,100,116,198,152,206,178,131,209,170,151,64,155,18,106,10,80,18,27,10,4,108,115,99,99,18,19,10,17,10,11,115,117,112,101,114,118,105,115,105,111,110,18,2,8,2,18,49,10,11,115,117,112,101,114,118,105,115,105,111,110,18,34,26,32,10,12,115,117,112,101,114,118,105,115,105,111,110,49,26,16,123,34,115,101,114,105,97,108,78,111,34,58,34,49,34,125,26,3,8,200,1,34,17,18,11,115,117,112,101,114,118,105,115,105,111,110,26,2,118,48]},"endorsement":{"endorser":{"type":"Buffer","data":[10,7,79,114,103,50,77,83,80,18,170,6,45,45,45,45,45,66,69,71,73,78,32,67,69,82,84,73,70,73,67,65,84,69,45,45,45,45,45,10,77,73,73,67,75,68,67,67,65,99,54,103,65,119,73,66,65,103,73,81,66,89,55,66,103,97,69,69,121,84,122,115,114,101,119,81,65,114,116,106,85,84,65,75,66,103,103,113,104,107,106,79,80,81,81,68,65,106,66,122,77,81,115,119,10,67,81,89,68,86,81,81,71,69,119,74,86,85,122,69,84,77,66,69,71,65,49,85,69,67,66,77,75,81,50,70,115,97,87,90,118,99,109,53,112,89,84,69,87,77,66,81,71,65,49,85,69,66,120,77,78,85,50,70,117,73,69,90,121,10,89,87,53,106,97,88,78,106,98,122,69,90,77,66,99,71,65,49,85,69,67,104,77,81,98,51,74,110,77,105,53,108,101,71,70,116,99,71,120,108,76,109,78,118,98,84,69,99,77,66,111,71,65,49,85,69,65,120,77,84,89,50,69,117,10,98,51,74,110,77,105,53,108,101,71,70,116,99,71,120,108,76,109,78,118,98,84,65,101,70,119,48,120,79,68,69,121,77,84,107,119,78,122,77,52,77,106,108,97,70,119,48,121,79,68,69,121,77,84,89,119,78,122,77,52,77,106,108,97,10,77,71,111,120,67,122,65,74,66,103,78,86,66,65,89,84,65,108,86,84,77,82,77,119,69,81,89,68,86,81,81,73,69,119,112,68,89,87,120,112,90,109,57,121,98,109,108,104,77,82,89,119,70,65,89,68,86,81,81,72,69,119,49,84,10,89,87,52,103,82,110,74,104,98,109,78,112,99,50,78,118,77,81,48,119,67,119,89,68,86,81,81,76,69,119,82,119,90,87,86,121,77,82,56,119,72,81,89,68,86,81,81,68,69,120,90,119,90,87,86,121,77,67,53,118,99,109,99,121,10,76,109,86,52,89,87,49,119,98,71,85,117,89,50,57,116,77,70,107,119,69,119,89,72,75,111,90,73,122,106,48,67,65,81,89,73,75,111,90,73,122,106,48,68,65,81,99,68,81,103,65,69,53,68,88,50,100,50,99,116,68,84,90,112,10,90,105,73,80,82,117,97,77,111,104,97,57,109,74,98,52,72,54,50,54,87,70,111,71,79,120,70,116,109,67,72,87,47,50,107,97,69,51,104,102,105,112,78,109,110,69,51,74,83,87,101,118,80,73,90,105,116,119,70,57,73,52,74,97,10,85,103,103,48,57,74,102,119,52,97,78,78,77,69,115,119,68,103,89,68,86,82,48,80,65,81,72,47,66,65,81,68,65,103,101,65,77,65,119,71,65,49,85,100,69,119,69,66,47,119,81,67,77,65,65,119,75,119,89,68,86,82,48,106,10,66,67,81,119,73,111,65,103,73,108,83,109,88,117,49,81,76,100,71,69,48,54,90,103,90,90,52,90,49,90,113,98,76,52,75,72,83,74,65,73,70,81,55,114,107,43,111,70,120,71,119,119,67,103,89,73,75,111,90,73,122,106,48,69,10,65,119,73,68,83,65,65,119,82,81,73,104,65,77,118,51,105,118,106,97,121,122,110,78,88,89,88,85,122,103,105,121,56,120,56,57,81,100,52,108,97,87,49,67,73,77,71,78,66,73,73,73,106,116,74,65,65,105,65,67,102,119,86,73,10,69,89,115,107,97,56,57,69,108,55,102,122,70,116,113,68,109,69,81,88,99,82,89,110,122,90,122,111,117,119,107,105,117,76,88,66,116,119,61,61,10,45,45,45,45,45,69,78,68,32,67,69,82,84,73,70,73,67,65,84,69,45,45,45,45,45,10]},"signature":{"type":"Buffer","data":[48,68,2,32,52,137,170,4,92,251,112,99,83,151,186,99,91,107,209,126,55,171,186,52,109,77,40,120,50,123,131,97,25,153,22,206,2,32,8,52,124,152,197,165,73,57,108,117,104,124,54,64,30,56,208,195,104,226,101,44,42,130,148,241,244,118,75,176,149,209]}}}]
+[2019-01-09 11:41:42.348] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 11:41:42.348] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 11:54:48.828] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 11:54:48.829] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 11:54:52.783] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:54:52.783] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 11:54:52.995] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:54:53.201] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 11:54:53.444] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:54:54.804] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 11:54:54.816] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:54:54.966] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:54:55.202] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:54:55.202] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 11:54:55.207] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:54:55.372] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:54:55.624] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:54:55.624] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 11:54:55.630] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:54:55.778] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 11:54:56.041] [INFO] app -  ------>>>>>> new request for /channels
+[2019-01-09 11:54:56.041] [INFO] app - ------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[2019-01-09 11:54:56.042] [INFO] app - <<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:55:01.255] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:55:01.255] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[2019-01-09 11:55:01.256] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:55:01.256] [INFO] Join-Channel - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:55:01.302] [INFO] console - "peer0.org1.example.com"
+[2019-01-09 11:55:01.608] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:7053 mychannel
+[2019-01-09 11:55:01.608] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:55:01.611] [INFO] Join-Channel - Successfully joined peers in organization Org1 to the channel:mychannel
+[2019-01-09 11:55:01.633] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:55:01.633] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[2019-01-09 11:55:01.633] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:55:01.633] [INFO] Join-Channel - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:55:01.666] [INFO] console - "peer0.org2.example.com"
+[2019-01-09 11:55:02.062] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:8053 mychannel
+[2019-01-09 11:55:02.062] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:55:02.064] [INFO] Join-Channel - Successfully joined peers in organization Org2 to the channel:mychannel
+[2019-01-09 11:55:02.090] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:55:02.090] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[2019-01-09 11:55:02.090] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:55:02.090] [INFO] Join-Channel - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:55:02.133] [INFO] console - "peer0.org3.example.com"
+[2019-01-09 11:55:02.464] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:9053 mychannel
+[2019-01-09 11:55:02.464] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:55:02.467] [INFO] Join-Channel - Successfully joined peers in organization Org3 to the channel:mychannel
+[2019-01-09 11:55:02.496] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:55:02.496] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"]}
+[2019-01-09 11:55:02.497] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:55:02.497] [INFO] Join-Channel - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:55:02.527] [INFO] console - "peer0.org4.example.com"
+[2019-01-09 11:55:02.798] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:10053 mychannel
+[2019-01-09 11:55:02.798] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:55:02.802] [INFO] Join-Channel - Successfully joined peers in organization Org4 to the channel:mychannel
+[2019-01-09 11:55:02.825] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:55:02.825] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:55:02.826] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:55:02.909] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:55:02.909] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:55:02.909] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:55:02.929] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:55:02.929] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:55:02.930] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:55:02.991] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:55:02.991] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:55:02.991] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:55:03.009] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:55:03.009] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:55:03.010] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:55:03.064] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:55:03.064] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:55:03.064] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:55:03.081] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:55:03.082] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:55:03.082] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:55:03.140] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:55:03.140] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:55:03.140] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:55:03.158] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 11:55:03.159] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"args":[]}
+[2019-01-09 11:57:56.311] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 11:57:56.312] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 11:58:00.245] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:58:00.245] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 11:58:00.458] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:58:00.676] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 11:58:00.921] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:58:00.921] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 11:58:00.929] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:58:01.086] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:58:01.317] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:58:01.317] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 11:58:01.322] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:58:01.469] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 11:58:01.712] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 11:58:01.712] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 11:58:01.718] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 11:58:01.874] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 11:58:02.114] [INFO] app -  ------>>>>>> new request for /channels
+[2019-01-09 11:58:02.114] [INFO] app - ------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[2019-01-09 11:58:02.115] [INFO] app - <<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:58:07.286] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:58:07.287] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[2019-01-09 11:58:07.287] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:58:07.288] [INFO] Join-Channel - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:58:07.328] [INFO] console - "peer0.org1.example.com"
+[2019-01-09 11:58:07.607] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:7053 mychannel
+[2019-01-09 11:58:07.608] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:58:07.611] [INFO] Join-Channel - Successfully joined peers in organization Org1 to the channel:mychannel
+[2019-01-09 11:58:07.628] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:58:07.628] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[2019-01-09 11:58:07.629] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:58:07.629] [INFO] Join-Channel - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:58:07.662] [INFO] console - "peer0.org2.example.com"
+[2019-01-09 11:58:07.897] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:8053 mychannel
+[2019-01-09 11:58:07.897] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:58:07.899] [INFO] Join-Channel - Successfully joined peers in organization Org2 to the channel:mychannel
+[2019-01-09 11:58:07.917] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:58:07.917] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[2019-01-09 11:58:07.917] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:58:07.917] [INFO] Join-Channel - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:58:07.953] [INFO] console - "peer0.org3.example.com"
+[2019-01-09 11:58:08.195] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:9053 mychannel
+[2019-01-09 11:58:08.196] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:58:08.198] [INFO] Join-Channel - Successfully joined peers in organization Org3 to the channel:mychannel
+[2019-01-09 11:58:08.217] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 11:58:08.217] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"]}
+[2019-01-09 11:58:08.217] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 11:58:08.217] [INFO] Join-Channel - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:58:08.246] [INFO] console - "peer0.org4.example.com"
+[2019-01-09 11:58:08.523] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:10053 mychannel
+[2019-01-09 11:58:08.524] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 11:58:08.526] [INFO] Join-Channel - Successfully joined peers in organization Org4 to the channel:mychannel
+[2019-01-09 11:58:08.545] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:08.545] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:08.546] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:58:08.628] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:08.628] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:08.628] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:08.644] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:08.644] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:08.645] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:58:08.707] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:08.708] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:08.708] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:08.724] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:08.725] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:08.725] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:58:08.786] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:08.786] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:08.786] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:08.804] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:08.804] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:08.805] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:58:08.870] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:08.870] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:08.870] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:08.887] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 11:58:08.887] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"args":[]}
+[2019-01-09 11:58:41.304] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:58:41.304] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:58:41.304] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:58:41.304] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:58:41.304] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+tracev0escc"vscc*J 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ ��&������K�V S��I?���e?� (3mnv�FOZ8� ��&h�a�N聀Zi��k�: hcl�S��1^�V�= dKD�ȣð&:[7���WBR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0E! ��-<���v�~�bK����"���_�
+�w� LZ�v@��YOX��~�+Y9k���H��So=�
+[2019-01-09 11:58:43.666] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 11:58:43.666] [INFO] instantiate-chaincode - Transaction 7369d76965ea3f470de634e7d65e75e036bd24b43bc7dedef3bc29ff1a694853 has status of VALID in blocl 1
+[2019-01-09 11:58:43.666] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 11:58:43.667] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 11:58:43.667] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 11:58:43.691] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:43.691] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:43.692] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 11:58:43.731] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:43.731] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:43.731] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:43.751] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:43.751] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:43.751] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 11:58:43.789] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:43.789] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:43.789] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:43.806] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:43.806] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:43.807] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 11:58:43.833] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:43.833] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:43.833] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:43.850] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 11:58:43.850] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 11:58:43.850] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 11:58:43.886] [INFO] install-chaincode - install proposal was good
+[2019-01-09 11:58:43.887] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 11:58:43.887] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 11:58:43.904] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 11:58:43.904] [INFO] app - ------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3}]}]}},"args":[]}
+[2019-01-09 11:59:17.189] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:59:17.191] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:59:17.191] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:59:17.191] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 11:59:17.192] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+supervisionv0escc"vscc*P 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ du����+�V��V�Pe��w��L�?$���v�: `1v�r�R[�`�������ְMZ*���g��%��: {.��zYv"�4�~>�"�Vs;�Z�@�cA�BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D y��vWd%���Wd�Q܎Mga���C�)� )�`p�9m�̝d��QR�&B���[��n�s
+[2019-01-09 11:59:19.435] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 11:59:19.435] [INFO] instantiate-chaincode - Transaction 869a0b50b5a0f9dcbf6fa54f04f54be223df94d09b9a6b9fd5d1340c6d43c65a has status of VALID in blocl 2
+[2019-01-09 11:59:19.435] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 11:59:19.436] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 11:59:19.436] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 12:00:44.376] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 12:00:44.377] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 12:00:44.386] [ERROR] invoke-chaincode - Error: User was not found : do
+    at Object.getClientForOrg (/opt/fabric-sdk-node/app/helper.js:67:19)
+    at <anonymous>
+[2019-01-09 12:00:44.386] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Error: User was not found : do
+[2019-01-09 12:00:48.868] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 12:00:48.868] [INFO] app - ------->>>>>> request params {"username":"do","orgName":"Org4"}
+[2019-01-09 12:00:48.875] [INFO] Helper - User do was not enrolled, so we will need an admin user object to register
+[2019-01-09 12:00:48.889] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org4', affiliations: [ [Object] ] } ]
+[2019-01-09 12:00:58.141] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 12:00:58.142] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 12:00:58.218] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:00:58.219] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:00:58.219] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D h�emK�Q ]=�gyJ�ƥ �UY~GGY�/�  H&t)%��yT�F�8>�����W3�Y�e�P]
+[2019-01-09 12:01:00.447] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:01:00.447] [INFO] invoke-chaincode - Transaction dbdaa3a1f58ff2b2a9c7ca6165b4da457530e87a6a4b9b7caeebb22426d14f49 has status of VALID in blocl 3
+[2019-01-09 12:01:00.448] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 12:01:00.448] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 12:01:00.448] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: dbdaa3a1f58ff2b2a9c7ca6165b4da457530e87a6a4b9b7caeebb22426d14f49
+[2019-01-09 12:01:11.557] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 12:01:11.557] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org2.example.com"]}
+[2019-01-09 12:01:11.600] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:01:11.600] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ��w�L�`�K��~�~)���;�}�@�/*� 2�3�h��%��-���<�#A�5�U!@\<���
+[2019-01-09 12:01:13.739] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:01:13.739] [INFO] invoke-chaincode - Transaction c53842dc7cc2336f1c96c39a63b135642d2afb85f24067f7a79a72a55a491d7e has status of ENDORSEMENT_POLICY_FAILURE in blocl 4
+[2019-01-09 12:01:13.739] [ERROR] invoke-chaincode - The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+[2019-01-09 12:01:13.740] [ERROR] invoke-chaincode - Error: The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+    at EventRegistration.eh.registerTxEvent [as onEvent] (/opt/fabric-sdk-node/app/invoke-transaction.js:95:40)
+    at ChannelEventHub._callTransactionListener (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:1068:14)
+    at ChannelEventHub._processTxEvents (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:1045:10)
+    at ClientDuplexStream.<anonymous> (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:358:11)
+    at emitOne (events.js:115:13)
+    at ClientDuplexStream.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at ClientDuplexStream.Readable.push (_stream_readable.js:209:10)
+    at readCallback (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:312:14)
+[2019-01-09 12:01:13.741] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Error: The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+[2019-01-09 12:49:04.198] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 12:49:04.199] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com"]}
+[2019-01-09 12:49:04.244] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:49:04.244] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D .$G<� �%�\�$�uEM�1a����(�]i�tV 3���ۡ��~�(����@��0H�l���#
+[2019-01-09 12:49:06.599] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:49:06.599] [INFO] invoke-chaincode - Transaction f53bf8beea32b6cf040172c362db84785381796c7d59428f5168f0fef00c8282 has status of ENDORSEMENT_POLICY_FAILURE in blocl 5
+[2019-01-09 12:49:06.599] [ERROR] invoke-chaincode - The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+[2019-01-09 12:49:06.600] [ERROR] invoke-chaincode - Error: The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+    at EventRegistration.eh.registerTxEvent [as onEvent] (/opt/fabric-sdk-node/app/invoke-transaction.js:95:40)
+    at ChannelEventHub._callTransactionListener (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:1068:14)
+    at ChannelEventHub._processTxEvents (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:1045:10)
+    at ClientDuplexStream.<anonymous> (/opt/fabric-sdk-node/node_modules/fabric-client/lib/ChannelEventHub.js:358:11)
+    at emitOne (events.js:115:13)
+    at ClientDuplexStream.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:264:12)
+    at readableAddChunk (_stream_readable.js:251:11)
+    at ClientDuplexStream.Readable.push (_stream_readable.js:209:10)
+    at readCallback (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:312:14)
+[2019-01-09 12:49:06.600] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Error: The invoke chaincode transaction was invalid, code:ENDORSEMENT_POLICY_FAILURE
+[2019-01-09 12:49:27.314] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 12:49:27.320] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 12:49:27.373] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:49:27.374] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:49:27.374] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D *���W�Pz�1I�ߎ�U.(:�$r�oC��
+vk DJ�6
+]��?5�L��OG�r,���Y��C�"
+[2019-01-09 12:49:29.565] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:49:29.565] [INFO] invoke-chaincode - Transaction c2e1dd71114bde760347a62b270431c9b3d2ed9ab8631d09bc5a73b46d35848d has status of VALID in blocl 6
+[2019-01-09 12:49:29.566] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 12:49:29.566] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 12:49:29.567] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: c2e1dd71114bde760347a62b270431c9b3d2ed9ab8631d09bc5a73b46d35848d
+[2019-01-09 12:49:39.919] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:49:39.925] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org2.example.com"]}
+[2019-01-09 12:49:39.991] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:49:39.991] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ઎RT��]���0A�����H� [��.�~j� r��[�'��[$��ƌY�U���K#��;z�
+[2019-01-09 12:49:42.172] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:49:42.173] [INFO] invoke-chaincode - Transaction fe1522080fd0186c23fb4cdebb8efc2e2046b21344a71e387987f5d558564401 has status of VALID in blocl 7
+[2019-01-09 12:49:42.173] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 12:49:42.173] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 12:49:42.173] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: fe1522080fd0186c23fb4cdebb8efc2e2046b21344a71e387987f5d558564401
+[2019-01-09 12:50:18.259] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:50:18.260] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 12:50:18.342] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 12:50:18.342] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D >�<�*�Q�d�g�#i:�?��E�p��* 2�T����Q��㫘�Hҗ\��Rӗ��
+[2019-01-09 12:50:20.550] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 12:50:20.550] [INFO] invoke-chaincode - Transaction 971976f86b23507a2f4af7e86c707aeb86773a7e3f27abe4fc43e1ed82412c7f has status of VALID in blocl 8
+[2019-01-09 12:50:20.550] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 12:50:20.551] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 12:50:20.551] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 971976f86b23507a2f4af7e86c707aeb86773a7e3f27abe4fc43e1ed82412c7f
+[2019-01-09 12:50:27.573] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:50:27.578] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 12:50:27.640] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 2 Not found)"}]
+[2019-01-09 12:50:27.640] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 12:53:09.193] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 12:53:09.195] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 12:53:26.807] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:53:26.807] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 12:53:27.156] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 2 Not found)"}]
+[2019-01-09 12:55:13.386] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:Failed to send Proposal and receive all good ProposalResponse
+[2019-01-09 12:57:56.040] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 12:57:56.042] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 12:58:00.544] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:58:00.544] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 12:58:00.982] [ERROR] invoke-chaincode - TypeError: Cannot read property 'details' of undefined
+    at Object.invokeChaincode (/opt/fabric-sdk-node/app/invoke-transaction.js:64:50)
+    at <anonymous>
+[2019-01-09 12:58:00.982] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:TypeError: Cannot read property 'details' of undefined
+[2019-01-09 12:58:18.543] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:58:18.543] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 12:59:53.160] [ERROR] invoke-chaincode - TypeError: Cannot read property 'details' of undefined
+    at Object.invokeChaincode (/opt/fabric-sdk-node/app/invoke-transaction.js:64:50)
+    at <anonymous>
+[2019-01-09 12:59:53.161] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:TypeError: Cannot read property 'details' of undefined
+[2019-01-09 12:59:55.395] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 12:59:55.398] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 12:59:59.118] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 12:59:59.118] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 13:00:08.393] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 2 Not found)"}]
+[2019-01-09 13:00:17.882] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 2 Not found)
+[2019-01-09 13:00:39.423] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 13:00:39.424] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 13:00:39.508] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 13:00:39.509] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! �6�O3�E�zBޒ=��Hsp�
+�y��P�g ]�|$���4��HbR��< ��6�or���6)pd
+[2019-01-09 13:00:42.029] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 13:00:42.029] [INFO] invoke-chaincode - Transaction 7271cba7ed11d7f22a972ecb2b89de0198e6000912ab7ef719b9836f279e4fed has status of VALID in blocl 9
+[2019-01-09 13:00:42.029] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 13:00:42.030] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 13:00:42.030] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 7271cba7ed11d7f22a972ecb2b89de0198e6000912ab7ef719b9836f279e4fed
+[2019-01-09 13:00:45.313] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 13:00:45.313] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"3"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 13:00:49.338] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 3 Not found)"}]
+[2019-01-09 13:00:49.338] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 3 Not found)
+[2019-01-09 13:03:20.175] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 13:03:20.176] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 13:03:20.261] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 13:03:20.262] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! �7�?��E.�#;-��ხ��H�z/8���h� B��k��?��/+����T%x�$x�gp'��
+[2019-01-09 13:03:22.508] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 13:03:22.509] [INFO] invoke-chaincode - Transaction dc716ec37d604cc4d701e3d67f4313db4dd0fd8909c2a860959957a4fe085a5f has status of VALID in blocl 10
+[2019-01-09 13:03:22.509] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 13:03:22.510] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 13:03:22.510] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: dc716ec37d604cc4d701e3d67f4313db4dd0fd8909c2a860959957a4fe085a5f
+[2019-01-09 13:03:35.292] [ERROR] app - -------->>>>>> error {"name":"UnauthorizedError","message":"jwt expired","code":401,"status":401,"inner":{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-01-09T03:51:04.000Z"}}
+[2019-01-09 13:03:45.706] [INFO] app -  ------>>>>>> new request for /channels/mychannel/transactions/dc716ec37d604cc4d701e3d67f4313db4dd0fd8909c2a860959957a4fe085a5f?peer=peer0.org1.example.com
+[2019-01-09 13:03:45.707] [INFO] app - ------->>>>>> request params {}
+[2019-01-09 13:37:15.801] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 13:37:15.802] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"2"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 13:37:15.887] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 13:37:15.887] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 13:37:15.887] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D ��g!�fq�f��8Y��2Z'�w���\.� Zr�
+��v1�`/�?��+mе�nj.�^M�ӟ
+[2019-01-09 13:37:18.383] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 13:37:18.383] [INFO] invoke-chaincode - Transaction a25223c69a1a11a1ea4f7029ca1503dfbe232a49250d32bc336d46e90e18be97 has status of VALID in blocl 11
+[2019-01-09 13:37:18.383] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 13:37:18.384] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 13:37:18.384] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: a25223c69a1a11a1ea4f7029ca1503dfbe232a49250d32bc336d46e90e18be97
+[2019-01-09 13:37:26.273] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 13:37:26.273] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"3"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 13:37:26.339] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 3 Not found)"}]
+[2019-01-09 13:37:26.340] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 3 Not found)
+[2019-01-09 14:48:15.644] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 14:48:15.652] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 14:48:18.250] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 14:48:18.250] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 14:48:18.508] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 14:48:18.792] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 14:48:19.170] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 14:48:19.171] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 14:48:19.184] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 14:48:19.398] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 14:48:19.699] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 14:48:19.699] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 14:48:19.704] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 14:48:19.907] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 14:48:20.246] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 14:48:20.246] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 14:48:20.253] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 14:48:20.430] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 14:48:20.706] [INFO] app -  ------>>>>>> new request for /channels
+[2019-01-09 14:48:20.706] [INFO] app - ------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[2019-01-09 14:48:20.707] [INFO] app - <<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 14:48:25.926] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 14:48:25.926] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[2019-01-09 14:48:25.927] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 14:48:25.928] [INFO] Join-Channel - Calling peers in organization "Org1" to join the channel
+[2019-01-09 14:48:25.965] [INFO] console - "peer0.org1.example.com"
+[2019-01-09 14:48:26.244] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:7053 mychannel
+[2019-01-09 14:48:26.245] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 14:48:26.247] [INFO] Join-Channel - Successfully joined peers in organization Org1 to the channel:mychannel
+[2019-01-09 14:48:26.268] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 14:48:26.268] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[2019-01-09 14:48:26.268] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 14:48:26.268] [INFO] Join-Channel - Calling peers in organization "Org2" to join the channel
+[2019-01-09 14:48:26.299] [INFO] console - "peer0.org2.example.com"
+[2019-01-09 14:48:26.540] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:8053 mychannel
+[2019-01-09 14:48:26.540] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 14:48:26.542] [INFO] Join-Channel - Successfully joined peers in organization Org2 to the channel:mychannel
+[2019-01-09 14:48:26.561] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 14:48:26.562] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[2019-01-09 14:48:26.562] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 14:48:26.562] [INFO] Join-Channel - Calling peers in organization "Org3" to join the channel
+[2019-01-09 14:48:26.590] [INFO] console - "peer0.org3.example.com"
+[2019-01-09 14:48:26.840] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:9053 mychannel
+[2019-01-09 14:48:26.841] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 14:48:26.843] [INFO] Join-Channel - Successfully joined peers in organization Org3 to the channel:mychannel
+[2019-01-09 14:48:26.864] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 14:48:26.864] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"]}
+[2019-01-09 14:48:26.864] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 14:48:26.864] [INFO] Join-Channel - Calling peers in organization "Org4" to join the channel
+[2019-01-09 14:48:26.896] [INFO] console - "peer0.org4.example.com"
+[2019-01-09 14:48:27.179] [INFO] Join-Channel - EventHub % has reported a block update for channel 127.0.0.1:10053 mychannel
+[2019-01-09 14:48:27.180] [INFO] Join-Channel - Successfully joined peer to the channel mychannel
+[2019-01-09 14:48:27.182] [INFO] Join-Channel - Successfully joined peers in organization Org4 to the channel:mychannel
+[2019-01-09 14:48:27.202] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:48:27.203] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:48:27.203] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 14:48:27.281] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:48:27.281] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:48:27.281] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:48:27.298] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:48:27.298] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:48:27.298] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 14:48:27.365] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:48:27.365] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:48:27.365] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:48:27.382] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:48:27.382] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:48:27.382] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 14:48:27.436] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:48:27.436] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:48:27.436] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:48:27.454] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:48:27.454] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:48:27.454] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 14:48:27.513] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:48:27.513] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:48:27.513] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:48:27.531] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 14:48:27.531] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"args":[]}
+[2019-01-09 14:49:08.414] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:08.414] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:08.417] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:08.417] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:08.417] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+tracev0escc"vscc*J 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ G�C��9������r]��k���(���1����	 (3mnv�FOZ8� ��&h�a�N聀Zi��k�: ��/K�Lu�<��,���W��1J��P9����BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D �R�%��K\����=��)}�[����D ( �>��s�Z]��1��u�A�p��˙>Pd
+[2019-01-09 14:49:10.797] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 14:49:10.797] [INFO] instantiate-chaincode - Transaction a51e0681afe306668153bb9965df9694c7c5dd9977b53bfe4e780c27dd7ebb5e has status of VALID in blocl 1
+[2019-01-09 14:49:10.798] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 14:49:10.798] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 14:49:10.798] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 14:49:10.852] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:49:10.852] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:49:10.852] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 14:49:10.890] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:49:10.890] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:49:10.890] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:49:10.907] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:49:10.907] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:49:10.907] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 14:49:10.946] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:49:10.946] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:49:10.946] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:49:10.963] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:49:10.963] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:49:10.964] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 14:49:10.998] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:49:10.998] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:49:10.998] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:49:11.015] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 14:49:11.015] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[2019-01-09 14:49:11.015] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 14:49:11.046] [INFO] install-chaincode - install proposal was good
+[2019-01-09 14:49:11.046] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 14:49:11.047] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 14:49:11.063] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 14:49:11.063] [INFO] app - ------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3}]}]}},"args":[]}
+[2019-01-09 14:49:43.015] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:43.017] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:43.017] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:43.017] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 14:49:43.017] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+supervisionv0escc"vscc*P 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ ��C�f����be��t#� �H���7I.�� `1v�r�R[�`�������ְMZ*���g��%��: ��X�t�-�R�L+���F�k����,�BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D Tv��WX��E�G��L"���&I3)W�^; K)߳���-S]T9��=��z�0gˠ/oZ�.
+[2019-01-09 14:49:45.311] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 14:49:45.312] [INFO] instantiate-chaincode - Transaction 7e9e34717b5d9a2abf6353518f624c61f206490c0d7a97e58d7e51ddf0179219 has status of VALID in blocl 2
+[2019-01-09 14:49:45.312] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 14:49:45.312] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 14:49:45.312] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 14:52:50.215] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 14:52:50.221] [INFO] app - ------->>>>>> request params {"username":"do","orgName":"Org4"}
+[2019-01-09 14:52:50.231] [INFO] Helper - User do was not enrolled, so we will need an admin user object to register
+[2019-01-09 14:52:50.252] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org4', affiliations: [ [Object] ] } ]
+[2019-01-09 14:53:05.100] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 14:53:05.100] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 14:53:05.119] [ERROR] invoke-chaincode - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Object.invokeChaincode (/opt/fabric-sdk-node/app/invoke-transaction.js:45:37)
+    at <anonymous>
+[2019-01-09 14:53:05.119] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+[2019-01-09 14:53:49.175] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 14:53:49.176] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 14:53:53.640] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 14:53:53.640] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 14:53:54.013] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 14:53:54.013] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 14:53:54.013] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ����5hV����z��@�q+e#��q/rK Q#��c+⽋�L�V�������w�S�x�>�
+[2019-01-09 14:53:56.215] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 14:53:56.216] [INFO] invoke-chaincode - Transaction 953d70fb2c8dd256d2ba0349d06ac5fc051ee5bf0d7f863170ddbace82f56009 has status of VALID in blocl 3
+[2019-01-09 14:53:56.216] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 14:53:56.217] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 14:53:56.217] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 953d70fb2c8dd256d2ba0349d06ac5fc051ee5bf0d7f863170ddbace82f56009
+[2019-01-09 14:59:26.244] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 14:59:26.245] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"3","serialNo":"3"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 14:59:26.343] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 3 Not found)"}]
+[2019-01-09 14:59:26.343] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 3 Not found)
+[2019-01-09 14:59:34.960] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 14:59:34.960] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 14:59:35.022] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 14:59:35.023] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D Sw����4�����MF	.��i��03_� G�c���<'��~-�7�\b��{�*���e��
+[2019-01-09 14:59:37.322] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 14:59:37.322] [INFO] invoke-chaincode - Transaction 5b5862417b21c420aa06d5591cf1abe1d3aa03cb915ecac1f4d5904042dd2930 has status of VALID in blocl 4
+[2019-01-09 14:59:37.322] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 14:59:37.323] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 14:59:37.323] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 5b5862417b21c420aa06d5591cf1abe1d3aa03cb915ecac1f4d5904042dd2930
+[2019-01-09 15:03:59.349] [INFO] app -  ------>>>>>> new request for /api/v1/get
+[2019-01-09 15:03:59.349] [INFO] app - ------->>>>>> request params {"key":"supervision1"}
+[2019-01-09 15:03:59.406] [INFO] console - {"className":"supervision","serialNo":"1"}
+[2019-01-09 15:10:35.794] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 15:10:35.796] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 15:10:40.513] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 15:10:40.513] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"1"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 15:10:40.893] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 15:10:40.893] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 15:10:40.893] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0D ?L�7+^9�fR��Ǥ����5G�����Y�| E�aǽ�Xz�m��;Z�]�K�����F�
+[2019-01-09 15:10:43.380] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 15:10:43.380] [INFO] invoke-chaincode - Transaction 6f96328e45f7a4b75e94358a1095374ac90b7de2993323bb8964d952dd05ad47 has status of VALID in blocl 5
+[2019-01-09 15:10:43.380] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 15:10:43.381] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 15:10:43.381] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 6f96328e45f7a4b75e94358a1095374ac90b7de2993323bb8964d952dd05ad47
+[2019-01-09 15:11:52.221] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 15:11:52.221] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 15:11:52.280] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: jsonStr unMarshal failed . source = {\"className\":\"plants\",\"key\":\"1\",\"data\":{\"id\":\"1\",\"serialNo\":\"1\"}})"}]
+[2019-01-09 15:11:52.280] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: jsonStr unMarshal failed . source = {"className":"plants","key":"1","data":{"id":"1","serialNo":"1"}})
+[2019-01-09 15:16:37.862] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:16:37.864] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 15:16:37.879] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:16:37.905] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:16:37.905] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 15:16:37.919] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:16:37.945] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:16:37.946] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 15:16:37.958] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:16:37.982] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:16:37.982] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 15:16:37.993] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:16:38.020] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:16:38.020] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v1"}
+[2019-01-09 15:16:38.022] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 15:16:38.082] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:16:38.083] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:16:38.083] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:16:38.131] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:16:38.132] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v1"}
+[2019-01-09 15:16:38.132] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 15:16:38.190] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:16:38.190] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:16:38.190] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:16:38.208] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:16:38.208] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v1"}
+[2019-01-09 15:16:38.209] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 15:16:38.250] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:16:38.250] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:16:38.250] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:16:38.268] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:16:38.268] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v1"}
+[2019-01-09 15:16:38.269] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 15:16:38.323] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:16:38.323] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:16:38.323] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:16:38.341] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 15:16:38.341] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v1","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"upgrade":"true","args":[]}
+[2019-01-09 15:17:10.225] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:17:10.226] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:17:10.226] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:17:10.226] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:17:10.226] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+tracev1escc"vscc*J 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ �}��繶'��/ZluGj=ݴ,̮Z\�R�S�B ���K
+D�����0-	�
+���@y�ɧ: �eO��R��[z:�����q��je�\F2�����BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D Qf���t;A7����Q�JO"'��K�b��� 	�WE����9$\UY"����C��L���Q�'
+[2019-01-09 15:17:12.497] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 15:17:12.498] [INFO] instantiate-chaincode - Transaction 43c85b1dd28de38c80451bad1d9a089ca232672d7d87c0b603bd412109206946 has status of VALID in blocl 6
+[2019-01-09 15:17:12.498] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 15:17:12.498] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 15:17:12.499] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 15:17:23.437] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 15:17:23.437] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 15:17:23.487] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: jsonStr unMarshal failed . source = {\"className\":\"plants\",\"key\":\"1\",\"data\":{\"id\":\"1\",\"serialNo\":\"1\"}})"}]
+[2019-01-09 15:17:23.487] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: jsonStr unMarshal failed . source = {"className":"plants","key":"1","data":{"id":"1","serialNo":"1"}})
+[2019-01-09 15:25:06.498] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:25:06.499] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 15:25:06.509] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:25:06.532] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:25:06.532] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 15:25:06.543] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:25:06.568] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:25:06.568] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 15:25:06.579] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:25:06.608] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 15:25:06.608] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 15:25:06.619] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 15:25:06.647] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:25:06.648] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 15:25:06.649] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 15:25:06.704] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:25:06.704] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:25:06.704] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:25:06.739] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:25:06.739] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 15:25:06.740] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 15:25:06.890] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:25:06.890] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:25:06.890] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:25:06.909] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:25:06.909] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 15:25:06.909] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 15:25:07.082] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:25:07.082] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:25:07.082] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:25:07.105] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 15:25:07.105] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 15:25:07.106] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 15:25:07.265] [INFO] install-chaincode - install proposal was good
+[2019-01-09 15:25:07.267] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 15:25:07.268] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 15:25:07.327] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 15:25:07.327] [INFO] app - ------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v2","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3}]}},"upgrade":"true","args":[]}
+[2019-01-09 15:25:42.573] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:25:42.573] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:25:42.573] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:25:42.573] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 15:25:42.573] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+tracev2escc"vscc*J 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ Q�ѭ~��M ��,w(D�_��R��8��ɩ �$�H������֫�T\�[��	|��8�y: ��<=���n��������n�\S��jE  ��zBR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D %��ˬJ�?�{�Na\M)�$�j �:��� 9C&W;�O���u��R�*� �������L
+[2019-01-09 15:25:44.833] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 15:25:44.833] [INFO] instantiate-chaincode - Transaction 960733a6f5fdaed816ee65a76f70995ecd782bac6f95be84ca03e9087ea89f8a has status of VALID in blocl 7
+[2019-01-09 15:25:44.833] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 15:25:44.834] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 15:25:44.834] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 15:25:49.225] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 15:25:49.225] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 15:25:49.295] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 15:25:49.296] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ����	��N���I�UB�9GW��V�{_KC�E� _lZ0��� ,��/���IAFk��2U�d"rM
+[2019-01-09 15:25:51.561] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 15:25:51.561] [INFO] invoke-chaincode - Transaction 4ef2cfee64176adf64791f7fb64afe0fd29e87b04767ec80132a657829b423a4 has status of VALID in blocl 8
+[2019-01-09 15:25:51.561] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 15:25:51.562] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 15:25:51.562] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 4ef2cfee64176adf64791f7fb64afe0fd29e87b04767ec80132a657829b423a4
+[2019-01-09 15:25:59.139] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 15:25:59.139] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"3"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 15:25:59.207] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 3 Not found)"}]
+[2019-01-09 15:25:59.208] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 3 Not found)
+[2019-01-09 16:49:36.870] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 16:49:36.871] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 16:51:43.400] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:51:43.401] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:52:36.928] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'Data.serialNo': '1' } } }
+[2019-01-09 16:52:36.932] [ERROR] console - (node:37222) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): TypeError: Cannot read property 'username' of undefined
+[2019-01-09 16:52:36.932] [ERROR] console - (node:37222) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2019-01-09 16:53:12.463] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:53:12.463] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:53:14.605] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'Data.serialNo': '1' } } }
+[2019-01-09 16:53:14.605] [ERROR] console - (node:37222) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: Cannot read property 'username' of undefined
+[2019-01-09 16:53:36.273] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:53:36.273] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:53:38.900] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'Data.serialNo': '1' } } }
+[2019-01-09 16:54:04.608] [ERROR] console - (node:37222) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): TypeError: Cannot read property 'username' of undefined
+[2019-01-09 16:54:07.519] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 16:54:07.521] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 16:54:30.106] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:54:30.106] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:54:32.958] [INFO] sdkUtils - selector: { selector: 
+   { data: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '/api/v1/trace',
+        method: 'POST',
+        statusCode: null,
+        statusMessage: null,
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        next: [Function: next],
+        baseUrl: '',
+        originalUrl: '/api/v1/trace',
+        _parsedUrl: [Object],
+        params: {},
+        query: {},
+        res: [Object],
+        body: [Object],
+        _body: true,
+        length: undefined,
+        read: [Function],
+        user: [Object],
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDcxMDMxNzAsInVzZXJuYW1lIjoiZG8iLCJvcmdOYW1lIjoiT3JnNCIsImlhdCI6MTU0NzAxNjc3MH0.0Pw2WWsOT326ETCGl0-4Er6D_Ea19FPl7uyw2Q9ruWg',
+        username: 'do',
+        orgname: 'Org4',
+        route: [Object] } } }
+[2019-01-09 16:54:37.273] [ERROR] console - (node:37227) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): TypeError: Cannot read property 'username' of undefined
+[2019-01-09 16:54:37.273] [ERROR] console - (node:37227) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2019-01-09 16:54:46.875] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:54:46.875] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:54:49.729] [INFO] sdkUtils - selector: { selector: 
+   { data: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '/api/v1/trace',
+        method: 'POST',
+        statusCode: null,
+        statusMessage: null,
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        next: [Function: next],
+        baseUrl: '',
+        originalUrl: '/api/v1/trace',
+        _parsedUrl: [Object],
+        params: {},
+        query: {},
+        res: [Object],
+        body: [Object],
+        _body: true,
+        length: undefined,
+        read: [Function],
+        user: [Object],
+        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDcxMDMxNzAsInVzZXJuYW1lIjoiZG8iLCJvcmdOYW1lIjoiT3JnNCIsImlhdCI6MTU0NzAxNjc3MH0.0Pw2WWsOT326ETCGl0-4Er6D_Ea19FPl7uyw2Q9ruWg',
+        username: 'do',
+        orgname: 'Org4',
+        route: [Object] } } }
+[2019-01-09 16:55:35.326] [ERROR] console - (node:37227) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: Cannot read property 'username' of undefined
+[2019-01-09 16:55:38.020] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 16:55:38.022] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 16:55:40.779] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:55:40.779] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:55:43.087] [INFO] sdkUtils - selector: { selector: { data: {} } }
+[2019-01-09 16:56:27.194] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 16:57:26.513] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 16:57:26.517] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 16:59:43.972] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 16:59:43.973] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 16:59:46.928] [INFO] sdkUtils - selector: { selector: { data: {} } }
+[2019-01-09 17:00:29.006] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 17:01:23.805] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:01:23.807] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:01:37.368] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:01:37.369] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:01:37.370] [INFO] sdkUtils - selector: { selector: { data: {} } }
+[2019-01-09 17:01:58.214] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 17:03:02.302] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:03:02.304] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:03:16.723] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:03:16.723] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:03:16.725] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:03:33.253] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 17:03:55.835] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:03:55.835] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:04:43.415] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:05:23.429] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 17:05:41.678] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:05:41.679] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:05:43.832] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:05:43.833] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:05:47.317] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:05:50.671] [ERROR] Query - TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+    at Function.Buffer.from (buffer.js:198:9)
+    at Function.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1490:21)
+    at Channel.sendTransactionProposal (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1459:18)
+    at Channel.queryByChaincode (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Channel.js:1738:15)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:44:41)
+    at <anonymous>
+[2019-01-09 17:07:47.950] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:07:47.951] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:07:50.793] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:07:50.793] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:07:52.658] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:07:54.068] [INFO] console - Error: 2 UNKNOWN: chaincode error (status: 500, message: Received unknown function invocation :query)
+[2019-01-09 17:08:26.122] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:08:26.123] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:08:28.798] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:08:28.798] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:08:31.261] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:08:33.015] [INFO] console - []
+[2019-01-09 17:11:18.221] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:11:18.223] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:11:20.393] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:11:20.394] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:11:20.395] [INFO] sdkUtils - selector: { selector: { data: { className: 'plants', 'data.serialNo': '1' } } }
+[2019-01-09 17:11:20.737] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:15:05.164] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:15:05.166] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:15:11.666] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:15:11.667] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:15:11.668] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:15:12.018] [INFO] console - []
+[2019-01-09 17:15:25.193] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:15:25.194] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:15:25.195] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:15:46.472] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:15:46.476] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:15:53.035] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:15:53.035] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:15:53.037] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:15:53.367] [INFO] console - []
+[2019-01-09 17:16:14.956] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:16:14.957] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:16:14.958] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:16:32.725] [INFO] console - []
+[2019-01-09 17:16:36.889] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:16:36.889] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:16:36.889] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:16:46.344] [INFO] console - []
+[2019-01-09 17:16:51.815] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:16:51.816] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:16:51.816] [INFO] sdkUtils - selector: { selector: { data: { className: 'supervision', 'data.serialNo': '1' } } }
+[2019-01-09 17:17:43.014] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:17:43.016] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:17:46.210] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:17:46.210] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:17:53.723] [INFO] console - []
+[2019-01-09 17:18:04.650] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:18:04.651] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:18:35.451] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:18:35.458] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:18:39.540] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:18:39.540] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:18:47.291] [INFO] console - Error: 2 UNKNOWN: chaincode error (status: 500, message: Received unknown function invocation :query)
+[2019-01-09 17:23:46.887] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 17:23:46.887] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 17:23:46.908] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 17:23:46.932] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 17:23:46.932] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v1"}
+[2019-01-09 17:23:46.933] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 17:23:46.988] [INFO] install-chaincode - install proposal was good
+[2019-01-09 17:23:46.988] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 17:23:46.988] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 17:23:47.006] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 17:23:47.006] [INFO] app - ------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v1","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3}]}]}},"peers":["peer0.org1.example.com"],"upgrade":"true","args":[]}
+[2019-01-09 17:24:03.054] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 17:24:03.054] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+supervisionv1escc"vscc*P 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ |�?+%x��)�t^��"��LV�� bx��7^�EÕ���n'�qwK �hR���L�a�: 29�:*u���wP��x{�z�U�������l'�BR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0D J���@9+$?�ï�	��Nk�gx*8�4) C���*D��`�;?K�D�/-_�"U2�Z�� �
+[2019-01-09 17:24:05.566] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 17:24:05.566] [INFO] instantiate-chaincode - Transaction 23efbf777fc383102c350f3732cbe5705ce1e83100349f7ec59fecde45556b27 has status of VALID in blocl 9
+[2019-01-09 17:24:05.566] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 17:24:05.567] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 17:24:05.568] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 17:25:15.003] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 17:25:15.003] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 17:25:15.012] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 17:25:15.036] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 17:25:15.036] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 17:25:15.048] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 17:25:15.074] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 17:25:15.074] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 17:25:15.085] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 17:25:15.112] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 17:25:15.112] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 17:25:15.123] [INFO] Helper - Successfully loaded member from persistence
+[2019-01-09 17:25:15.152] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 17:25:15.152] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 17:25:15.153] [INFO] install-chaincode - Calling peers in organization "Org1" to join the channel
+[2019-01-09 17:25:15.207] [INFO] install-chaincode - install proposal was good
+[2019-01-09 17:25:15.207] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 17:25:15.207] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 17:25:15.244] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 17:25:15.247] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 17:25:15.252] [INFO] install-chaincode - Calling peers in organization "Org2" to join the channel
+[2019-01-09 17:25:15.343] [INFO] install-chaincode - install proposal was good
+[2019-01-09 17:25:15.343] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 17:25:15.343] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 17:25:15.372] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 17:25:15.373] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 17:25:15.373] [INFO] install-chaincode - Calling peers in organization "Org3" to join the channel
+[2019-01-09 17:25:15.416] [INFO] install-chaincode - install proposal was good
+[2019-01-09 17:25:15.417] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 17:25:15.417] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 17:25:15.451] [INFO] app -  ------>>>>>> new request for /chaincodes
+[2019-01-09 17:25:15.452] [INFO] app - ------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/supervision/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v2"}
+[2019-01-09 17:25:15.459] [INFO] install-chaincode - Calling peers in organization "Org4" to join the channel
+[2019-01-09 17:25:15.567] [INFO] install-chaincode - install proposal was good
+[2019-01-09 17:25:15.568] [INFO] install-chaincode - Successfully sent install Proposal and received ProposalResponse
+[2019-01-09 17:25:15.568] [INFO] install-chaincode - Successfully install chaincode
+[2019-01-09 17:25:15.589] [INFO] app -  ------>>>>>> new request for /channels/mychannel/chaincodes
+[2019-01-09 17:25:15.589] [INFO] app - ------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v2","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3}]}]}},"peers":["peer0.org1.example.com"],"upgrade":"true","args":[]}
+[2019-01-09 17:25:31.342] [INFO] instantiate-chaincode - instantiate proposal was good
+[2019-01-09 17:25:31.343] [INFO] instantiate-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "
+supervisionv2escc"vscc*P 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP2D
+ |�?+%x��)�t^��"��LV�� |[O,wQ���Or�],!Q�^O�}�?��: �q��:§���R�]_��BJ+���V��v�>FBR 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP", endorsement signature: 0E! ��� s���Y����?�J�F�%�F�_��'� 魰յ���v��X��uz�{�I��OH
+[2019-01-09 17:25:33.534] [INFO] instantiate-chaincode - The chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[2019-01-09 17:25:33.534] [INFO] instantiate-chaincode - Transaction 45920c118d42030c9f9b7749d0adeb4f0abd11972edb1dc38ec03422517ea1c8 has status of VALID in blocl 10
+[2019-01-09 17:25:33.534] [INFO] instantiate-chaincode - The chaincode instantiate transaction was valid.
+[2019-01-09 17:25:33.534] [INFO] instantiate-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 17:25:33.535] [INFO] instantiate-chaincode - Successfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[2019-01-09 17:25:48.215] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:25:48.215] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:25:52.833] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:26:23.629] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:26:23.629] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:26:32.124] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:27:10.304] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:27:10.306] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:27:10.960] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:27:10.961] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:27:11.314] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:27:30.481] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:27:30.482] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:27:30.562] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:29:47.983] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:29:47.985] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:29:51.226] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:29:51.226] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:29:51.604] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:30:44.149] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:30:44.151] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:30:46.722] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:30:46.723] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:30:47.073] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:30:58.734] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:30:58.735] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:30:58.825] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:31:49.465] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:31:49.467] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:31:52.090] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:31:52.090] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:31:52.451] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:33:10.540] [ERROR] Query - Error: Invalid network configuration due to missing configuration data
+    at _getNetworkConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:1940:9)
+    at Client.loadFromConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:134:35)
+    at Object.getClientForOrg (/opt/fabric-sdk-node/app/helper.js:54:12)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:26:29)
+    at queryChaincode (/opt/fabric-sdk-node/app/sdkUtils.js:305:37)
+    at richQuery (/opt/fabric-sdk-node/app/sdkUtils.js:244:12)
+    at queryChaincode.then (/opt/fabric-sdk-node/app/sdkUtils.js:269:39)
+    at <anonymous>
+[2019-01-09 17:34:18.923] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:34:18.924] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:34:19.005] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:34:19.010] [ERROR] Query - Error: Invalid network configuration due to missing configuration data
+    at _getNetworkConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:1940:9)
+    at Client.loadFromConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:134:35)
+    at Object.getClientForOrg (/opt/fabric-sdk-node/app/helper.js:54:12)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:26:29)
+    at queryChaincode (/opt/fabric-sdk-node/app/sdkUtils.js:305:37)
+    at richQuery (/opt/fabric-sdk-node/app/sdkUtils.js:244:12)
+    at queryChaincode.then (/opt/fabric-sdk-node/app/sdkUtils.js:269:39)
+    at <anonymous>
+[2019-01-09 17:34:50.335] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:34:50.335] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:34:50.400] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:36:41.305] [ERROR] Query - Error: Invalid network configuration due to missing configuration data
+    at _getNetworkConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:1940:9)
+    at Client.loadFromConfig (/opt/fabric-sdk-node/node_modules/fabric-client/lib/Client.js:134:35)
+    at Object.getClientForOrg (/opt/fabric-sdk-node/app/helper.js:54:12)
+    at Object.queryChaincode (/opt/fabric-sdk-node/app/query.js:26:29)
+    at queryChaincode (/opt/fabric-sdk-node/app/sdkUtils.js:305:37)
+    at richQuery (/opt/fabric-sdk-node/app/sdkUtils.js:244:12)
+    at queryChaincode.then (/opt/fabric-sdk-node/app/sdkUtils.js:269:39)
+    at <anonymous>
+[2019-01-09 17:38:19.529] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 17:38:19.531] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 17:38:21.141] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 17:38:21.142] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"1","serialNo":"3"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 17:38:38.443] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 3 Not found)"}]
+[2019-01-09 17:38:38.443] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 3 Not found)
+[2019-01-09 17:38:45.345] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 17:38:45.345] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 17:38:47.606] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 17:38:50.661] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:18:17.066] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:18:17.067] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:18:20.751] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:18:20.751] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:18:21.104] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:18:38.563] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:18:38.563] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:18:38.643] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:19:11.742] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:19:11.743] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:19:13.346] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:19:13.346] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:19:13.707] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:19:25.569] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:19:25.569] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:19:25.634] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:19:58.379] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:19:58.382] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:19:59.655] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:19:59.655] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:20:00.085] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:20:20.044] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:20:20.044] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:20:20.116] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:20:50.360] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:20:50.360] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:20:50.433] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:21:07.328] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:21:07.328] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:21:07.396] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:21:21.747] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:21:21.747] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:21:21.812] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:24:20.636] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:24:20.638] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:24:25.104] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:24:25.104] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:24:25.471] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:24:25.527] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:25:40.780] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:25:40.780] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:25:40.857] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:25:40.905] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:25:52.729] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:25:52.730] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:25:52.783] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:25:52.826] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:26:10.458] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:26:10.458] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:26:10.515] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:26:19.894] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:29:42.996] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:29:42.998] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:30:33.418] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:30:33.422] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:30:34.041] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:30:34.041] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:30:34.391] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:30:34.463] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:30:49.498] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:30:49.498] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:30:49.561] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:30:49.613] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:31:58.952] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:31:58.954] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:32:00.472] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:32:00.473] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:32:00.825] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 18:40:35.286] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 18:40:35.295] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 18:40:36.869] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 18:40:36.869] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 18:40:37.221] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:00:56.339] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:00:56.340] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:00:57.993] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:00:57.993] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:00:58.360] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:02:15.300] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:02:15.302] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:02:16.883] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:02:16.883] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:02:17.252] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:02:19.546] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:02:28.865] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:02:28.866] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:02:28.940] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:02:30.789] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:04:15.005] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:04:15.007] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:04:16.506] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:04:16.506] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:04:16.865] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:04:19.154] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:16:21.246] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:16:21.248] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:16:22.782] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:16:22.782] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:16:23.118] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:16:23.167] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:16:57.708] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:16:57.708] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:16:57.769] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:16:57.831] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:18:42.904] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:18:42.909] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:18:44.614] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:18:44.614] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:18:44.958] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:18:45.023] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:18:59.079] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 19:18:59.079] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"2","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 19:18:59.161] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 19:18:59.161] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! �ֱl��PN�.�Ek7S�y�2A�x���i�^�E ,�+6��Ãm�\�ߑΛQ�B�;�L�q���
+[2019-01-09 19:19:01.686] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 19:19:01.686] [INFO] invoke-chaincode - Transaction 3e843536ba3ec6c5d2eb852c58684083d1a8c2c1da49c140e26e4abf7a3dc1e6 has status of VALID in blocl 11
+[2019-01-09 19:19:01.687] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 19:19:01.688] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 19:19:01.688] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 3e843536ba3ec6c5d2eb852c58684083d1a8c2c1da49c140e26e4abf7a3dc1e6
+[2019-01-09 19:19:04.252] [ERROR] app - -------->>>>>> error {"name":"UnauthorizedError","message":"jwt expired","code":401,"status":401,"inner":{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-01-09T08:50:20.000Z"}}
+[2019-01-09 19:19:08.291] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:19:08.291] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:19:08.355] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:19:08.422] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}},{"Key":"plants2", "Record":{"className":"plants","data":{"id":"2","serialNo":"1"},"key":"2"}}]
+[2019-01-09 19:19:18.536] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 19:19:18.536] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"2","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 19:19:18.602] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 2 Not found)"}]
+[2019-01-09 19:19:18.602] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 2 Not found)
+[2019-01-09 19:19:25.227] [INFO] app -  ------>>>>>> new request for /api/v1/createSerialNo
+[2019-01-09 19:19:25.227] [INFO] app - ------->>>>>> request params {"className":"supervision","data":[{"serialNo":"2"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"]}
+[2019-01-09 19:19:29.428] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 19:19:29.428] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"2","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 19:19:29.499] [ERROR] invoke-chaincode - invoke chaincode proposal was bad[{"code":2,"metadata":{"_internal_repr":{}},"details":"chaincode error (status: 500, message: serialNo 2 Not found)"}]
+[2019-01-09 19:19:29.500] [ERROR] invoke-chaincode - Failed to invoke chaincode. cause:chaincode error (status: 500, message: serialNo 2 Not found)
+[2019-01-09 19:19:41.856] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 19:19:41.857] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 19:19:41.857] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! ���J���a\�ѡH�Q�w:�夦m��h n�A����eLCjp8���շ5 B���Կ�|
+[2019-01-09 19:19:44.047] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 19:19:44.047] [INFO] invoke-chaincode - Transaction 5a9587b19499871109d5d02c1ff922b4cf5353674d55ea5f8cecbf22fe7d3ed2 has status of VALID in blocl 12
+[2019-01-09 19:19:44.047] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 19:19:44.048] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 19:19:44.048] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 5a9587b19499871109d5d02c1ff922b4cf5353674d55ea5f8cecbf22fe7d3ed2
+[2019-01-09 19:19:49.787] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 19:19:49.787] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"2","serialNo":"2"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 19:19:49.861] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 19:19:49.861] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! �;[uMY�}��8�����o��(l�@��� +�����AX6���:k5�NH�&�O��HU
+[2019-01-09 19:19:52.086] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 19:19:52.086] [INFO] invoke-chaincode - Transaction 19e2af7cf18c5aa9dd3fa29898dafc4d3b959673d2e45aa79dc5b25e250e8569 has status of VALID in blocl 13
+[2019-01-09 19:19:52.086] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 19:19:52.087] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 19:19:52.087] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 19e2af7cf18c5aa9dd3fa29898dafc4d3b959673d2e45aa79dc5b25e250e8569
+[2019-01-09 19:19:55.936] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:19:55.936] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:19:55.999] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:19:56.048] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}},{"Key":"plants2", "Record":{"className":"plants","data":{"id":"2","serialNo":"2"},"key":"2"}}]
+[2019-01-09 19:20:10.590] [INFO] app -  ------>>>>>> new request for /api/v1/save
+[2019-01-09 19:20:10.590] [INFO] app - ------->>>>>> request params {"className":"plants","data":[{"id":"2","serialNo":"1"}],"peersUrls":["peer0.org3.example.com"]}
+[2019-01-09 19:20:10.669] [INFO] invoke-chaincode - invoke chaincode proposal was good
+[2019-01-09 19:20:10.669] [INFO] invoke-chaincode - Successfully sent Proposal and received ProposalResponse: Status - 200, message - "OK", metadata - "", endorsement signature: 0E! �%�5;�P���l#%	*�rcR��	��/h¢S (±W����!o���C(y��H���~���
+[2019-01-09 19:20:12.897] [INFO] invoke-chaincode - The chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:10051
+[2019-01-09 19:20:12.898] [INFO] invoke-chaincode - Transaction 9e5ef4a35852ea53a70efae1c9128b2f236a5fd113de48a30092d24dfc4b3e44 has status of VALID in blocl 14
+[2019-01-09 19:20:12.898] [INFO] invoke-chaincode - The invoke chaincode transaction was valid.
+[2019-01-09 19:20:12.898] [INFO] invoke-chaincode - Successfully sent transaction to the orderer.
+[2019-01-09 19:20:12.898] [INFO] invoke-chaincode - Successfully invoked the chaincode Org4 to the channel 'mychannel' for transaction ID: 9e5ef4a35852ea53a70efae1c9128b2f236a5fd113de48a30092d24dfc4b3e44
+[2019-01-09 19:20:14.886] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-09 19:20:14.886] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-09 19:20:14.938] [INFO] console - [{"Key":"supervision1", "Record":{"className":"supervision","data":{"serialNo":"1"},"key":"1"}}]
+[2019-01-09 19:20:14.984] [INFO] console - [{"Key":"plants1", "Record":{"className":"plants","data":{"id":"1","serialNo":"1"},"key":"1"}},{"Key":"plants2", "Record":{"className":"plants","data":{"id":"2","serialNo":"1"},"key":"2"}}]
+[2019-01-09 19:24:00.286] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-09 19:24:00.288] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-09 19:24:04.220] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 19:24:04.220] [INFO] app - ------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[2019-01-09 19:24:04.429] [INFO] Helper - User doc was not enrolled, so we will need an admin user object to register
+[2019-01-09 19:24:04.646] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 19:24:04.892] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 19:24:04.892] [INFO] app - ------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[2019-01-09 19:24:04.899] [INFO] Helper - User Barry was not enrolled, so we will need an admin user object to register
+[2019-01-09 19:24:05.043] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 19:24:05.273] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 19:24:05.273] [INFO] app - ------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[2019-01-09 19:24:05.279] [INFO] Helper - User Selina was not enrolled, so we will need an admin user object to register
+[2019-01-09 19:24:05.439] [INFO] Helper - [ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[2019-01-09 19:24:05.689] [INFO] app -  ------>>>>>> new request for /api/v1/token
+[2019-01-09 19:24:05.689] [INFO] app - ------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[2019-01-09 19:24:05.695] [INFO] Helper - User Randy was not enrolled, so we will need an admin user object to register
+[2019-01-09 19:24:05.832] [INFO] Helper - [ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[2019-01-09 19:24:06.077] [INFO] app -  ------>>>>>> new request for /channels
+[2019-01-09 19:24:06.077] [INFO] app - ------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[2019-01-09 19:24:06.078] [INFO] app - <<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 19:24:11.188] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 19:24:11.188] [INFO] app - ------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[2019-01-09 19:24:11.189] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 19:24:11.190] [INFO] Join-Channel - Calling peers in organization "Org1" to join the channel
+[2019-01-09 19:24:11.226] [INFO] console - "peer0.org1.example.com"
+[2019-01-09 19:24:11.242] [ERROR] Join-Channel - Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:24:11.245] [ERROR] Join-Channel - Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+    at eh.registerBlockEvent (/opt/fabric-sdk-node/app/join-channel.js:89:13)
+    at closer (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:441:5)
+    at EventHub._closeAllCallbacks (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:446:3)
+    at EventHub._disconnect (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:387:8)
+    at ClientDuplexStream.<anonymous> (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:358:10)
+    at emitOne (events.js:115:13)
+    at ClientDuplexStream.emit (events.js:210:7)
+    at ClientDuplexStream._emitStatusIfDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:271:12)
+    at ClientDuplexStream._readsDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:236:8)
+    at readCallback (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:296:12)
+[2019-01-09 19:24:11.245] [ERROR] Join-Channel - Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:24:11.246] [ERROR] console - (node:37765) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:24:11.246] [ERROR] console - (node:37765) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2019-01-09 19:28:11.234] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 19:28:11.234] [INFO] app - ------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[2019-01-09 19:28:11.235] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 19:28:11.235] [INFO] Join-Channel - Calling peers in organization "Org2" to join the channel
+[2019-01-09 19:28:11.277] [INFO] console - "peer0.org2.example.com"
+[2019-01-09 19:28:11.291] [ERROR] Join-Channel - Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:28:11.295] [ERROR] Join-Channel - Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+    at eh.registerBlockEvent (/opt/fabric-sdk-node/app/join-channel.js:89:13)
+    at closer (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:441:5)
+    at EventHub._closeAllCallbacks (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:446:3)
+    at EventHub._disconnect (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:387:8)
+    at ClientDuplexStream.<anonymous> (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:358:10)
+    at emitOne (events.js:115:13)
+    at ClientDuplexStream.emit (events.js:210:7)
+    at ClientDuplexStream._emitStatusIfDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:271:12)
+    at ClientDuplexStream._readsDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:236:8)
+    at readCallback (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:296:12)
+[2019-01-09 19:28:11.295] [ERROR] Join-Channel - Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:28:11.295] [ERROR] console - (node:37765) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): Error: Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:32:11.266] [INFO] app -  ------>>>>>> new request for /channels/mychannel/peers
+[2019-01-09 19:32:11.266] [INFO] app - ------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[2019-01-09 19:32:11.267] [INFO] app - <<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[2019-01-09 19:32:11.268] [INFO] Join-Channel - Calling peers in organization "Org3" to join the channel
+[2019-01-09 19:32:11.302] [INFO] console - "peer0.org3.example.com"
+[2019-01-09 19:32:11.315] [ERROR] Join-Channel - Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:32:11.319] [ERROR] Join-Channel - Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+    at eh.registerBlockEvent (/opt/fabric-sdk-node/app/join-channel.js:89:13)
+    at closer (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:441:5)
+    at EventHub._closeAllCallbacks (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:446:3)
+    at EventHub._disconnect (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:387:8)
+    at ClientDuplexStream.<anonymous> (/opt/fabric-sdk-node/node_modules/fabric-client/lib/EventHub.js:358:10)
+    at emitOne (events.js:115:13)
+    at ClientDuplexStream.emit (events.js:210:7)
+    at ClientDuplexStream._emitStatusIfDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:271:12)
+    at ClientDuplexStream._readsDone (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:236:8)
+    at readCallback (/opt/fabric-sdk-node/node_modules/grpc/src/client.js:296:12)
+[2019-01-09 19:32:11.319] [ERROR] Join-Channel - Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed
+[2019-01-09 19:32:11.319] [ERROR] console - (node:37765) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): Error: Failed to join all peers to channel. cause:Error: Problem setting up the event hub :Error: 14 UNAVAILABLE: Connect Failed

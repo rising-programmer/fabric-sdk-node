@@ -1,0 +1,131 @@
+{
+  "chaincodeName":"trace",
+  "className":"splitworkshop",
+  "parentClassName":"aciddrainageworkshop",
+  "data":[
+    {
+      "id":"1"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZT007" ,
+      "productName":"猪头1-1" ,
+      "productId":"1",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"2"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZW007" ,
+      "productName":"猪尾1-1" ,
+      "productId":"2",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"3"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚1-1" ,
+      "productId":"3",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"4"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚1-2" ,
+      "productId":"4",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"5"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚1-3" ,
+      "productId":"5",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"6"          ,
+      "roomId":"6",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚1-4" ,
+      "productId":"5",
+      "parentId":"1",
+      "parentProductId":"1"
+    },{
+      "id":"7"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZT007" ,
+      "productName":"猪头2-1" ,
+      "productId":"7",
+      "parentId":"2",
+      "parentProductId":"2"
+    },{
+      "id":"8"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZW007" ,
+      "productName":"猪尾2-1" ,
+      "productId":"8",
+      "parentId":"2",
+      "parentProductId":"2"
+    },{
+      "id":"9"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚2-1" ,
+      "productId":"9",
+      "parentId":"2",
+      "parentProductId":"2"
+    },{
+      "id":"10"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚2-2" ,
+      "productId":"10",
+      "parentId":"2",
+      "parentProductId":"2"
+    },{
+      "id":"11"          ,
+      "roomId":"5",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚2-3" ,
+      "productId":"11",
+      "parentId":"2",
+      "parentProductId":"2"
+    },{
+      "id":"12"          ,
+      "roomId":"6",
+      "receiveDate":"2019-01-16 00:00:00",
+      "sendDate":"2019-01-16 23:59:59",
+      "batchNumber":"ZJ007" ,
+      "productName":"猪脚2-4" ,
+      "productId":"12",
+      "parentId":"2",
+      "parentProductId":"2"
+    }
+  ],
+  "peersUrls":["peer0.org6.example.com"],
+  "username":"test6",
+  "orgname":"Org6"
+}

@@ -25,7 +25,7 @@ function printHelp() {
   echo "sh network_setup.sh createPeerTemplate -p peer0.org1.example.com -o org1 -M Org1Msp -c couchdb -P 5984 -l 7051 -e 7053 -f docker-composer-peer1.yaml"
   echo
 }
-IMAGETAG="1.1.0"
+IMAGETAG="1.4"
 
 function networkUp(){
     if [ -z ${COMPOSE_FILE} ];then
@@ -176,24 +176,6 @@ function startPeerForOrg1(){
     sh network_setup.sh up -f docker-compose-ca-org1.yaml
 }
 
-## 启动Org1 peer节点
-function startPeer1ForOrg1(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer12.yaml -o org1 -M Org1MSP -p peer1.org1.example.com -c couchdb5 -P 9984 -l 11051 -e 11053
-    sh network_setup.sh up -f docker-compose-peer12.yaml
-}
-
-## 启动Org2 peer节点
-function startPeer1ForOrg2(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer22.yaml -o org2 -M Org2MSP -p peer1.org2.example.com -c couchdb6 -P 10984 -l 12051 -e 12053
-    sh network_setup.sh up -f docker-compose-peer22.yaml
-}
-
-## 启动Org3 peer节点
-function startPeer1ForOrg3(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer32.yaml -o org3 -M Org3MSP -p peer1.org3.example.com -c couchdb7 -P 11984 -l 13051 -e 13053
-    sh network_setup.sh up -f docker-compose-peer32.yaml
-}
-
 ## 启动peer2节点和ca2节点
 function startPeerForOrg2(){
     sh network_setup.sh createPeerTemplate -f docker-compose-peer2.yaml -o org2 -M Org2MSP -p peer0.org2.example.com -c couchdb2 -P 6984 -l 8051 -e 8053
@@ -239,6 +221,33 @@ function startPeerForOrg6(){
     sh network_setup.sh up -f docker-compose-ca-org6.yaml
 }
 
+## 启动peer7节点和ca7节点
+function startPeerForOrg7(){
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer7.yaml -o org7 -M Org7MSP -p peer0.org7.example.com -c couchdb7 -P 11984 -l 13051 -e 13053
+    sh network_setup.sh up -f docker-compose-peer7.yaml
+
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org7.yaml -o org7.example.com -P 13054
+    sh network_setup.sh up -f docker-compose-ca-org7.yaml
+}
+
+## 启动peer8节点和ca8节点
+function startPeerForOrg8(){
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer8.yaml -o org8 -M Org8MSP -p peer0.org8.example.com -c couchdb8 -P 12984 -l 14051 -e 14053
+    sh network_setup.sh up -f docker-compose-peer8.yaml
+
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org8.yaml -o org8.example.com -P 14054
+    sh network_setup.sh up -f docker-compose-ca-org8.yaml
+}
+
+## 启动peer9节点和ca9节点
+function startPeerForOrg9(){
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer9.yaml -o org9 -M Org9MSP -p peer0.org9.example.com -c couchdb9 -P 13984 -l 15051 -e 15053
+    sh network_setup.sh up -f docker-compose-peer9.yaml
+
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org9.yaml -o org9.example.com -P 15054
+    sh network_setup.sh up -f docker-compose-ca-org9.yaml
+}
+
 ## 启动服务器1上的服务
 function startServer1(){
    startOrderer1
@@ -271,6 +280,11 @@ startServer2
 startServer3
 startServer4
 startServer5
+startPeerForOrg5
+startPeerForOrg6
+startPeerForOrg7
+startPeerForOrg8
+startPeerForOrg9
 }
 
 # Parse commandline args

@@ -26,7 +26,7 @@ export ORG_NAME_LOWERCASE="org${ORG_NAME_NUMBER}"
 # chaincode version
 export CHAINCODE_VERSION="v1.${ORG_NAME_NUMBER}"
 # orderer ca
-export ORDERER_CA=/opt/kingland/trace_kingland/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+export ORDERER_CA=/opt/fabric-sdk-node/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 . scripts/utils.sh
 
 # Print the usage message
@@ -102,9 +102,36 @@ function removeUnwantedImages() {
   fi
 }
 
+# Delete unused materials
+function clearMaterials(){
+    rm -rf config.json
+    rm -rf configtx.yaml
+    rm -rf crypto-config.yaml
+    rm -rf config_block.pb
+    rm -rf config_update.json
+    rm -rf config_update.pb
+    rm -rf config_update_in_envelope.json
+    rm -rf config_update_in_envelope.pb
+    rm -rf configtx.yamlt
+    rm -rf crypto-config.yamlt
+    rm -rf error.log
+    rm -rf log.txt
+    rm -rf modified_config.json
+    rm -rf modified_config.pb
+    rm -rf original_config.pb
+    rm -rf succ.log
+    rm -rf tmp.json
+    for ((i=1; i<=$[ORG_NAME_NUMBER]; i++))
+    do
+         rm -rf org${i}.json
+         rm -rf org${i}_update_in_envelope.pb
+    done
+}
+
 # Generate the needed certificates, the genesis block and start the network.
 function networkUp () {
-
+clearMaterials
+exit 1
    # generate yaml through template
     cp configtx-template.yaml configtx.yaml
     cp crypto-config-template.yaml crypto-config.yaml
@@ -163,6 +190,7 @@ function networkUp () {
     echo "ERROR !!!! Unable to add Org${ORG_NAME_NUMBER} peers on network"
     exit 1
   fi
+  clearMaterials
 }
 
 # Tear down running network

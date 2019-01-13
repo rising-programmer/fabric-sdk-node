@@ -1,0 +1,975 @@
+[32m[2019-01-13 23:51:41.982] [INFO] app - [39m****************** SERVER STARTED ************************
+[32m[2019-01-13 23:51:41.983] [INFO] app - [39m***************  http://localhost:4000  ******************
+[32m[2019-01-13 23:51:46.127] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:46.127] [INFO] app - [39m------->>>>>> request params {"username":"doc","orgName":"Org1"}
+[32m[2019-01-13 23:51:46.333] [INFO] Helper - [39mUser doc was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:46.548] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:46.796] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:46.796] [INFO] app - [39m------->>>>>> request params {"username":"Barry","orgName":"Org2"}
+[32m[2019-01-13 23:51:46.802] [INFO] Helper - [39mUser Barry was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:46.967] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:47.206] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:47.206] [INFO] app - [39m------->>>>>> request params {"username":"Selina","orgName":"Org3"}
+[32m[2019-01-13 23:51:47.212] [INFO] Helper - [39mUser Selina was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:47.362] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:47.636] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:47.636] [INFO] app - [39m------->>>>>> request params {"username":"Randy","orgName":"Org4"}
+[32m[2019-01-13 23:51:47.641] [INFO] Helper - [39mUser Randy was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:47.783] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:48.035] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:48.036] [INFO] app - [39m------->>>>>> request params {"username":"test5","orgName":"Org5"}
+[32m[2019-01-13 23:51:48.040] [INFO] Helper - [39mUser test5 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:48.193] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:48.454] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:48.454] [INFO] app - [39m------->>>>>> request params {"username":"test6","orgName":"Org6"}
+[32m[2019-01-13 23:51:48.458] [INFO] Helper - [39mUser test6 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:48.604] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:48.848] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:48.848] [INFO] app - [39m------->>>>>> request params {"username":"test7","orgName":"Org7"}
+[32m[2019-01-13 23:51:48.852] [INFO] Helper - [39mUser test7 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:48.995] [INFO] Helper - [39m[ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[32m[2019-01-13 23:51:49.234] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:49.234] [INFO] app - [39m------->>>>>> request params {"username":"test8","orgName":"Org8"}
+[32m[2019-01-13 23:51:49.239] [INFO] Helper - [39mUser test8 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:49.393] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:49.635] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:51:49.635] [INFO] app - [39m------->>>>>> request params {"username":"test9","orgName":"Org9"}
+[32m[2019-01-13 23:51:49.639] [INFO] Helper - [39mUser test9 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:51:49.779] [INFO] Helper - [39m[ { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:51:50.034] [INFO] app - [39m ------>>>>>> new request for /channels
+[32m[2019-01-13 23:51:50.034] [INFO] app - [39m------->>>>>> request params {"channelName":"mychannel","channelConfigPath":"../artifacts/channel/mychannel.tx"}
+[32m[2019-01-13 23:51:50.035] [INFO] app - [39m<<<<<<<<<<<<<<<<< C R E A T E  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:51:55.196] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:51:55.196] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org1.example.com"]}
+[32m[2019-01-13 23:51:55.197] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:51:55.197] [INFO] Join-Channel - [39mCalling peers in organization "Org1" to join the channel
+[32m[2019-01-13 23:52:05.250] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:05.251] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org1 to the channel:mychannel
+[32m[2019-01-13 23:52:05.271] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:05.271] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org2.example.com"]}
+[32m[2019-01-13 23:52:05.271] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:05.271] [INFO] Join-Channel - [39mCalling peers in organization "Org2" to join the channel
+[32m[2019-01-13 23:52:15.318] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:15.319] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org2 to the channel:mychannel
+[32m[2019-01-13 23:52:15.339] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:15.339] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org3.example.com"]}
+[32m[2019-01-13 23:52:15.340] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:15.340] [INFO] Join-Channel - [39mCalling peers in organization "Org3" to join the channel
+[32m[2019-01-13 23:52:25.590] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:25.591] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org3 to the channel:mychannel
+[32m[2019-01-13 23:52:25.611] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:25.611] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org4.example.com"]}
+[32m[2019-01-13 23:52:25.612] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:25.612] [INFO] Join-Channel - [39mCalling peers in organization "Org4" to join the channel
+[32m[2019-01-13 23:52:35.659] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:35.660] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org4 to the channel:mychannel
+[32m[2019-01-13 23:52:35.681] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:35.681] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org5.example.com"]}
+[32m[2019-01-13 23:52:35.681] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:35.681] [INFO] Join-Channel - [39mCalling peers in organization "Org5" to join the channel
+[32m[2019-01-13 23:52:45.748] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:45.749] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org5 to the channel:mychannel
+[32m[2019-01-13 23:52:45.769] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:45.769] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org6.example.com"]}
+[32m[2019-01-13 23:52:45.770] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:45.770] [INFO] Join-Channel - [39mCalling peers in organization "Org6" to join the channel
+[32m[2019-01-13 23:52:55.837] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:52:55.838] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org6 to the channel:mychannel
+[32m[2019-01-13 23:52:55.860] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:52:55.860] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org7.example.com"]}
+[32m[2019-01-13 23:52:55.861] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:52:55.861] [INFO] Join-Channel - [39mCalling peers in organization "Org7" to join the channel
+[32m[2019-01-13 23:53:05.917] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:53:05.917] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org7 to the channel:mychannel
+[32m[2019-01-13 23:53:05.936] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:53:05.936] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org8.example.com"]}
+[32m[2019-01-13 23:53:05.937] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:53:05.937] [INFO] Join-Channel - [39mCalling peers in organization "Org8" to join the channel
+[32m[2019-01-13 23:53:15.991] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:53:15.991] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org8 to the channel:mychannel
+[32m[2019-01-13 23:53:16.012] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/peers
+[32m[2019-01-13 23:53:16.013] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org9.example.com"]}
+[32m[2019-01-13 23:53:16.013] [INFO] app - [39m<<<<<<<<<<<<<<<<< J O I N  C H A N N E L >>>>>>>>>>>>>>>>>
+[32m[2019-01-13 23:53:16.013] [INFO] Join-Channel - [39mCalling peers in organization "Org9" to join the channel
+[32m[2019-01-13 23:53:26.067] [INFO] Join-Channel - [39mSuccessfully joined peer to the channel mychannel
+[32m[2019-01-13 23:53:26.067] [INFO] Join-Channel - [39mSuccessfully joined peers in organization Org9 to the channel:mychannel
+[32m[2019-01-13 23:53:26.088] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.088] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.089] [INFO] install-chaincode - [39mCalling peers in organization "Org1" to join the channel
+[32m[2019-01-13 23:53:26.167] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.167] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.167] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.184] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.184] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.185] [INFO] install-chaincode - [39mCalling peers in organization "Org2" to join the channel
+[32m[2019-01-13 23:53:26.249] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.249] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.249] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.266] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.266] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.267] [INFO] install-chaincode - [39mCalling peers in organization "Org3" to join the channel
+[32m[2019-01-13 23:53:26.332] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.332] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.332] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.349] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.349] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.349] [INFO] install-chaincode - [39mCalling peers in organization "Org4" to join the channel
+[32m[2019-01-13 23:53:26.411] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.411] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.412] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.428] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.429] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org5.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.429] [INFO] install-chaincode - [39mCalling peers in organization "Org5" to join the channel
+[32m[2019-01-13 23:53:26.488] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.488] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.488] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.506] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.506] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org6.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.506] [INFO] install-chaincode - [39mCalling peers in organization "Org6" to join the channel
+[32m[2019-01-13 23:53:26.563] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.563] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.564] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.582] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.582] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org7.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.582] [INFO] install-chaincode - [39mCalling peers in organization "Org7" to join the channel
+[32m[2019-01-13 23:53:26.666] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.667] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.667] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.684] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.684] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org8.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.685] [INFO] install-chaincode - [39mCalling peers in organization "Org8" to join the channel
+[32m[2019-01-13 23:53:26.744] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.744] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.744] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.762] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:26.762] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org9.example.com"],"chaincodeName":"trace","chaincodePath":"github.com/chaincode/go","metadataPath":"artifacts/META-INF","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:26.762] [INFO] install-chaincode - [39mCalling peers in organization "Org9" to join the channel
+[32m[2019-01-13 23:53:26.823] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:26.823] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:26.823] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:26.841] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/chaincodes
+[32m[2019-01-13 23:53:26.841] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}},{"role":{"name":"member","mspId":"Org5MSP"}},{"role":{"name":"member","mspId":"Org6MSP"}},{"role":{"name":"member","mspId":"Org7MSP"}},{"role":{"name":"member","mspId":"Org8MSP"}},{"role":{"name":"member","mspId":"Org9MSP"}}],"policy":{"1-of":[{"signed-by":0},{"signed-by":1},{"signed-by":2},{"signed-by":3},{"signed-by":4},{"signed-by":5},{"signed-by":6},{"signed-by":7},{"signed-by":8}]}},"args":[]}
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.554] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:53:29.555] [INFO] instantiate-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "
+tracev0escc"vscc*�(& 	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP	
+Org5MSP	
+Org6MSP	
+Org7MSP	
+Org8MSP	
+Org9MSP2D
+ ��?V;��7�ά����0o��xV0�<˓b�⟺H (3mnv�FOZ8� ��&h�a�N聀Zi��k�: ΂�Y�1���o�ΚF�־������/y#��B�(& 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP
+Org5MSP
+Org6MSP
+Org7MSP
+Org8MSP
+Org9MSP", endorsement signature: 0E! ��@��d����X�b���]+MQ�]y� Z
+a=�9,�J%��'�w�N�2�
+3+
+[32m[2019-01-13 23:53:32.250] [INFO] instantiate-chaincode - [39mThe chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[32m[2019-01-13 23:53:32.250] [INFO] instantiate-chaincode - [39mTransaction 3ec82bc0249048b8307b4aa0a5e0d1a1f74c1a9880886332b1e388acf1f491c5 has status of VALID in blocl 1
+[32m[2019-01-13 23:53:32.251] [INFO] instantiate-chaincode - [39mThe chaincode instantiate transaction was valid.
+[32m[2019-01-13 23:53:32.251] [INFO] instantiate-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:53:32.251] [INFO] instantiate-chaincode - [39mSuccessfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[32m[2019-01-13 23:53:32.274] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.275] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org1.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.275] [INFO] install-chaincode - [39mCalling peers in organization "Org1" to join the channel
+[32m[2019-01-13 23:53:32.306] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.306] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.306] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.333] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.333] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org2.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.334] [INFO] install-chaincode - [39mCalling peers in organization "Org2" to join the channel
+[32m[2019-01-13 23:53:32.367] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.368] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.368] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.390] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.390] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org3.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.390] [INFO] install-chaincode - [39mCalling peers in organization "Org3" to join the channel
+[32m[2019-01-13 23:53:32.426] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.427] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.427] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.449] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.449] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org4.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.449] [INFO] install-chaincode - [39mCalling peers in organization "Org4" to join the channel
+[32m[2019-01-13 23:53:32.484] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.484] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.484] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.502] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.502] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org5.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.502] [INFO] install-chaincode - [39mCalling peers in organization "Org5" to join the channel
+[32m[2019-01-13 23:53:32.532] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.533] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.533] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.559] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.559] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org6.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.559] [INFO] install-chaincode - [39mCalling peers in organization "Org6" to join the channel
+[32m[2019-01-13 23:53:32.584] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.584] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.584] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.605] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.605] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org7.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.606] [INFO] install-chaincode - [39mCalling peers in organization "Org7" to join the channel
+[32m[2019-01-13 23:53:32.645] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.645] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.645] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.664] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.664] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org8.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.664] [INFO] install-chaincode - [39mCalling peers in organization "Org8" to join the channel
+[32m[2019-01-13 23:53:32.694] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.695] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.695] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.718] [INFO] app - [39m ------>>>>>> new request for /chaincodes
+[32m[2019-01-13 23:53:32.718] [INFO] app - [39m------->>>>>> request params {"peers":["peer0.org9.example.com"],"chaincodeName":"supervision","chaincodePath":"github.com/chaincode/go","metadataPath":"","chaincodeType":"golang","chaincodeVersion":"v0"}
+[32m[2019-01-13 23:53:32.718] [INFO] install-chaincode - [39mCalling peers in organization "Org9" to join the channel
+[32m[2019-01-13 23:53:32.753] [INFO] install-chaincode - [39minstall proposal was good
+[32m[2019-01-13 23:53:32.754] [INFO] install-chaincode - [39mSuccessfully sent install Proposal and received ProposalResponse
+[32m[2019-01-13 23:53:32.754] [INFO] install-chaincode - [39mSuccessfully install chaincode
+[32m[2019-01-13 23:53:32.778] [INFO] app - [39m ------>>>>>> new request for /channels/mychannel/chaincodes
+[32m[2019-01-13 23:53:32.778] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"supervision","chaincodeVersion":"v0","chaincodeType":"golang","endorsementPolicy":{"identities":[{"role":{"name":"member","mspId":"Org1MSP"}},{"role":{"name":"member","mspId":"Org2MSP"}},{"role":{"name":"member","mspId":"Org3MSP"}},{"role":{"name":"member","mspId":"Org4MSP"}},{"role":{"name":"member","mspId":"Org5MSP"}},{"role":{"name":"member","mspId":"Org6MSP"}},{"role":{"name":"member","mspId":"Org7MSP"}},{"role":{"name":"member","mspId":"Org8MSP"}},{"role":{"name":"member","mspId":"Org9MSP"}}],"policy":{"2-of":[{"signed-by":0},{"1-of":[{"signed-by":1},{"signed-by":2},{"signed-by":3},{"signed-by":4},{"signed-by":5},{"signed-by":6},{"signed-by":7},{"signed-by":8}]}]}},"args":[]}
+[32m[2019-01-13 23:55:32.674] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39minstantiate proposal was good
+[32m[2019-01-13 23:55:32.677] [INFO] instantiate-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "
+supervisionv0escc"vscc*�., $"	
+Org1MSP	
+Org2MSP	
+Org3MSP	
+Org4MSP	
+Org5MSP	
+Org6MSP	
+Org7MSP	
+Org8MSP	
+Org9MSP2D
+ ��o�	���j���=ʹ�6	�U�(m�� `1v�r�R[�`�������ְMZ*���g��%��: ��q��r�h�Ol�1n���0Jh�|_�5��*�%B�(& 
+Org1MSP
+Org2MSP
+Org3MSP
+Org4MSP
+Org5MSP
+Org6MSP
+Org7MSP
+Org8MSP
+Org9MSP", endorsement signature: 0D ^�*��0/�W�_.P&M�j�ݨ������k� Jc�n��Hӟ����2V"123���C���_#
+[32m[2019-01-13 23:55:34.903] [INFO] instantiate-chaincode - [39mThe chaincode instantiate transaction has been committed on peer 127.0.0.1:7051
+[32m[2019-01-13 23:55:34.904] [INFO] instantiate-chaincode - [39mTransaction 396f19ee11e96ff25637e71da7828f93b1e9bae69c85cc1a05ae646932e85400 has status of VALID in blocl 2
+[32m[2019-01-13 23:55:34.904] [INFO] instantiate-chaincode - [39mThe chaincode instantiate transaction was valid.
+[32m[2019-01-13 23:55:34.906] [INFO] instantiate-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:55:34.906] [INFO] instantiate-chaincode - [39mSuccessfully instantiate chaingcode in organization Org1 to the channel 'mychannel'
+[32m[2019-01-13 23:56:39.483] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:56:39.483] [INFO] app - [39m------->>>>>> request params {"username":"test2","orgName":"Org2"}
+[32m[2019-01-13 23:56:39.493] [INFO] Helper - [39mUser test2 was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:56:39.512] [INFO] Helper - [39m[ { name: 'org2', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] } ]
+[32m[2019-01-13 23:56:39.776] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:39.776] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"supervision","className":"farm","data":[{"id":"1","providerId":"provider1","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪一号","productId":"1"},{"id":"2","providerId":"provider1","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪二号","productId":"2"},{"id":"3","providerId":"provider1","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪三号","productId":"3"},{"id":"4","providerId":"provider1","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪四号","productId":"4"},{"id":"5","providerId":"provider1","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪五号","productId":"5"},{"id":"6","providerId":"provider6","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪六号","productId":"6"},{"id":"7","providerId":"provider7","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪七号","productId":"7"},{"id":"8","providerId":"provider8","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪八号","productId":"8"},{"id":"9","providerId":"provider9","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪九号","productId":"9"},{"id":"10","providerId":"provider10","createDate":"2019-01-13 00:00:00","batchNumber":"CS007","productName":"猪猪十号","productId":"10"}],"peersUrls":["peer0.org1.example.com","peer0.org2.example.com"],"username":"test2","orgname":"Org2"}
+[32m[2019-01-13 23:56:40.112] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.113] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.113] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �p&{���*O<b~����'s�+�t�I>� >���_�JL!y�DDxJދ	���xY����
+[32m[2019-01-13 23:56:40.123] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.123] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.123] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �c>�����4�T��(�}J�s���@~K��] I%4��P���t�}aR�^v�3����_"k��o��
+[32m[2019-01-13 23:56:40.130] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.130] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.130] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �j�757�,p����.����Rv^��U���Y 7I[�����*h��{2�-�7 �t��R��P
+[32m[2019-01-13 23:56:40.136] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.136] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.137] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D )�2�h�9KvôY@�Q��Ħ�)�9��>� x��#[�(53x�Ed���囿H�p����� �
+[32m[2019-01-13 23:56:40.141] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.141] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.141] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D �얛�n�H���U����Ay#�6;Ȯ\� |�����I6�IU�Sk;%|�f�3���ĸ��
+[32m[2019-01-13 23:56:40.145] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.145] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.145] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��t=&�Jh,�SN+x6+�%�G��U�%� 9�x�}�x_�0B���:Ǳx��~f�L
+[32m[2019-01-13 23:56:40.149] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.149] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.149] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �\�?��4W�3L������H�V����b+ Ե3N��m��Ce�N��y7��Q�?���Ԑ
+[32m[2019-01-13 23:56:40.152] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.152] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.152] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D 	3���-��q�Y�g�f�"��MxF�f�Z�a: f�	��rၴ)JG����7tV��_c�0��
+[32m[2019-01-13 23:56:40.156] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.156] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.156] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �f��"�jrq���4Z4AV�4#���� b�V��d�K/�g&x�*�g�=LAp8�W�ϋ
+[32m[2019-01-13 23:56:40.168] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.168] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.168] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����mJr9�W�,�v�d_:��I^���q� 1}��v/�=�|3wu2�yH6Up	ֱwK��
+[32m[2019-01-13 23:56:40.652] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.652] [INFO] invoke-chaincode - [39mTransaction 594e85c45031b320ba9cdc4dc4815a7b2489d177237fa05fd9aef77533e3cb50 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.652] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.653] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.653] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 594e85c45031b320ba9cdc4dc4815a7b2489d177237fa05fd9aef77533e3cb50
+[32m[2019-01-13 23:56:40.657] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.657] [INFO] invoke-chaincode - [39mTransaction 4e3608c8b676322cdfaa63f4571e6cdba7e51f2ef518b06e8ee03f4e4b7a7dd7 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.657] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.657] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.657] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 4e3608c8b676322cdfaa63f4571e6cdba7e51f2ef518b06e8ee03f4e4b7a7dd7
+[32m[2019-01-13 23:56:40.659] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.661] [INFO] invoke-chaincode - [39mTransaction 5c6eb4b6235eaf675a463b5533c47b9e268168d2946a3a94c8e6749a9129b3ce has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.661] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.661] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.661] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5c6eb4b6235eaf675a463b5533c47b9e268168d2946a3a94c8e6749a9129b3ce
+[32m[2019-01-13 23:56:40.662] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.662] [INFO] invoke-chaincode - [39mTransaction 9aa36a63019a2afedcf3efced6e2b3c9efaa13e824188ec7da98f5accfb809d0 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.662] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.663] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.663] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 9aa36a63019a2afedcf3efced6e2b3c9efaa13e824188ec7da98f5accfb809d0
+[32m[2019-01-13 23:56:40.664] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.664] [INFO] invoke-chaincode - [39mTransaction 81c3a7c3eb16045c88ea4f6dea0839e62aa6ee0529fde3ded2a147a7a4a18d91 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.664] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.665] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.665] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 81c3a7c3eb16045c88ea4f6dea0839e62aa6ee0529fde3ded2a147a7a4a18d91
+[32m[2019-01-13 23:56:40.666] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.666] [INFO] invoke-chaincode - [39mTransaction 1cdc5f8df89f1f0ddab592dc82b70ff10ffaf4d2023056fb26ccff1779310e9d has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.666] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.666] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.666] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 1cdc5f8df89f1f0ddab592dc82b70ff10ffaf4d2023056fb26ccff1779310e9d
+[32m[2019-01-13 23:56:40.667] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.667] [INFO] invoke-chaincode - [39mTransaction dd33d33b4fcea84febec5a7e08e70593f9ce964b14a930f03bac96595936d99d has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.667] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.668] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.668] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: dd33d33b4fcea84febec5a7e08e70593f9ce964b14a930f03bac96595936d99d
+[32m[2019-01-13 23:56:40.669] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.669] [INFO] invoke-chaincode - [39mTransaction dbc2a6223176f1da0cdc6fd904b349ff75911bad9dfad59b5831878e2ae2ea0c has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.669] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.669] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.669] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: dbc2a6223176f1da0cdc6fd904b349ff75911bad9dfad59b5831878e2ae2ea0c
+[32m[2019-01-13 23:56:40.670] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.670] [INFO] invoke-chaincode - [39mTransaction d813233b30768ad16f47a36899a5c4ba1affbf53660b2e43e721706b0a250720 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.670] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.671] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.671] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: d813233b30768ad16f47a36899a5c4ba1affbf53660b2e43e721706b0a250720
+[32m[2019-01-13 23:56:40.674] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:40.674] [INFO] invoke-chaincode - [39mTransaction fd6c82d619d75385d046b7d065350d5e3fc03fb93ae041293f0a7e1806251a55 has status of VALID in blocl 3
+[32m[2019-01-13 23:56:40.674] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:40.674] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:40.674] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: fd6c82d619d75385d046b7d065350d5e3fc03fb93ae041293f0a7e1806251a55
+[32m[2019-01-13 23:56:40.683] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:40.683] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","parentChaincodeName":"supervision","className":"slaughterhouse","parentClassName":"farm","data":[{"id":"1","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪一号","productId":"1","parentId":"1"},{"id":"2","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪二号","productId":"2","parentId":"2"},{"id":"3","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪三号","productId":"3","parentId":"3"},{"id":"4","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪四号","productId":"4","parentId":"4"},{"id":"5","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪五号","productId":"5","parentId":"5"},{"id":"6","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪六号","productId":"6","parentId":"6"},{"id":"7","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪七号","productId":"7","parentId":"7"},{"id":"8","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪八号","productId":"8","parentId":"8"},{"id":"9","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪九号","productId":"9","parentId":"9"},{"id":"10","roomId":"2","receiveDate":"2019-01-13 00:00:00","sendDate":"2019-01-13 23:59:59","batchNumber":"CS007","productName":"猪猪十号","productId":"10","parentId":"10"}],"peersUrls":["peer0.org3.example.com"],"username":"test3","orgname":"Org3"}
+[32m[2019-01-13 23:56:40.912] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.912] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ߛ�%��P�ؾG�l�j|b�jnw�1s%� �45B�$(C��.�u�x��v�SX�Z��3^
+[32m[2019-01-13 23:56:40.918] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.918] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �]6��܄.�Q�i�v L�<a�#C�V��� *Dq-1@��x���6 )�8\G�'3�x�
+[32m[2019-01-13 23:56:40.925] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.925] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D |�w�t���BL$튇��qmw�x�nD"|> p Ȯo�ގ/����8����R�Ä�2�h�\T
+[32m[2019-01-13 23:56:40.935] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.935] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �h'�]JX��W��B�jqJ���.���8��3 =�>��*�ڂ��+M%��<�K�����f���`
+[32m[2019-01-13 23:56:40.942] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.942] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D j{�A� �v����Xv�t�,f�����6}� f��X�+�J��g�K)��;v��1=���7~
+[32m[2019-01-13 23:56:40.946] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.946] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �r^����j�\S�U�\��5�j��b�2�~ /����|8���')����@R�-Op4т�3�up
+[32m[2019-01-13 23:56:40.950] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.950] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D hC�K�Ҭ%�-Z�:����&s�6����S�5 �o�Z(��"�ch�u�fT��������e2�
+[32m[2019-01-13 23:56:40.954] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.954] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��ygVv�Q�\^,b�Yo:7Ĭ�^��Td��T� KKj+�z=Yc���<��%���y�M/ș��l
+[32m[2019-01-13 23:56:40.958] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.958] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��>�?�>�iՏI]i�M��D�C/�����<qd� %i�T��,�\P/8���_$��E==ѱ��
+[32m[2019-01-13 23:56:40.973] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:40.973] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �TV��wĿ(]�:��M
+�3�o�,��V�!	� P�ٗHQ-���Ѽa��*U�ˁTم��IxO
+[32m[2019-01-13 23:56:41.440] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.440] [INFO] invoke-chaincode - [39mTransaction 5296922a567dec517b3a96a878a1bb1461d964db7e65a10df5dccc25c7ab0f3f has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.440] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.441] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.441] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5296922a567dec517b3a96a878a1bb1461d964db7e65a10df5dccc25c7ab0f3f
+[32m[2019-01-13 23:56:41.442] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.442] [INFO] invoke-chaincode - [39mTransaction e1be5648b839244492e41026e00649b738c0b35ae10008af182488c61dd07059 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.442] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.443] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.443] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: e1be5648b839244492e41026e00649b738c0b35ae10008af182488c61dd07059
+[32m[2019-01-13 23:56:41.444] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.444] [INFO] invoke-chaincode - [39mTransaction 2db6b181eb257642a27edd0500d5773b8e2586598ccc38db901753357c7f4f55 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.444] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.445] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.445] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 2db6b181eb257642a27edd0500d5773b8e2586598ccc38db901753357c7f4f55
+[32m[2019-01-13 23:56:41.446] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.446] [INFO] invoke-chaincode - [39mTransaction 5d55e3e8f68c5a0b7976a73c8a7ac062724a77948287446dc56673e90836dd48 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.447] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.447] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.447] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5d55e3e8f68c5a0b7976a73c8a7ac062724a77948287446dc56673e90836dd48
+[32m[2019-01-13 23:56:41.448] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.448] [INFO] invoke-chaincode - [39mTransaction c06d67a07a6f0bfe7cf2eb2aeb3b4c266acb43e7676b6f6a50d864089aef3a52 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.448] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.448] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.448] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: c06d67a07a6f0bfe7cf2eb2aeb3b4c266acb43e7676b6f6a50d864089aef3a52
+[32m[2019-01-13 23:56:41.449] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.449] [INFO] invoke-chaincode - [39mTransaction dfbb9069541ee074732c13e4fb39450784ecc29bf6292c8ffaafc541512112cf has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.449] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.450] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.450] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: dfbb9069541ee074732c13e4fb39450784ecc29bf6292c8ffaafc541512112cf
+[32m[2019-01-13 23:56:41.451] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.451] [INFO] invoke-chaincode - [39mTransaction 7ec95472c82de8aefb676498266df27573dbf2e219a5530674c92977152f4bbf has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.451] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.452] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.452] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 7ec95472c82de8aefb676498266df27573dbf2e219a5530674c92977152f4bbf
+[32m[2019-01-13 23:56:41.452] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.452] [INFO] invoke-chaincode - [39mTransaction 7213ca1180e2c68d85e0ee27149c0aebacadcfcdc23f237acaddad1101d4999b has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.453] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.453] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.453] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 7213ca1180e2c68d85e0ee27149c0aebacadcfcdc23f237acaddad1101d4999b
+[32m[2019-01-13 23:56:41.454] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.454] [INFO] invoke-chaincode - [39mTransaction ec2dfdf1a8ca75caaa0c7f9b767745306dc93b38664297f6ac551a68abad7b61 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.454] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.454] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.454] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: ec2dfdf1a8ca75caaa0c7f9b767745306dc93b38664297f6ac551a68abad7b61
+[32m[2019-01-13 23:56:41.466] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:41.466] [INFO] invoke-chaincode - [39mTransaction 190aa0264c2d3549c3051c8a7c4110bbd937492343186579c6461e3b864ab239 has status of VALID in blocl 4
+[32m[2019-01-13 23:56:41.467] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:41.467] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:41.467] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 190aa0264c2d3549c3051c8a7c4110bbd937492343186579c6461e3b864ab239
+[32m[2019-01-13 23:56:41.472] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:41.473] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"freezingworkshop","parentClassName":"slaughterhouse","data":[{"id":"1","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪一号","productId":"1","parentId":"1"},{"id":"2","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪二号","productId":"2","parentId":"2"},{"id":"3","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪三号","productId":"3","parentId":"3"},{"id":"4","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪四号","productId":"4","parentId":"4"},{"id":"5","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪五号","productId":"5","parentId":"5"},{"id":"6","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪六号","productId":"6","parentId":"6"},{"id":"7","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪七号","productId":"7","parentId":"7"},{"id":"8","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪八号","productId":"8","parentId":"8"},{"id":"9","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪九号","productId":"9","parentId":"9"},{"id":"10","roomId":"3","receiveDate":"2019-01-14 00:00:00","sendDate":"2019-01-14 23:59:59","batchNumber":"CS007","productName":"猪猪十号","productId":"10","parentId":"10"}],"peersUrls":["peer0.org4.example.com"],"username":"test4","orgname":"Org4"}
+[32m[2019-01-13 23:56:41.846] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.847] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ������>6���TO���5��vF0߻��*�� H1��I�\@C7�r��ֹ���^���{7���
+[32m[2019-01-13 23:56:41.878] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.879] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����9��*oR,�3e2)�']�Y,����� pt��L�t��$��H3��\���k�8J��c֥
+[32m[2019-01-13 23:56:41.887] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.888] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �	�������/����"v��i"��
+C.�m� L-R0&[�ײ�Q�y��Ʋ�M���DyT�n�%
+[32m[2019-01-13 23:56:41.906] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.906] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����	K��q),e�Q���?U��D��*� ES����"�
+��_�J�9f>|��H��7s��
+[32m[2019-01-13 23:56:41.913] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.913] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D J��xcu@9~��z�gVg�9~�:�Z� 	�!�H([��#du�h�Y�)U���Y*���|��
+[32m[2019-01-13 23:56:41.933] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.933] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��E}5b��R�|�>��K]Sy���k�@��k� ��<4]��+B.�r�����=��}��3��b
+[32m[2019-01-13 23:56:41.939] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.939] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D PM��.��ъ�[�����￨��q��1 '�>��V���$!ɹ3T�S���2u�x��
+[32m[2019-01-13 23:56:41.944] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.944] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��F.�G�<��p�<�t^dC�Zr~ ����� S�EH4x|�0l��(���aF�M9X+�i
+[32m[2019-01-13 23:56:41.958] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.958] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���7�1�
+'g@چ��[-(�e�� 9i,A�64��,�{ ���Z����G;�a�%-�
+[32m[2019-01-13 23:56:41.965] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:41.965] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �]�-M�V'�Mќm.`��F�(�8z�o� +R�BӇk��ࢣ4�KU/���1){��g����
+[32m[2019-01-13 23:56:42.372] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.373] [INFO] invoke-chaincode - [39mTransaction 15059501e56c91529b324a55433459b1028821da8d1da730335bfa32b9215933 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.373] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.373] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.373] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 15059501e56c91529b324a55433459b1028821da8d1da730335bfa32b9215933
+[32m[2019-01-13 23:56:42.375] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.375] [INFO] invoke-chaincode - [39mTransaction 5815285a4ac04ef49a2207d01b7642a7ef267ca7562fabb4bea014aea75ca756 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.375] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.375] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.375] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5815285a4ac04ef49a2207d01b7642a7ef267ca7562fabb4bea014aea75ca756
+[32m[2019-01-13 23:56:42.376] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.376] [INFO] invoke-chaincode - [39mTransaction 305647b60e7dcbe4c55f60b4e5ceb7002638ea2ee1af9589d618b4a1a1ebb8d3 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.376] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.377] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.377] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 305647b60e7dcbe4c55f60b4e5ceb7002638ea2ee1af9589d618b4a1a1ebb8d3
+[32m[2019-01-13 23:56:42.377] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.378] [INFO] invoke-chaincode - [39mTransaction 99865cb2d80812be8627341eccbd710cfa9240651fc7d69a37ef58dd7de1ec09 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.378] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.378] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.378] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 99865cb2d80812be8627341eccbd710cfa9240651fc7d69a37ef58dd7de1ec09
+[32m[2019-01-13 23:56:42.379] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.379] [INFO] invoke-chaincode - [39mTransaction a9166c8bb8a6edbdee8ed89fe7ca5dc80c9e14bc285f8d4b6844c371fc3f8602 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.379] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.379] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.379] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: a9166c8bb8a6edbdee8ed89fe7ca5dc80c9e14bc285f8d4b6844c371fc3f8602
+[32m[2019-01-13 23:56:42.380] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.380] [INFO] invoke-chaincode - [39mTransaction 8be6d52568755402eb4e05acc6db94cd74cce18196d5c13ffe5773882ce8a793 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.380] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.380] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.381] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 8be6d52568755402eb4e05acc6db94cd74cce18196d5c13ffe5773882ce8a793
+[32m[2019-01-13 23:56:42.381] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.381] [INFO] invoke-chaincode - [39mTransaction c221f9c16e20a2024de96ddfcab301b4806d638ed7404167afbd2e22c88aa1bd has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.381] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.382] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.382] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: c221f9c16e20a2024de96ddfcab301b4806d638ed7404167afbd2e22c88aa1bd
+[32m[2019-01-13 23:56:42.383] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.383] [INFO] invoke-chaincode - [39mTransaction 703e9067b2b76f4a81f796d1f66bd6197d19f61084f084594b574623b0ac3b6a has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.383] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.383] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.383] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 703e9067b2b76f4a81f796d1f66bd6197d19f61084f084594b574623b0ac3b6a
+[32m[2019-01-13 23:56:42.384] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.384] [INFO] invoke-chaincode - [39mTransaction f73d4c30d2327af519ac731dd0dce47907fb414090cad115773e3a6b683a4a68 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.384] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.384] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.384] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: f73d4c30d2327af519ac731dd0dce47907fb414090cad115773e3a6b683a4a68
+[32m[2019-01-13 23:56:42.386] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:42.386] [INFO] invoke-chaincode - [39mTransaction d86adc0226aaa975c605ce8c75673107818050c858c0968060d6fb35e3407050 has status of VALID in blocl 5
+[32m[2019-01-13 23:56:42.387] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:42.387] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:42.387] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: d86adc0226aaa975c605ce8c75673107818050c858c0968060d6fb35e3407050
+[32m[2019-01-13 23:56:42.393] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:42.393] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"aciddrainageworkshop","parentClassName":"freezingworkshop","data":[{"id":"1","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪一号","productId":"1","parentId":"1"},{"id":"2","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪二号","productId":"2","parentId":"2"},{"id":"3","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪三号","productId":"3","parentId":"3"},{"id":"4","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪四号","productId":"4","parentId":"4"},{"id":"5","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪五号","productId":"5","parentId":"5"},{"id":"6","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪六号","productId":"6","parentId":"6"},{"id":"7","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪七号","productId":"7","parentId":"7"},{"id":"8","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪八号","productId":"8","parentId":"8"},{"id":"9","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪九号","productId":"9","parentId":"9"},{"id":"10","roomId":"4","receiveDate":"2019-01-15 00:00:00","sendDate":"2019-01-15 23:59:59","batchNumber":"CS007","productName":"猪猪十号","productId":"10","parentId":"10"}],"peersUrls":["peer0.org5.example.com"],"username":"test5","orgname":"Org5"}
+[32m[2019-01-13 23:56:42.676] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.677] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D NC�ك�"j)��h~̣���S�ɡ-�W��{< ��
+���%�2z�M��n���Ϻ�6�����A�
+[32m[2019-01-13 23:56:42.685] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.686] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �,�����-�ϥ��&�}"
+t�wC���� |�hG1�����h�3e1R&.���Rf�O�g
+[32m[2019-01-13 23:56:42.694] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.694] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D QF{PcD"�;�bd�V�	�Q7X�ܧ��M�Ç n��G
+��6��������(
+�&HX�R]
+[32m[2019-01-13 23:56:42.699] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.699] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D ��? B)##�?�ܒ��~���@ӶȖ6j o��ރZ12�7=�y,�*�{�@��2,q��m�a�
+[32m[2019-01-13 23:56:42.703] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.703] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ������)^+��G��j^j��͑LLfmNRò (�����U���z�9���	N�BjJ���
+[32m[2019-01-13 23:56:42.707] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.707] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��L��b���8���=����?2��fzj� ����0�<&����׭���LC�����
+��
+[32m[2019-01-13 23:56:42.711] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.711] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D j��N�� [�"�Ez���<�]ɡ�?�v��,� ZS�4��Z\X"�KxdO3W+?Y>�z}?
+[32m[2019-01-13 23:56:42.714] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.715] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D hL!'ll�� Xm�����b�P��< |�c=4; xks�����Et�}AW�=89Ћ �໨�
+[32m[2019-01-13 23:56:42.726] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.726] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���a�Qc�����9Ү�J����S�t� Ds���VN@Ջ'��UbX�d~k�%�DBDfr�
+[32m[2019-01-13 23:56:42.730] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:42.730] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D ,� ձGJ�ĭ��1Hg�š[a��G�K��~� _'&���@$�θa��?#��;|씻�*��.��
+[32m[2019-01-13 23:56:43.110] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.110] [INFO] invoke-chaincode - [39mTransaction 65cccf4e414087214bd07514901fcaa28b43eb63fecafcb6a2d555bc211b3634 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.110] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.111] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.111] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 65cccf4e414087214bd07514901fcaa28b43eb63fecafcb6a2d555bc211b3634
+[32m[2019-01-13 23:56:43.111] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.112] [INFO] invoke-chaincode - [39mTransaction cc3c483332eedb9f6eb4eb9b063d5833bf65c4515e3c5b8acf59059ce776751d has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.112] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.112] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.112] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: cc3c483332eedb9f6eb4eb9b063d5833bf65c4515e3c5b8acf59059ce776751d
+[32m[2019-01-13 23:56:43.113] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.113] [INFO] invoke-chaincode - [39mTransaction 1003352893701a032b182be944df83e5c23c2573f20dd8e5b81b017a1c8b5939 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.113] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.113] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.113] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 1003352893701a032b182be944df83e5c23c2573f20dd8e5b81b017a1c8b5939
+[32m[2019-01-13 23:56:43.115] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.115] [INFO] invoke-chaincode - [39mTransaction e363829d2f5030f6b16aa25715d8e766b6035594305f5920db6f72b10e4e07a8 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.115] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.116] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.116] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: e363829d2f5030f6b16aa25715d8e766b6035594305f5920db6f72b10e4e07a8
+[32m[2019-01-13 23:56:43.117] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.117] [INFO] invoke-chaincode - [39mTransaction a3cda5d77b8d567335149ba4fefc4374783683644d1ab15ff98e360e8e140f93 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.117] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.117] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.117] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: a3cda5d77b8d567335149ba4fefc4374783683644d1ab15ff98e360e8e140f93
+[32m[2019-01-13 23:56:43.118] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.118] [INFO] invoke-chaincode - [39mTransaction ee6ad96167cdf5f2a9b0811849ed617f40684d4edfda25348c692d883b5a5000 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.118] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.119] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.119] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: ee6ad96167cdf5f2a9b0811849ed617f40684d4edfda25348c692d883b5a5000
+[32m[2019-01-13 23:56:43.119] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.120] [INFO] invoke-chaincode - [39mTransaction ba27bf0ef08d1b7a7170b7ff07ee6f26756ac853ce5c884e3cb3653430663aff has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.120] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.120] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.120] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: ba27bf0ef08d1b7a7170b7ff07ee6f26756ac853ce5c884e3cb3653430663aff
+[32m[2019-01-13 23:56:43.121] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.121] [INFO] invoke-chaincode - [39mTransaction 77d355f31f05e8b482cc0637b6cbc76a9d3e33bbacb27a318efa259d878537b8 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.121] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.121] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.122] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 77d355f31f05e8b482cc0637b6cbc76a9d3e33bbacb27a318efa259d878537b8
+[32m[2019-01-13 23:56:43.122] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.122] [INFO] invoke-chaincode - [39mTransaction a268634e953d5cfd0dd68350f9a608c3f2726e0883929d6d4e7a7a1fb361623e has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.122] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.123] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.123] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: a268634e953d5cfd0dd68350f9a608c3f2726e0883929d6d4e7a7a1fb361623e
+[32m[2019-01-13 23:56:43.124] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.124] [INFO] invoke-chaincode - [39mTransaction 540c15886227a2ec4626054b04f2df208eff95b0eaf216ea2e8e0faf81e31257 has status of VALID in blocl 6
+[32m[2019-01-13 23:56:43.124] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.124] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.125] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 540c15886227a2ec4626054b04f2df208eff95b0eaf216ea2e8e0faf81e31257
+[32m[2019-01-13 23:56:43.134] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:43.134] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"splitworkshop","parentClassName":"aciddrainageworkshop","data":[{"id":"1","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZT007","productName":"猪头1-1","productId":"1","parentId":"1","parentProductId":"1"},{"id":"2","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZW007","productName":"猪尾1-1","productId":"2","parentId":"1","parentProductId":"1"},{"id":"3","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-1","productId":"3","parentId":"1","parentProductId":"1"},{"id":"4","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-2","productId":"4","parentId":"1","parentProductId":"1"},{"id":"5","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-3","productId":"5","parentId":"1","parentProductId":"1"},{"id":"6","roomId":"6","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-4","productId":"5","parentId":"1","parentProductId":"1"},{"id":"7","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZT007","productName":"猪头2-1","productId":"7","parentId":"2","parentProductId":"2"},{"id":"8","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZW007","productName":"猪尾2-1","productId":"8","parentId":"2","parentProductId":"2"},{"id":"9","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-1","productId":"9","parentId":"2","parentProductId":"2"},{"id":"10","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-2","productId":"10","parentId":"2","parentProductId":"2"},{"id":"11","roomId":"5","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-3","productId":"11","parentId":"2","parentProductId":"2"},{"id":"12","roomId":"6","receiveDate":"2019-01-16 00:00:00","sendDate":"2019-01-16 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-4","productId":"12","parentId":"2","parentProductId":"2"}],"peersUrls":["peer0.org6.example.com"],"username":"test6","orgname":"Org6"}
+[32m[2019-01-13 23:56:43.452] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.452] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �E&�&�ez�Ģ�R��y�'�)'��o��� 3b~�)�w{).�rb���1�D����QV��
+[32m[2019-01-13 23:56:43.459] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.459] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �{f v���"�G��="��N_*�*�p� V 8+�"v��a��v��Z�}����is
+[32m[2019-01-13 23:56:43.465] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.465] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �ѐ2T �LW�I�'����ɓJ�WX�vu_A Vh��F��/�</�Z��*��`$L�ecd&��
+[32m[2019-01-13 23:56:43.475] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.475] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����V�푉��<_3�־l���T���1jX� &c�Ĵ0��N��I�P�J��	is�Y!����
+[32m[2019-01-13 23:56:43.481] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.482] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D km�l��[�b2���p�/$s_sF��:�L� w#dA��8H��f�0P~�n�^�Pܛ�m�ǝ
+[32m[2019-01-13 23:56:43.492] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.492] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���-��.�<u!�J���~�}�g>��әS�	c� ��z(ݜ�\���=�X��hb�H���3E��)
+[32m[2019-01-13 23:56:43.498] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.499] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���0I��6��ϰ��Ѯ�F� Cخ�<� [���%0� �C@cg�����j�s�|��z��
+[32m[2019-01-13 23:56:43.504] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.504] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D (��by����׺$b�3^ ՘&��
+A3N4�͡z ��E1�l�7w/6�ɯ��$���?���5��
+[32m[2019-01-13 23:56:43.510] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.510] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D 4�����Ӄ��3s���x�G4�4>�%�8� ���ٚr�G�e�X���������BX~Ҏy8
+[32m[2019-01-13 23:56:43.513] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.514] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �3p��?��{��xܐuϝ�ޤ�B`�!z xǘH��\-��!��F%�90�͐�L��� Y
+[32m[2019-01-13 23:56:43.517] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.517] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �(J5ev�g��Avf1�o���3o0+�q9 :Tnu	�;T��ލ4���\��F�P�5�
+[32m[2019-01-13 23:56:43.521] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:43.521] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����c9X�[�g����V���U�|���Cl��	� 0�����D|.^�͑K.&��
+8P�*����
+[32m[2019-01-13 23:56:43.903] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.903] [INFO] invoke-chaincode - [39mTransaction e001777bc47d7ab5c9e0072692fe4b6b03b434306b3608852b560f3348b1bb40 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.903] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.904] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.904] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: e001777bc47d7ab5c9e0072692fe4b6b03b434306b3608852b560f3348b1bb40
+[32m[2019-01-13 23:56:43.905] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.905] [INFO] invoke-chaincode - [39mTransaction 1511de44843547a7aae1b9ac816b4d206315616d23bcbdfc844e105676bd065c has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.905] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.905] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.905] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 1511de44843547a7aae1b9ac816b4d206315616d23bcbdfc844e105676bd065c
+[32m[2019-01-13 23:56:43.907] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.907] [INFO] invoke-chaincode - [39mTransaction 851164d0a2be5f0c77de7ca6a12d20bc913f4f4adcac249532485a2a544bf61d has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.907] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.908] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.908] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 851164d0a2be5f0c77de7ca6a12d20bc913f4f4adcac249532485a2a544bf61d
+[32m[2019-01-13 23:56:43.909] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.909] [INFO] invoke-chaincode - [39mTransaction c571f55df3e78e822f64c589533ad6fbf22317f8e2f03f4caf9b5cf8b27e1b64 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.909] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.910] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.910] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: c571f55df3e78e822f64c589533ad6fbf22317f8e2f03f4caf9b5cf8b27e1b64
+[32m[2019-01-13 23:56:43.910] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.910] [INFO] invoke-chaincode - [39mTransaction fa7bebe1b33e9558d41080be3bce2afee7d979199010d6119233012485ab6ab9 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.911] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.911] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.911] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: fa7bebe1b33e9558d41080be3bce2afee7d979199010d6119233012485ab6ab9
+[32m[2019-01-13 23:56:43.912] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.912] [INFO] invoke-chaincode - [39mTransaction 3a7c3a6d127ae7790aa277f175b04d8d262f47c6dd607a4c4fd42e032d79f687 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.912] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.912] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.913] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 3a7c3a6d127ae7790aa277f175b04d8d262f47c6dd607a4c4fd42e032d79f687
+[32m[2019-01-13 23:56:43.913] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.913] [INFO] invoke-chaincode - [39mTransaction 5f8161f863912480b69edcdda0ff8b601e75fc57d08c86d9e736f33621f1e1a1 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.913] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.914] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.914] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5f8161f863912480b69edcdda0ff8b601e75fc57d08c86d9e736f33621f1e1a1
+[32m[2019-01-13 23:56:43.915] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.915] [INFO] invoke-chaincode - [39mTransaction 90b222de0a16c9fae9e1c829e2031836db1a99def9b98f3e0c3a616a153afaf2 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.915] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.915] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.915] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 90b222de0a16c9fae9e1c829e2031836db1a99def9b98f3e0c3a616a153afaf2
+[32m[2019-01-13 23:56:43.916] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.916] [INFO] invoke-chaincode - [39mTransaction 290e91346dcaab6ee23c8803f368f535361c8e3b8c0553b83a3ecf1a267fd94c has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.916] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.917] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.917] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 290e91346dcaab6ee23c8803f368f535361c8e3b8c0553b83a3ecf1a267fd94c
+[32m[2019-01-13 23:56:43.917] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:43.918] [INFO] invoke-chaincode - [39mTransaction 00d01ec9fcc88c411e86c3da9ca28243443b21c849f667195a35af75e45cfc38 has status of VALID in blocl 7
+[32m[2019-01-13 23:56:43.918] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:43.918] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:43.918] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 00d01ec9fcc88c411e86c3da9ca28243443b21c849f667195a35af75e45cfc38
+[32m[2019-01-13 23:56:45.864] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:45.864] [INFO] invoke-chaincode - [39mTransaction d46e8ada507ccbdaef1f7aec8163c1f968b25e7efdc65018bac2cd6c9ba1ed1f has status of VALID in blocl 8
+[32m[2019-01-13 23:56:45.864] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:45.865] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:45.865] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: d46e8ada507ccbdaef1f7aec8163c1f968b25e7efdc65018bac2cd6c9ba1ed1f
+[32m[2019-01-13 23:56:45.866] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:45.866] [INFO] invoke-chaincode - [39mTransaction f921a08c60f05267274420b2f4b499db1f253e04ffb09394d90a114140e62cd1 has status of VALID in blocl 8
+[32m[2019-01-13 23:56:45.866] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:45.866] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:45.866] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: f921a08c60f05267274420b2f4b499db1f253e04ffb09394d90a114140e62cd1
+[32m[2019-01-13 23:56:45.875] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:45.876] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"coldstorage","parentClassName":"splitworkshop","data":[{"id":"1","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZT007","productName":"猪头1-1","productId":"1","parentId":"1"},{"id":"2","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZW007","productName":"猪尾1-1","productId":"2","parentId":"2"},{"id":"3","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-1","productId":"3","parentId":"3"},{"id":"4","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚1-2","productId":"4","parentId":"4"},{"id":"5","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚1-3","productId":"5","parentId":"5"},{"id":"6","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚1-4","productId":"5","parentId":"6"},{"id":"7","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZT007","productName":"猪头2-1","productId":"7","parentId":"7"},{"id":"8","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZW007","productName":"猪尾2-1","productId":"8","parentId":"8"},{"id":"9","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-1","productId":"9","parentId":"9"},{"id":"10","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚2-2","productId":"10","parentId":"10"},{"id":"11","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚2-3","productId":"11","parentId":"11"},{"id":"12","roomId":"6","receiveDate":"2019-01-17 00:00:00","sendDate":"2019-01-17 23:59:59","batchNumber":"CS007","productName":"猪脚2-4","productId":"12","parentId":"12"}],"peersUrls":["peer0.org7.example.com"],"username":"test7","orgname":"Org7"}
+[32m[2019-01-13 23:56:46.162] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.162] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��'jL_I�[�=�$'�R|P2PP��dA�� VH�`��:�CB��Rbs�G3�I¼nu�3����
+[32m[2019-01-13 23:56:46.172] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.172] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D ~�	V@��cr��Z��^�.?�����^� ʶ ?[Rs�����N��З�
+E��������d��
+[32m[2019-01-13 23:56:46.179] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.180] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D a����&gۨ�Q���@c��I[�Mȥ�� +����t�Tq.���*�:��>�p�K��
+[32m[2019-01-13 23:56:46.186] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.186] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D <$��B�3%@�]=@G��̝0C��r�Ɣ� �T?3��o�I��29VXS��Av�盾�+
+[32m[2019-01-13 23:56:46.197] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.198] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D J�x"��9�҄y2���ov��Ы���9KKQ��- '��\Ԡw��p��d���"ڂڄ�.(�
+[32m[2019-01-13 23:56:46.203] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.203] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D ?�R�zΠ�<v�K��V⋂���j{0�8 6�Y�̓:NtH���T�_'�&O���
+[32m[2019-01-13 23:56:46.207] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.207] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��ȡ�Գ|wn��S`����;�ƅ.*�$�P� ��)���Fr	��O>��T���JVH>��2\
+[32m[2019-01-13 23:56:46.212] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.212] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �؂�{�(��a��sׯ�I�A��ۅ (&�`S_`&����m�]��Ml�����0
+[32m[2019-01-13 23:56:46.216] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.216] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D ��S#ybf	��&C�;ն��s̭x�Z�^�7� "�\F�Ɂ����m���4D墡*dY��m
+[32m[2019-01-13 23:56:46.220] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.220] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��^��P�q�Ʈ�J�XN�N��{�i��$ <۝�������)�2&��� .��Z�m����
+[32m[2019-01-13 23:56:46.224] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.224] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���D�G=�e�[��b�Zz�G讒���Y�. N��� O��',&����[��T}�E?�($��
+[32m[2019-01-13 23:56:46.228] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:46.228] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D A�����o��?&�8���K����Z^>/ Y�����n���=$�w�-Q���Ze�i��m
+[32m[2019-01-13 23:56:46.724] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.725] [INFO] invoke-chaincode - [39mTransaction ac2adecdd85b62b86680ce2de273fbba539638cc28deca286dc8f5b4b93342d5 has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.725] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.725] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.726] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: ac2adecdd85b62b86680ce2de273fbba539638cc28deca286dc8f5b4b93342d5
+[32m[2019-01-13 23:56:46.727] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.727] [INFO] invoke-chaincode - [39mTransaction 062af5942e984e086a7b58298b7f9f392a43e307e5431fb666e7e2643eeef9c8 has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.727] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.728] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.729] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 062af5942e984e086a7b58298b7f9f392a43e307e5431fb666e7e2643eeef9c8
+[32m[2019-01-13 23:56:46.730] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.730] [INFO] invoke-chaincode - [39mTransaction 8fceb6e5e567eddedb28d5e87b5489d37176f4cd9fe2e66a324cf86f0bd5985a has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.731] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.731] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.732] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 8fceb6e5e567eddedb28d5e87b5489d37176f4cd9fe2e66a324cf86f0bd5985a
+[32m[2019-01-13 23:56:46.733] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.733] [INFO] invoke-chaincode - [39mTransaction 45b1559dd187504697db63a5f4c551e02babb99ef8e4ebf2a75463d47cd7164a has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.734] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.734] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.734] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 45b1559dd187504697db63a5f4c551e02babb99ef8e4ebf2a75463d47cd7164a
+[32m[2019-01-13 23:56:46.737] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.737] [INFO] invoke-chaincode - [39mTransaction b902fa5a00185e4ef4c74a8cf08b43ee75cfc4da003e0196199ed47b744d9d1f has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.737] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.738] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.738] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: b902fa5a00185e4ef4c74a8cf08b43ee75cfc4da003e0196199ed47b744d9d1f
+[32m[2019-01-13 23:56:46.739] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.739] [INFO] invoke-chaincode - [39mTransaction 898a0cc271fd4117c3570431770c4cc419ae375fc941fef692ef2606858c1037 has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.739] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.740] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.740] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 898a0cc271fd4117c3570431770c4cc419ae375fc941fef692ef2606858c1037
+[32m[2019-01-13 23:56:46.743] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.743] [INFO] invoke-chaincode - [39mTransaction 32e05428159f54e79ef1d3d87bf7c3bf4f844430d516f031f4215f379e40b2e9 has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.743] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.744] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.744] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 32e05428159f54e79ef1d3d87bf7c3bf4f844430d516f031f4215f379e40b2e9
+[32m[2019-01-13 23:56:46.746] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.746] [INFO] invoke-chaincode - [39mTransaction e8740cba05b1be03065c91e9cf3aecb28ed3153ce65a9ba8e986e7a10815b8d3 has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.746] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.746] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.747] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: e8740cba05b1be03065c91e9cf3aecb28ed3153ce65a9ba8e986e7a10815b8d3
+[32m[2019-01-13 23:56:46.748] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.750] [INFO] invoke-chaincode - [39mTransaction 97758621a2d4b83efe86204488ecda18ea0f3baa97c31a7269794b93e119ccbf has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.751] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.751] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.751] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 97758621a2d4b83efe86204488ecda18ea0f3baa97c31a7269794b93e119ccbf
+[32m[2019-01-13 23:56:46.754] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:46.754] [INFO] invoke-chaincode - [39mTransaction c4e7a8678ae956bac8b0211bf1bfbc596ca9c9d5650bfb1c64c40467cf7c0d5d has status of VALID in blocl 9
+[32m[2019-01-13 23:56:46.754] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:46.755] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:46.755] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: c4e7a8678ae956bac8b0211bf1bfbc596ca9c9d5650bfb1c64c40467cf7c0d5d
+[32m[2019-01-13 23:56:48.644] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:48.644] [INFO] invoke-chaincode - [39mTransaction 4b91cfd752da2b9a3998104ce3dbb2a57754d202de5035f6e10abec44d9a6ba9 has status of VALID in blocl 10
+[32m[2019-01-13 23:56:48.645] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:48.647] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:48.647] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 4b91cfd752da2b9a3998104ce3dbb2a57754d202de5035f6e10abec44d9a6ba9
+[32m[2019-01-13 23:56:48.648] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:48.648] [INFO] invoke-chaincode - [39mTransaction d6f5ddbcae06fab6d5d56b237b123df618dbbfed054fabd7c3acad41efc31e44 has status of VALID in blocl 10
+[32m[2019-01-13 23:56:48.648] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:48.648] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:48.648] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: d6f5ddbcae06fab6d5d56b237b123df618dbbfed054fabd7c3acad41efc31e44
+[32m[2019-01-13 23:56:48.652] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:48.652] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"coldchaintransporter","parentClassName":"coldstorage","data":[{"id":"1","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZT007","productName":"猪头1-1","productId":"1","parentId":"1"},{"id":"2","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZW007","productName":"猪尾1-1","productId":"2","parentId":"2"},{"id":"3","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-1","productId":"3","parentId":"3"},{"id":"4","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚1-2","productId":"4","parentId":"4"},{"id":"5","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚1-3","productId":"5","parentId":"5"},{"id":"6","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚1-4","productId":"5","parentId":"6"},{"id":"7","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZT007","productName":"猪头2-1","productId":"7","parentId":"7"},{"id":"8","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZW007","productName":"猪尾2-1","productId":"8","parentId":"8"},{"id":"9","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-1","productId":"9","parentId":"9"},{"id":"10","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚2-2","productId":"10","parentId":"10"},{"id":"11","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚2-3","productId":"11","parentId":"11"},{"id":"12","roomId":"7","receiveDate":"2019-01-18 00:00:00","sendDate":"2019-01-18 23:59:59","batchNumber":"CS007","productName":"猪脚2-4","productId":"12","parentId":"12"}],"peersUrls":["peer0.org8.example.com"],"username":"test8","orgname":"Org8"}
+[32m[2019-01-13 23:56:49.805] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.805] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D #)�&�>��ͺ7��e��>�hq��M��� 'a�;��o	�@�u~!ճ5��dk�/�oƃOe�
+[32m[2019-01-13 23:56:49.815] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.815] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D "o4�#a��6�c��ek2˹�_�Rl� &��U0=ÈX��{N��E�N�m�M$(v�2
+[32m[2019-01-13 23:56:49.823] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.823] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D %�H�s��l�w6��g��eȵ}bm�� w�F `,x��T�C��'mO�s�h=�S
+�Z��7��y
+[32m[2019-01-13 23:56:49.829] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.829] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D 2��)`a���%Zv�e\+/U!U�lT�շ �xOtQ�a]�U��F]�ʰm�"ǹ���N
+[32m[2019-01-13 23:56:49.835] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.835] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D rXQ,�:P�hdl.�˗�eu��=|%:�8Я��� P%�q��w��X���y�ų�|I���]�#^
+[32m[2019-01-13 23:56:49.842] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.842] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D p���TLc$���3�2̝X@VT�L-��!�f� XJ{���S2��:O�L��L�˩fpڌ���1
+[32m[2019-01-13 23:56:49.849] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.849] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D hY��ǝԣ�QZ��K�j3!��jT�\�$�� <�E�Iߊٝ�r� ɢ���뷏��#�6S
+[32m[2019-01-13 23:56:49.865] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.865] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ����3F,�7o��Mm���K�~+�j����4 R�M-y9�I��ޕ#{�<[jw
+���w��
+[32m[2019-01-13 23:56:49.874] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.874] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ���MJQki�l�)�tO@�!�6-E������ oQ�v��;	��丕�m �|˫�}�O�Ib
+[32m[2019-01-13 23:56:49.883] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.883] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �]�����2PF��@Mso��dol�?-�� 7E�6��jJ�m�0.\�QT�T/�1V3����%�
+[32m[2019-01-13 23:56:49.888] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.888] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D F�u\��T���Q�x)�]`L_M�r�	`�F z��!�1{�yg�^cS�_f�zt�#�e�5��
+[32m[2019-01-13 23:56:49.892] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:49.892] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��&��B�1�}!B���C�V�٩��Ƅ� �����\�TJL��NF��z���ez���
+[32m[2019-01-13 23:56:50.478] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.479] [INFO] invoke-chaincode - [39mTransaction b53fb57a751103d0b789d7fd7b53afcf7ed7653f8e88f9affaa15f09b11e7886 has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.479] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.479] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.480] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: b53fb57a751103d0b789d7fd7b53afcf7ed7653f8e88f9affaa15f09b11e7886
+[32m[2019-01-13 23:56:50.480] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.481] [INFO] invoke-chaincode - [39mTransaction a8d88f87d095f553d0c052dbe1ebcfeb6db3ec8a16bc28acd19361757c8247af has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.481] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.481] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.481] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: a8d88f87d095f553d0c052dbe1ebcfeb6db3ec8a16bc28acd19361757c8247af
+[32m[2019-01-13 23:56:50.483] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.483] [INFO] invoke-chaincode - [39mTransaction 0234562e1c547a2bf03d103cd6de64ae4286ce7bcc4b83ddb3dfd7539add651e has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.483] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.483] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.483] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 0234562e1c547a2bf03d103cd6de64ae4286ce7bcc4b83ddb3dfd7539add651e
+[32m[2019-01-13 23:56:50.484] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.484] [INFO] invoke-chaincode - [39mTransaction 7c06f4c629c43c45e8e3e312c6ea2de4c010fc9aae7cca1ddb50489439a3f9db has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.484] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.485] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.486] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 7c06f4c629c43c45e8e3e312c6ea2de4c010fc9aae7cca1ddb50489439a3f9db
+[32m[2019-01-13 23:56:50.490] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.491] [INFO] invoke-chaincode - [39mTransaction 91804161b225922b820fc461e7e81f7157a87ffd23d947d3c69b9f8439372c9d has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.492] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.495] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.495] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 91804161b225922b820fc461e7e81f7157a87ffd23d947d3c69b9f8439372c9d
+[32m[2019-01-13 23:56:50.495] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.495] [INFO] invoke-chaincode - [39mTransaction fa0ade12e19d7942f90845bc6a425c080718485977e882399f5341374e19cf8d has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.496] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.496] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.496] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: fa0ade12e19d7942f90845bc6a425c080718485977e882399f5341374e19cf8d
+[32m[2019-01-13 23:56:50.497] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.497] [INFO] invoke-chaincode - [39mTransaction 34ef81c1ee297ae2c20fe2dd941dd664ed1caa8608d4b632076d957874d6013a has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.497] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.498] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.498] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 34ef81c1ee297ae2c20fe2dd941dd664ed1caa8608d4b632076d957874d6013a
+[32m[2019-01-13 23:56:50.499] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.501] [INFO] invoke-chaincode - [39mTransaction 54d6df3b050e67fa06cd6c2e58d2190a663d0148881fb12e128ed73f8749cece has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.502] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.504] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.505] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 54d6df3b050e67fa06cd6c2e58d2190a663d0148881fb12e128ed73f8749cece
+[32m[2019-01-13 23:56:50.511] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.512] [INFO] invoke-chaincode - [39mTransaction 22f4b96c7b01d79284c2ca2cbb6fc89a434c18987b8374d065fd12942bbedeb9 has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.513] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.516] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.518] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 22f4b96c7b01d79284c2ca2cbb6fc89a434c18987b8374d065fd12942bbedeb9
+[32m[2019-01-13 23:56:50.538] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:50.538] [INFO] invoke-chaincode - [39mTransaction 518f8b5d1a1de6b515aec08474ab51254a1d3fc8d88b367ab2d0aefcced323ba has status of VALID in blocl 11
+[32m[2019-01-13 23:56:50.538] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:50.538] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:50.539] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 518f8b5d1a1de6b515aec08474ab51254a1d3fc8d88b367ab2d0aefcced323ba
+[32m[2019-01-13 23:56:52.343] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:52.344] [INFO] invoke-chaincode - [39mTransaction 3b45f5453307cac8641f19ff70c6ac3ee3a6cedfcface094e956e403c4e93b7b has status of VALID in blocl 12
+[32m[2019-01-13 23:56:52.344] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:52.344] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:52.344] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 3b45f5453307cac8641f19ff70c6ac3ee3a6cedfcface094e956e403c4e93b7b
+[32m[2019-01-13 23:56:52.345] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:52.345] [INFO] invoke-chaincode - [39mTransaction 46e40ca316dc03e02bcf22d5ae6dfa2ac4b21e6bf322eb29cab773e017d14e82 has status of VALID in blocl 12
+[32m[2019-01-13 23:56:52.345] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:52.346] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:52.346] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 46e40ca316dc03e02bcf22d5ae6dfa2ac4b21e6bf322eb29cab773e017d14e82
+[32m[2019-01-13 23:56:52.357] [INFO] app - [39m ------>>>>>> new request for /api/v1/save
+[32m[2019-01-13 23:56:52.357] [INFO] app - [39m------->>>>>> request params {"chaincodeName":"trace","className":"saleterminal","parentClassName":"coldchaintransporter","data":[{"id":"1","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZT007","productName":"猪头1-1","productId":"1","parentId":"1"},{"id":"2","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZW007","productName":"猪尾1-1","productId":"2","parentId":"2"},{"id":"3","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZJ007","productName":"猪脚1-1","productId":"3","parentId":"3"},{"id":"4","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚1-2","productId":"4","parentId":"4"},{"id":"5","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚1-3","productId":"5","parentId":"5"},{"id":"6","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚1-4","productId":"5","parentId":"6"},{"id":"7","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZT007","productName":"猪头2-1","productId":"7","parentId":"7"},{"id":"8","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZW007","productName":"猪尾2-1","productId":"8","parentId":"8"},{"id":"9","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"ZJ007","productName":"猪脚2-1","productId":"9","parentId":"9"},{"id":"10","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚2-2","productId":"10","parentId":"10"},{"id":"11","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚2-3","productId":"11","parentId":"11"},{"id":"12","roomId":"8","receiveDate":"2019-01-19 00:00:00","sendDate":"2019-01-19 23:59:59","batchNumber":"CS007","productName":"猪脚2-4","productId":"12","parentId":"12"}],"peersUrls":["peer0.org9.example.com"],"username":"test9","orgname":"Org9"}
+[32m[2019-01-13 23:56:52.627] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.628] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ̃��ǌ������U�@^�⑛�D?��` D e�D%h����EQ�w�8�T�ü�z$�jK	�
+[32m[2019-01-13 23:56:52.635] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.636] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D |�>��i3y3�x ���Ƿ �\��tM��� d)D��w8��k{��L������+�4�
+[32m[2019-01-13 23:56:52.640] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.641] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �\;7�`}7���LW�3e��b���yP)�S ,���=���f�ø��ͩ��ܶo܄�JJ6bj
+[32m[2019-01-13 23:56:52.647] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.647] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��Ѥ�WS�jk˰��(�vj=9�܏I����� E}���v��Rpqf9.J���kI� w��[e��
+[32m[2019-01-13 23:56:52.652] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.652] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �5~;$H�����&���mTM�m�ݬ��z@� ЇB�o4�� ���I��ݧ����.18�)ȷ
+[32m[2019-01-13 23:56:52.665] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.665] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��
+�L/N�]����E����_�|����wI fZ�y�B��T�1%ou}�h�S��E%�b���
+[32m[2019-01-13 23:56:52.671] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.671] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! ��;,������<�{K�0B�`��e�J� Ug���l;�G�҈��Ώ'ڃ��z6ȑ^`&
+[32m[2019-01-13 23:56:52.675] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.675] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �|�o��&i�Z��MV�~Y�@+�YC���pg_ EE�1��z.*㈋��ƦӉ��I�B#��
+[32m[2019-01-13 23:56:52.679] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.679] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �R5{��z�����U%7�'�����rs�
+v X���uV��	l���������q9]���
+[32m[2019-01-13 23:56:52.683] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.683] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D )s���2��$��C�̊+����)O��^�� AKqn�d;D�!��o�SI�;����޴	��#�
+[32m[2019-01-13 23:56:52.698] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.698] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0D l�ꇝ�l�h�>?�@��fܠ[��"���ń Cf���iIC$x��!8�o���u֣~�w���
+[32m[2019-01-13 23:56:52.702] [INFO] invoke-chaincode - [39minvoke chaincode proposal was good
+[32m[2019-01-13 23:56:52.702] [INFO] invoke-chaincode - [39mSuccessfully sent Proposal and received ProposalResponse: Status - 200, message - "", metadata - "", endorsement signature: 0E! �i�H`X~M@�'�s�D�����X�B�+~&HN }�\�e��v[��q����w	C�B�L��͒�
+[32m[2019-01-13 23:56:53.188] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.189] [INFO] invoke-chaincode - [39mTransaction 319aae5b106a9bd896519630251e53befce6dba8367f63baeac61ec912c51b19 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.189] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.189] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.189] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 319aae5b106a9bd896519630251e53befce6dba8367f63baeac61ec912c51b19
+[32m[2019-01-13 23:56:53.190] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.190] [INFO] invoke-chaincode - [39mTransaction 30bbd51975ddb61b602cc4e02312e11320eed3d6256c2c005d1af734cb350abf has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.190] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.191] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.191] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 30bbd51975ddb61b602cc4e02312e11320eed3d6256c2c005d1af734cb350abf
+[32m[2019-01-13 23:56:53.191] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.191] [INFO] invoke-chaincode - [39mTransaction 4798c61a426103c265813c6e13a864c56d08f204eab484be9b99912a1f20d38d has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.191] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.192] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.192] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 4798c61a426103c265813c6e13a864c56d08f204eab484be9b99912a1f20d38d
+[32m[2019-01-13 23:56:53.193] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.193] [INFO] invoke-chaincode - [39mTransaction 85e2213858aeed80d660aac158b81f41ebb5acbf61c946b0439ca311ea42fda0 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.193] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.193] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.193] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 85e2213858aeed80d660aac158b81f41ebb5acbf61c946b0439ca311ea42fda0
+[32m[2019-01-13 23:56:53.194] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.194] [INFO] invoke-chaincode - [39mTransaction 3819052eec61cfb78a39ed44710ae1b0dc69cb8793f6b04631b382c80eb636f1 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.194] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.195] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.195] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 3819052eec61cfb78a39ed44710ae1b0dc69cb8793f6b04631b382c80eb636f1
+[32m[2019-01-13 23:56:53.195] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.195] [INFO] invoke-chaincode - [39mTransaction cc243310f8be261833883320f9f26beab57cf3e26137f16cf950b520619baef1 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.196] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.196] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.196] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: cc243310f8be261833883320f9f26beab57cf3e26137f16cf950b520619baef1
+[32m[2019-01-13 23:56:53.196] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.197] [INFO] invoke-chaincode - [39mTransaction e2f495ab8c82dab7ab6d6f9286bf687461ea88fcc852d9d2baef17b7157e147b has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.197] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.197] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.197] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: e2f495ab8c82dab7ab6d6f9286bf687461ea88fcc852d9d2baef17b7157e147b
+[32m[2019-01-13 23:56:53.198] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.198] [INFO] invoke-chaincode - [39mTransaction c6d7475e0c1788edb3193c967034f16d92a99bd66ac26b69472311a2b0d54f3f has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.198] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.199] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.199] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: c6d7475e0c1788edb3193c967034f16d92a99bd66ac26b69472311a2b0d54f3f
+[32m[2019-01-13 23:56:53.201] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.201] [INFO] invoke-chaincode - [39mTransaction 9b6b6ca4ab1be3eab6bbbdbcdab3dec675087a38113c2d54f56fde6164bf1450 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.201] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.201] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.201] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 9b6b6ca4ab1be3eab6bbbdbcdab3dec675087a38113c2d54f56fde6164bf1450
+[32m[2019-01-13 23:56:53.202] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:53.202] [INFO] invoke-chaincode - [39mTransaction 5a0eeedc53d6293a6a29c8991925d9c1270c24c83cc6d0886816a39af7df29f9 has status of VALID in blocl 13
+[32m[2019-01-13 23:56:53.202] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:53.202] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:53.202] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: 5a0eeedc53d6293a6a29c8991925d9c1270c24c83cc6d0886816a39af7df29f9
+[32m[2019-01-13 23:56:55.031] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:55.031] [INFO] invoke-chaincode - [39mTransaction ed0e59954e30f894048ab8aa6968689dd9fd1fc3cc2958e443ffa295d164a0bf has status of VALID in blocl 14
+[32m[2019-01-13 23:56:55.031] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:55.032] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:55.032] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: ed0e59954e30f894048ab8aa6968689dd9fd1fc3cc2958e443ffa295d164a0bf
+[32m[2019-01-13 23:56:55.033] [INFO] invoke-chaincode - [39mThe chaincode invoke chaincode transaction has been committed on peer 127.0.0.1:8051
+[32m[2019-01-13 23:56:55.033] [INFO] invoke-chaincode - [39mTransaction cbc6ef7282ac761580a5efb3b2dce26f863c5996010f5ebe111680aa5bd75d7e has status of VALID in blocl 14
+[32m[2019-01-13 23:56:55.033] [INFO] invoke-chaincode - [39mThe invoke chaincode transaction was valid.
+[32m[2019-01-13 23:56:55.034] [INFO] invoke-chaincode - [39mSuccessfully sent transaction to the orderer.
+[32m[2019-01-13 23:56:55.034] [INFO] invoke-chaincode - [39mSuccessfully invoked the chaincode Org2 to the channel 'mychannel' for transaction ID: cbc6ef7282ac761580a5efb3b2dce26f863c5996010f5ebe111680aa5bd75d7e
+[32m[2019-01-13 23:57:15.346] [INFO] app - [39m ------>>>>>> new request for /api/v1/token
+[32m[2019-01-13 23:57:15.348] [INFO] app - [39m------->>>>>> request params {"username":"do","orgName":"Org9"}
+[32m[2019-01-13 23:57:15.360] [INFO] Helper - [39mUser do was not enrolled, so we will need an admin user object to register
+[32m[2019-01-13 23:57:15.385] [INFO] Helper - [39m[ { name: 'org9', affiliations: [ [Object] ] },
+  { name: 'org1', affiliations: [ [Object], [Object] ] },
+  { name: 'org2', affiliations: [ [Object] ] } ]
+[32m[2019-01-13 23:57:27.775] [INFO] app - [39m ------>>>>>> new request for /api/v1/trace
+[32m[2019-01-13 23:57:27.775] [INFO] app - [39m------->>>>>> request params {"id":"3"}
+[32m[2019-01-13 23:57:27.778] [INFO] console - [39m{ className: 'farm', 'data.id': '3' }
+[32m[2019-01-13 23:57:27.897] [INFO] console - [39m[{"Key":"farm3", "Record":{"className":"farm","data":{"batchNumber":"CS007","createDate":"2019-01-13 00:00:00","id":"3","productId":"3","productName":"猪猪三号","providerId":"provider1"},"key":"3"}}]
+[32m[2019-01-13 23:57:27.897] [INFO] console - [39m{ className: 'slaughterhouse', 'data.parentId': '3' }
+[32m[2019-01-13 23:57:27.948] [INFO] console - [39m[{"Key":"slaughterhouse3", "Record":{"className":"slaughterhouse","data":{"batchNumber":"CS007","id":"3","parentId":"3","productId":"3","productName":"猪猪三号","receiveDate":"2019-01-13 00:00:00","roomId":"2","sendDate":"2019-01-13 23:59:59"},"key":"3"}}]
+[32m[2019-01-13 23:57:27.948] [INFO] console - [39m{ className: 'room', 'data.roomId': '2' }
+[32m[2019-01-13 23:57:27.950] [INFO] console - [39m{ className: 'freezingworkshop', 'data.parentId': '3' }
+[32m[2019-01-13 23:57:28.017] [INFO] console - [39m[]
+[32m[2019-01-13 23:57:28.019] [INFO] console - [39m[{"Key":"freezingworkshop3", "Record":{"className":"freezingworkshop","data":{"batchNumber":"CS007","id":"3","parentId":"3","productId":"3","productName":"猪猪三号","receiveDate":"2019-01-14 00:00:00","roomId":"3","sendDate":"2019-01-14 23:59:59"},"key":"3"}}]
+[32m[2019-01-13 23:57:28.019] [INFO] console - [39m{ className: 'room', 'data.roomId': '3' }
+[32m[2019-01-13 23:57:28.022] [INFO] console - [39m{ className: 'aciddrainageworkshop', 'data.parentId': '3' }
+[32m[2019-01-13 23:57:28.088] [INFO] console - [39m[{"Key":"aciddrainageworkshop3", "Record":{"className":"aciddrainageworkshop","data":{"batchNumber":"CS007","id":"3","parentId":"3","productId":"3","productName":"猪猪三号","receiveDate":"2019-01-15 00:00:00","roomId":"4","sendDate":"2019-01-15 23:59:59"},"key":"3"}}]
+[32m[2019-01-13 23:57:28.089] [INFO] console - [39m{ className: 'room', 'data.roomId': '4' }
+[32m[2019-01-13 23:57:28.092] [INFO] console - [39m{ className: 'splitworkshop', 'data.parentProductId': '3' }
+[32m[2019-01-13 23:57:28.126] [INFO] console - [39m[]
+[32m[2019-01-13 23:57:28.170] [INFO] console - [39m[]
+[32m[2019-01-13 23:57:28.174] [INFO] console - [39m[]

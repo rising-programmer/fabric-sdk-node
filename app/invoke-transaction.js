@@ -4,13 +4,14 @@ var util = require('util');
 var hfc = require('fabric-client');
 var helper = require('./helper.js');
 var logger = helper.getLogger('invoke-chaincode');
+let reqUtils = require('./reqUtils');
 
-var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn, data, username, org_name) {
+
+var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn, args, username, org_name) {
     logger.debug(util.format('\n============ invoke transaction on channel %s ============\n', channelName));
     var error_message = null;
     var tx_id_string = null;
-    // var objectType = args[0];
-    // var id = args[1];
+    var id = args[1];
     try {
         // first setup the client for this org
         var client = await helper.getClientForOrg(org_name, username);
@@ -24,19 +25,12 @@ var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn,
         // will need the transaction ID string for the event registration later
         var tx_id = client.newTransactionID();
         tx_id_string = tx_id.getTransactionID();
-        let args = [];
-        args[0] = "";
-        for (let i = 0; i < data.length; i++) {
-            args[1 + 9 * i] = data[i].objectType;
-            args[2 + 9 * i] = data[i].id;
-            args[3 + 9 * i] = data[i].timestamp;
-            args[4 + 9 * i] = tx_id_string;
-            args[5 + 9 * i] = data[i].hash;
-            args[6 + 9 * i] = data[i].blockId || "";
-            args[7 + 9 * i] = data[i].deviceId || "";
-            args[8 + 9 * i] = username;
-            args[9 + 9 * i] = org_name;
-        }
+
+        // if(!reqUtils.isEmpty(args) && args instanceof Object){
+        //     var jsonObject = args[2];
+        //     jsonObject.txId = tx_id_string;
+        //     args[2] = JSON.stringify(jsonObject);
+        // }
 
         // send proposal to endorser
         var request = {
@@ -67,6 +61,9 @@ var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn,
                 one_good = true;
                 logger.info('invoke chaincode proposal was good');
             } else {
+                if(proposalResponses && proposalResponses[i].message){
+                    error_message = proposalResponses[i].message;
+                }
                 logger.error('invoke chaincode proposal was bad'+JSON.stringify(proposalResponses));
             }
             all_good = all_good & one_good;
@@ -152,7 +149,7 @@ var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn,
                 }
             }
         } else {
-            error_message = util.format('Failed to send Proposal and receive all good ProposalResponse');
+            // error_message = util.format('Failed to send Proposal and receive all good ProposalResponse');
             logger.debug(error_message);
         }
     } catch (error) {
@@ -165,16 +162,10 @@ var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn,
             'Successfully invoked the chaincode %s to the channel \'%s\' for transaction ID: %s',
             org_name, channelName, tx_id_string);
         logger.info(message);
-        let retJsons = [];
-
-        for (let i = 0; i < data.length; i++) {
-            let retJson = {};
-            retJson.objectType = data[i].objectType;
-            retJson.id = data[i].id;
-            retJson.transactionId = tx_id_string;
-            retJsons.push(retJson);
-        }
-        return retJsons;
+        let retJson = {};
+        retJson.id = id;
+        retJson.transactionId = tx_id_string;
+        return retJson;
     } else {
         let message = util.format('Failed to invoke chaincode. cause:%s',error_message);
         logger.error(message);

@@ -104,3 +104,58 @@ PeerOrgs:
       Count: 2
     Users:
       Count: 1
+
+  # ---------------------------------------------------------------------------
+  # Org5: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Org5
+    Domain: org5.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  # ---------------------------------------------------------------------------
+  # Org6: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Org6
+    Domain: org6.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  # ---------------------------------------------------------------------------
+  # Org7: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Org7
+    Domain: org7.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  # ---------------------------------------------------------------------------
+  # Org8: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Org8
+    Domain: org8.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+
+  # ---------------------------------------------------------------------------
+  # Org9: See "Org1" for full specification
+  # ---------------------------------------------------------------------------
+  - Name: Org9
+    Domain: org9.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1

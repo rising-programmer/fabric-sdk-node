@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55a0de5b-2481-4d62-ac89-d951485ab3fd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/query.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/aciddrainageworkshop.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/coldchaintransporter.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/coldstorage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/farm.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/freezingworkshop.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/room.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/saleterminal.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/slaughterhouse.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import/splitworkshop.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/configtxgen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/configtxlator" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/cryptogen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/discover" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/get-docker-images.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/idemixgen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/orderer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/bin/peer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/ca/4f4b8be58b87225295e8aa75b7aaa1f1075c8a436820178dfdb48671d4bdbce8_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/keystore/49e84b74b7e3c835a0c92024b82225e78430f864e1ef72b7587e7bd2d81df9d3_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/keystore/83ab867fde39c91df0ac9cb4149fd1963dfbbf5644ad0e16c55a0abe681e1c57_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/tlsca/c03cd435eb7e45e16456824498cf84f4e8b25ecbfaf103d614a40854964c16b5_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/4fcb251d80fcd8728d895434b86d8f5912b4c14578df848c4964251b6825a513_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/ca/50ca9b0526e211d46504c23085a252465faaa7c9fb709272aea48d8248ec119e_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/bccdae1a5c9e70a6d94621a5710d8285c1ec92bb3f07e2714a43eecff7b17423_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/keystore/6a3b0a8ade4de67769d311ef38a33ee0af200a913b8847348de83193293dd433_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/tlsca/51da52678a7d50880de19dfa554a02f765260031b1c6527aeea491d38174ebce_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/98b9e475a5f82a39c7cc041b08c37ed1015c26b0dec8c700b5693f3e6398bee2_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/757d80c73b812a7a55cf0f62eface0afe7527da203056859dc2dcf80467750a0_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/ca/7982637940124ed2771b3797f48c0b3f84b9445fcb249c35ce9e3f95b6b47930_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/ca/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/msp/config.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/config.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/keystore/223a59b2e8a6c290330127acd575f9c5b7f965b245fa5aa0394f1178f9c364a4_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/signcerts/peer0.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/server.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/server.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/tlsca/0a969ba33eba785cfd514a76a75060561b2a440205734374e94092caae7d7e15_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/tlsca/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/keystore/cc4802389911ea74d243525b5a722f0d6fc77a2addbf5c32780dac650aaa3b51_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/signcerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/client.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/client.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/admincerts/User1@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/keystore/8863be212132867ecf310235b51fb2c560c4966206979ab7cc663bf096ce4cc6_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/signcerts/User1@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/client.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/client.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/ca/2254a65eed502dd184d3a660659e19d59a9b2f8287489008150eeb93ea05c46c_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/keystore/f78da1be2facb5f8d1c556388bb8a4742d3f85c00a0e41bf180cb0ccc2f7fe0b_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/keystore/a223cbb4a527993bc34afedb9177291215a199c2b5e5ccc75cd1339796672f07_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/tlsca/d48e5e210bcc00420e9f8391296757cf330b0606a4c54f78b5be7d8a5c5b141c_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/01eed46fff5f93bb1014e16a5c23d5804d1bc3c44a7eaa9734d317d4bb455343_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/keystore/a46ea268a0598af93e84bf86c20188193a1048f86acfce6c9ba03394d16300cb_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/ca/3e357e1fa7049f049251e602ad894a904f9e9c61abfa69f8c3905da934ab0d87_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/keystore/bb039173fd9c11314c6a1afcfae494263d6b95c513f8580103a6d718f0639e34_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/keystore/e134e6c1320d3521fdc74bfb53f8a99746bf69b4bcb86acec3cc5eb74053fe82_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/tlsca/a64d4cc5c0b73f51e3090d32654bd8bf067c62ce8e04a5b136a5845da27e409c_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/keystore/2d4e8c8113a1de632dfd2c6c4d3004e85c91660bd787826bac0aa1d80a82c071_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/keystore/65d59936efe297bf772c125f69ca5be9a785290e0589c0c9bf6b696af9dad38a_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/ca/4f5be57e407c612afc97f52035954add4529bc5aeea297dd593fd1f495ef04db_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/keystore/03c095c781a1c4cecfafb13e49ff9c8f78e631aed01ea21b0722e11c07d63d99_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/keystore/8bc70031d73f14839861ede212302753e1d5aa49149ca2486567319ff9e56afa_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/tlsca/e2a57e7417a4bb78d430b4d6755c0242a18809073380d0b881481947d6ab1c8a_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/keystore/ef606d7b125791b7a75959137e8b1eb2f440cf9e15f431c8f509b035e81c0f96_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/keystore/958795bbb9e419c88cfa58a34fe009b9e4d6031d3241f4921d987d26cc4b9ddc_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/ca/d0a6ce7c0817cf3044cca29617460e9240a7b06bdfaa5a611578079a9ce945fe_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/keystore/c4cf4bb410d0fbe8b2ab2ae828f6eab4fea0d6ab1e4a588a0949a014f0bd1e33_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/tlsca/7c3841e95ede8b970bb87fc44793f6f716cbb2de1fd1dae2f17e9e9cd75e8d72_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/keystore/61478476fa4d83a86b7538b722b0c88888ed93d054f7b39753ea323d78a0af2f_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/keystore/ace68ea80c6387a64d214db837da20bc42c9c5ba3facc7e7cb3d1c67d539197c_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/ca/214927bb822402dccd9a7888631c525cf955249ab359479425a377c9b3e4bd99_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/keystore/cda8c33e9bcdf65dc754bfde2535a5da866642e60fa3a188a2dd820f5764fa0b_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/tlsca/2874a3d43f2c01414d4a48e41a93f0a592f08672fa69d0f3919d48953699322e_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/keystore/17529d8701705abf29b49169ac8fd6972f68b030909dc99ce8f1f5a9afd05762_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/keystore/7d9486b3f3a11b2f6426a321d20b585f6818719dbf4cec8c252d6881eb861c8a_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/ca/ff8ccaffbc2c61381d98c52b0cb42c777637024afda6d8e338eca02c12d35ec6_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/keystore/0b2185c03b96f54339f68c0b39f7775d6b0e11933e0bb60966509627416b75b4_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/tlsca/c699026df728c509583bc36c33b125ddd153ed25b0a779ffb38f62df14c631f0_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/keystore/c98e6f30eab73d06f41b951e8a64da051aeb8ca14b46c4ba957ccc4d98d380ec_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/keystore/38856a4aa7c2494b4db807ea062699c61becabebe3027da1ec256365a11b9cce_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/ca/d954a524cdd3a076458524087ccc9d511c0f8f45361075dd264ec91d2c9f7a26_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/keystore/f4266197d4467587be6fa711c21032052f23f50389040daaf4051f6c11ae9ca3_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/tlsca/8159788fdd2315d8f6c2490e41fefe603ba17196daa69f0f9caffc18ec159636_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/keystore/303ae8dfea7ec373d65d77a5992b77b716bdf52d82d0370df27d5fa735c53386_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/keystore/ef8e1a1cb4a1beb9ea5ce64b02129882d5e5311bbaacb3bba84df155ffc6c577_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/ca/4d395c665ab2a61628002a97185c0880ac2c439afe602b80473cdf4e49946299_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/keystore/ab08c6c7b0af16c4423cb97d20817dd24625cde2b7515da53fd1bccda88e8683_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/tlsca/7c9c124cac1ad657ddf9d972fbba21d2433e0955bfe5a0ad1d2a4bd4b8a420bb_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/keystore/47262af4f2126ffa45515c9531b4a951ff992685aad1da9df215ceebade601f5_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/keystore/d2d62a25af98a70066af4816c17b2b8a3342b6aff1a8bf0a470d25fef86a847d_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/config_block.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/config_update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/config_update.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/config_update_in_envelope.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/configtx.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/configtx.yamlt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config.yamlt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/ca/7982637940124ed2771b3797f48c0b3f84b9445fcb249c35ce9e3f95b6b47930_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/ca/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/msp/config.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/config.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/keystore/223a59b2e8a6c290330127acd575f9c5b7f965b245fa5aa0394f1178f9c364a4_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/signcerts/peer0.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/server.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/peers/peer0.org10.example.com/tls/server.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/tlsca/0a969ba33eba785cfd514a76a75060561b2a440205734374e94092caae7d7e15_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/tlsca/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/admincerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/keystore/cc4802389911ea74d243525b5a722f0d6fc77a2addbf5c32780dac650aaa3b51_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/signcerts/Admin@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/client.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/Admin@org10.example.com/tls/client.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/admincerts/User1@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/cacerts/ca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/keystore/8863be212132867ecf310235b51fb2c560c4966206979ab7cc663bf096ce4cc6_sk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/signcerts/User1@org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/msp/tlscacerts/tlsca.org10.example.com-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/ca.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/client.crt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/crypto-config/peerOrganizations/org10.example.com/users/User1@org10.example.com/tls/client.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/modified_config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/modified_config.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org10.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org10_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org5_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org6_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org7.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org7_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org8_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/org9_update_in_envelope.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/original_config.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/channel/shell/tmp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/META-INF/statedb/couchdb/indexes/indexTimestamp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/kingland.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ecosystem.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testAPIs.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/create-channel.js" afterPath="$PROJECT_DIR$/app/create-channel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/instantiate-chaincode.js" afterPath="$PROJECT_DIR$/app/instantiate-chaincode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/invoke-transaction.js" afterPath="$PROJECT_DIR$/app/invoke-transaction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/join-channel.js" afterPath="$PROJECT_DIR$/app/join-channel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/query.js" afterPath="$PROJECT_DIR$/app/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sdkUtils.js" afterPath="$PROJECT_DIR$/app/sdkUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/META-INF/statedb/couchdb/indexes/indexTimestamp.json" afterPath="$PROJECT_DIR$/artifacts/META-INF/statedb/couchdb/indexes/indexTimestamp.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/bootstrap.sh" afterPath="$PROJECT_DIR$/artifacts/channel/bootstrap.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/configtx.yaml" afterPath="$PROJECT_DIR$/artifacts/channel/configtx.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config.yaml" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/admincerts/Admin@example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/admincerts/Admin@example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/cacerts/ca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/cacerts/ca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/signcerts/orderer1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/signcerts/orderer1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/admincerts/Admin@example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/admincerts/Admin@example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/cacerts/ca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/cacerts/ca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/signcerts/orderer2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/signcerts/orderer2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/signcerts/peer1.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/signcerts/peer1.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/signcerts/peer0.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/signcerts/peer0.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/signcerts/peer1.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/signcerts/peer1.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/admincerts/Admin@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/admincerts/User1@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/admincerts/User1@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/User1@org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/User1@org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/ca/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/ca/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/signcerts/peer0.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/signcerts/peer0.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/signcerts/peer1.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/signcerts/peer1.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/admincerts/Admin@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/signcerts/Admin@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/signcerts/Admin@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/admincerts/User1@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/admincerts/User1@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/cacerts/ca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/signcerts/User1@org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/signcerts/User1@org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org3.example.com/users/User1@org3.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/ca/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/ca/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/signcerts/peer0.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/signcerts/peer0.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/signcerts/peer1.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/signcerts/peer1.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/tlsca/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/tlsca/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/admincerts/Admin@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/signcerts/Admin@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/signcerts/Admin@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/admincerts/User1@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/admincerts/User1@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/cacerts/ca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/signcerts/User1@org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/signcerts/User1@org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/msp/tlscacerts/tlsca.org4.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org4.example.com/users/User1@org4.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/ca/ca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/ca/ca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/signcerts/peer0.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/signcerts/peer0.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/tlsca/tlsca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/tlsca/tlsca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/admincerts/Admin@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/signcerts/Admin@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/signcerts/Admin@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/admincerts/User1@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/admincerts/User1@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/cacerts/ca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/signcerts/User1@org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/signcerts/User1@org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/msp/tlscacerts/tlsca.org5.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org5.example.com/users/User1@org5.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/ca/ca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/ca/ca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/signcerts/peer0.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/signcerts/peer0.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/peers/peer0.org6.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/tlsca/tlsca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/tlsca/tlsca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/admincerts/Admin@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/signcerts/Admin@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/signcerts/Admin@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/Admin@org6.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/admincerts/User1@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/admincerts/User1@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/cacerts/ca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/signcerts/User1@org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/signcerts/User1@org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/msp/tlscacerts/tlsca.org6.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org6.example.com/users/User1@org6.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/ca/ca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/ca/ca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/signcerts/peer0.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/signcerts/peer0.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/peers/peer0.org7.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/tlsca/tlsca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/tlsca/tlsca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/admincerts/Admin@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/signcerts/Admin@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/signcerts/Admin@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/Admin@org7.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/admincerts/User1@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/admincerts/User1@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/cacerts/ca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/signcerts/User1@org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/signcerts/User1@org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/msp/tlscacerts/tlsca.org7.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org7.example.com/users/User1@org7.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/ca/ca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/ca/ca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/signcerts/peer0.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/signcerts/peer0.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/peers/peer0.org8.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/tlsca/tlsca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/tlsca/tlsca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/admincerts/Admin@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/signcerts/Admin@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/signcerts/Admin@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/Admin@org8.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/admincerts/User1@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/admincerts/User1@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/cacerts/ca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/signcerts/User1@org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/signcerts/User1@org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/msp/tlscacerts/tlsca.org8.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org8.example.com/users/User1@org8.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/ca/ca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/ca/ca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/signcerts/peer0.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/signcerts/peer0.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/server.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/server.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/server.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/peers/peer0.org9.example.com/tls/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/tlsca/tlsca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/tlsca/tlsca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/admincerts/Admin@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/signcerts/Admin@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/signcerts/Admin@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/Admin@org9.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/admincerts/User1@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/admincerts/User1@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/cacerts/ca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/signcerts/User1@org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/signcerts/User1@org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/msp/tlscacerts/tlsca.org9.example.com-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/ca.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/ca.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/client.crt" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/client.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/client.key" afterPath="$PROJECT_DIR$/artifacts/channel/crypto-config/peerOrganizations/org9.example.com/users/User1@org9.example.com/tls/client.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/genesis.block" afterPath="$PROJECT_DIR$/artifacts/channel/genesis.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/mychannel.tx" afterPath="$PROJECT_DIR$/artifacts/channel/mychannel.tx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/network_setup.sh" afterPath="$PROJECT_DIR$/artifacts/channel/network_setup.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/shell/main.sh" afterPath="$PROJECT_DIR$/artifacts/channel/shell/main.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/shell/mychannel.block" afterPath="$PROJECT_DIR$/artifacts/channel/shell/mychannel.block" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/channel/shell/scripts/utils.sh" afterPath="$PROJECT_DIR$/artifacts/channel/shell/scripts/utils.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org1.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org1.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org1.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org1.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org2.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org2.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org2.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org2.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org3.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org3.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org3.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org3.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org4.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org4.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org4.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org4.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org5.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org5.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org5.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org5.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org6.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org6.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org6.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org6.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org7.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org7.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org7.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org7.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org8.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org8.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org8.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org8.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org9.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org9.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-ca-org9.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-ca-org9.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer-template.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer-template.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer1.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer1.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer1.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer1.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer2.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer2.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer2.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer2.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer3.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer3.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer3.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer3.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer4.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer4.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer4.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer4.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer5.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer5.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer5.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer5.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer6.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer6.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer6.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer6.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer7.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer7.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer7.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer7.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer8.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer8.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer8.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer8.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer9.yaml" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer9.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/docker-compose-peer9.yamlt" afterPath="$PROJECT_DIR$/artifacts/docker-compose-peer9.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/network-config-template.yaml" afterPath="$PROJECT_DIR$/artifacts/network-config-template.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/network-config.yaml" afterPath="$PROJECT_DIR$/artifacts/network-config.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/network-config.yamlt" afterPath="$PROJECT_DIR$/artifacts/network-config.yamlt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/down.sh" afterPath="$PROJECT_DIR$/down.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runApp.sh" afterPath="$PROJECT_DIR$/runApp.sh" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="387">
+                <caret line="198" column="79" lean-forward="false" selection-start-line="198" selection-start-column="79" selection-end-line="198" selection-end-column="79" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trace.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trace.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-449">
+              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>*</find>
+      <find>queryWithPagination</find>
+      <find>richQuery</find>
+      <find>&quot;roomId&quot;:&quot;6&quot;</find>
+      <find>sendP</find>
+      <find>kingland</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;roomId&quot;:&quot;8&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go@1.9/1.9.7/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/supervision/go/supervision.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/supervision/go/createSerialNo.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/supervision/go/main.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/supervision/go/get.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/supervision/go/queryWithPagination.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/trace/go/get.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/trace/go/save.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/trace/go/queryTotalCount.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/trace/go/main.go" />
+        <option value="$PROJECT_DIR$/artifacts/META-INF/statedb/couchdb/indexes/indexTimestamp.json" />
+        <option value="$PROJECT_DIR$/app/import.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/trace.json" />
+        <option value="$PROJECT_DIR$/import.js" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/queryTotalCount.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/query.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/main.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/save.go" />
+        <option value="$PROJECT_DIR$/artifacts/src/github.com/chaincode/go/queryWithPagination.go" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/artifacts/channel/shell/scripts/utils.sh" />
+        <option value="$PROJECT_DIR$/artifacts/channel/shell/main.sh" />
+        <option value="$PROJECT_DIR$/artifacts/channel/configtx.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/channel/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/channel/network_setup.sh" />
+        <option value="$PROJECT_DIR$/artifacts/org5.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/org6.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/org7.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/org8.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/org9.yaml" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/import/farm.json" />
+        <option value="$PROJECT_DIR$/import/aciddrainageworkshop.json" />
+        <option value="$PROJECT_DIR$/import/splitworkshop.json" />
+        <option value="$PROJECT_DIR$/import/coldstorage.json" />
+        <option value="$PROJECT_DIR$/import/coldchaintransporter.json" />
+        <option value="$PROJECT_DIR$/import/saleterminal.json" />
+        <option value="$PROJECT_DIR$/artifacts/network-config.yaml" />
+        <option value="$PROJECT_DIR$/artifacts/network-config-template.yaml" />
+        <option value="$PROJECT_DIR$/endorsement-policy-supervision.json" />
+        <option value="$PROJECT_DIR$/runApp.sh" />
+        <option value="$PROJECT_DIR$/scripts/upgrade-chaincode-supervision.sh" />
+        <option value="$PROJECT_DIR$/scripts/upgrade-chaincode-trace.sh" />
+        <option value="$PROJECT_DIR$/endorsement-policy-trace.json" />
+        <option value="$PROJECT_DIR$/node_modules/fabric-client/lib/Peer.js" />
+        <option value="$PROJECT_DIR$/app/instantiate-chaincode.js" />
+        <option value="$PROJECT_DIR$/app.log" />
+        <option value="$PROJECT_DIR$/init.sh" />
+        <option value="$PROJECT_DIR$/down.sh" />
+        <option value="$PROJECT_DIR$/app/sdkUtils.js" />
+        <option value="$PROJECT_DIR$/trace2.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>GSPGrailsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fabric-sdk-node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-sdk-node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-sdk-node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-sdk-node" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-sdk-node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-sdk-node" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-sdk-node" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-sdk-node" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="channel" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="statecou&#9;FILE&#9;file:///opt/goworkspace/src/github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/statecouchdb/statecouchdb.go&#10;hand&#9;FILE&#9;file:///opt/goworkspace/src/github.com/hyperledger/fabric/core/chaincode/shim/handler.go" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/artifacts" />
+      <recent name="$PROJECT_DIR$/import" />
+      <recent name="$PROJECT_DIR$/artifacts/src/github.com/trace/go" />
+      <recent name="$PROJECT_DIR$/artifacts/src/github.com/supervision/go" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55a0de5b-2481-4d62-ac89-d951485ab3fd" name="Default" comment="" />
+      <created>1546928942320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546928942320</updated>
+      <workItem from="1546928944769" duration="2546000" />
+      <workItem from="1546931644419" duration="277000" />
+      <workItem from="1546931957868" duration="128391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="131214000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="949" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.503663" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290398" sideWeight="0.496337" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3969555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.503663" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3969555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.496337" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="125" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/shell/scripts/step3org.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/shell/org8.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/shell/scripts/utils.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="187" column="131" lean-forward="false" selection-start-line="187" selection-start-column="131" selection-end-line="187" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/shell/main.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4131">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="155" column="16" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org45yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org4.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org5.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org6.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org8.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org9.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/genesis.block">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12968">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/network_setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="215" column="9" lean-forward="false" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/bootstrap.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/generateArtifacts.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/channel/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/network-config.yamlt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3566">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/farm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/room.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/slaughterhouse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/freezingworkshop.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/aciddrainageworkshop.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="7" lean-forward="false" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/splitworkshop.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="128" column="19" lean-forward="false" selection-start-line="128" selection-start-column="19" selection-end-line="128" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/coldstorage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="119" column="17" lean-forward="false" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/coldchaintransporter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="17" lean-forward="false" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import/saleterminal.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/org7.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/network-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="390" column="34" lean-forward="false" selection-start-line="390" selection-start-column="34" selection-end-line="390" selection-end-column="34" />
+          <folding>
+            <marker date="1547394629664" expanded="true" signature="1931:3376" ph="peers: &lt;4 keys&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/network-config-template.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="390" column="34" lean-forward="false" selection-start-line="390" selection-start-column="34" selection-end-line="390" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runApp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-ca-client/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/upgrade-chaincode-supervision.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="256" column="4" lean-forward="false" selection-start-line="256" selection-start-column="4" selection-end-line="256" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/upgrade-chaincode-trace.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-client/lib/Peer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="88" column="31" lean-forward="false" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-ca-client/lib/Remote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="127" column="52" lean-forward="false" selection-start-line="127" selection-start-column="52" selection-end-line="127" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-client/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fabric-client/config/default.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="91" lean-forward="false" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/instantiate-chaincode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="80" column="32" lean-forward="false" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="529">
+          <caret line="191" column="2" lean-forward="false" selection-start-line="191" selection-start-column="2" selection-end-line="191" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="640" column="4" lean-forward="false" selection-start-line="471" selection-start-column="0" selection-end-line="640" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/down.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/endorsement-policy-supervision.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/endorsement-policy-trace.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sdkUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trace2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="48" lean-forward="false" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="387">
+            <caret line="198" column="79" lean-forward="false" selection-start-line="198" selection-start-column="79" selection-end-line="198" selection-end-column="79" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trace.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>fabric-sdk-node</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

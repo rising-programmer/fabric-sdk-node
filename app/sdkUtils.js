@@ -4,39 +4,6 @@ let invoke = require('./invoke-transaction');
 let queryUtil = require('./query');
 let helper = require('./helper');
 let logger = helper.getLogger('sdkUtils');
-let crypto = require('crypto');
-let Enum = require('enum');
-let config = require('../config.json');
-let request = require('request');
-
-
-let myEnum = new Enum({
-    VALID: 0,
-    NIL_ENVELOPE: 1,
-    BAD_PAYLOAD: 2,
-    BAD_COMMON_HEADER: 3,
-    BAD_CREATOR_SIGNATURE: 4,
-    INVALID_ENDORSER_TRANSACTION: 5,
-    INVALID_CONFIG_TRANSACTION: 6,
-    UNSUPPORTED_TX_PAYLOAD: 7,
-    BAD_PROPOSAL_TXID: 8,
-    DUPLICATE_TXID: 9,
-    ENDORSEMENT_POLICY_FAILURE: 10,
-    MVCC_READ_CONFLICT: 11,
-    PHANTOM_READ_CONFLICT: 12,
-    UNKNOWN_TX_TYPE: 13,
-    TARGET_CHAIN_NOT_FOUND: 14,
-    MARSHAL_TX_ERROR: 15,
-    NIL_TXACTION: 16,
-    EXPIRED_CHAINCODE: 17,
-    CHAINCODE_VERSION_CONFLICT: 18,
-    BAD_HEADER_EXTENSION: 19,
-    BAD_CHANNEL_HEADER: 20,
-    BAD_RESPONSE_PAYLOAD: 21,
-    BAD_RWSET: 22,
-    ILLEGAL_WRITESET: 23,
-    INVALID_OTHER_REASON: 255
-});
 
 /**
  * 数据上链接口
@@ -47,17 +14,26 @@ let save = function (req, res) {
     let data = req.body.data;
     //通道名称，默认mychannel
     let channelName = req.body.channelName || "mychannel";
-    //智能合约名称，默认example
-    let chaincodeName = req.body.chaincodeName || "example";
+    //智能合约名称，默认trace
+    let chaincodeName = req.body.chaincodeName || "trace";
+    //父合约
+    let parentChaincodeName = req.body.parentChaincodeName || "";
     //peer节点url
-    let peersUrls = req.body.peersUrls;
+    let peersUrls = req.body.peersUrls || ["peer0.org1.example.com"];
     //智能合约方法名
     let functionName = req.body.functionName || "save";
     //用户
     let username = req.username;
     //组织
     let orgName = req.orgname;
+    //类名
+    let className = req.body.className;
+    //父类名
+    let parentClassName = req.body.parentClassName || "";
     //数据检查
+    if(reqUtils.isEmpty(className)){
+        throw new errors.NotFound("className");
+    }
     if(reqUtils.isEmpty(data)){
         throw new errors.NotFound("Key data");
     }
@@ -65,24 +41,9 @@ let save = function (req, res) {
         throw new errors.SystemError("data must be an array");
     }
     for (let i = 0; i < data.length; i++) {
-        let args = [];
-        args[0] = data[i].objectType;
-        args[1] = data[i].id;
-        args[2] = data[i].timestamp;
-        args[3] = data[i].hash;
-        args[5] = data[i].blockId;
-        args[6] = data[i].deviceId;
-        if(args[0] !== "business" && args[0] !== "iot"){
-            throw new errors.SystemError("objectType is not defined correctly，expect iot or business")
-        }
-        if(reqUtils.isEmpty(args[1])){
+        let id = data[i].id;
+        if(reqUtils.isEmpty(id)){
             throw new errors.SystemError("id argument must be a non-empty string");
-        }
-        if(reqUtils.isEmpty(args[2])){
-            throw new errors.SystemError("timestamp argument must be a non-empty string");
-        }
-        if(reqUtils.isEmpty(args[3])){
-            throw new errors.SystemError("hash argument must be a non-empty string");
         }
     }
 
@@ -91,17 +52,24 @@ let save = function (req, res) {
     let ret = [];
 
     //数据上链
+    for (let i = 0; i < data.length; i++) {
+        let args = [];
+        args[0] = className;
+        args[1] = data[i].id;
+        let jsonObject = {
+            "className": className,
+            "key": args[1],
+            "data": data[i]
+        };
+        args[2] = JSON.stringify(jsonObject);
+        args[3] = parentClassName;
+        args[4] = parentChaincodeName;
 
-    let invokePromise = invoke.invokeChaincode(peersUrls, channelName, chaincodeName, functionName, data, username, orgName).then(message => {
-        ret.push(message);
-    });
-    promises.push(invokePromise);
-    // let args = [];
-    // args[0] = data;
-    // let invokePromise = invoke.invokeChaincode(peersUrls, channelName, chaincodeName, functionName, args, username, orgName).then(message => {
-    //     ret.push(message);
-    // });
-    // promises.push(invokePromise);
+        let invokePromise = invoke.invokeChaincode(peersUrls, channelName, chaincodeName, functionName, args, username, orgName).then(message => {
+            ret.push(message);
+        });
+        promises.push(invokePromise);
+    }
     Promise.all(promises).then(message => {
         res.json(reqUtils.getResponse("操作成功",200,ret));
     }).catch(err => {
@@ -110,406 +78,260 @@ let save = function (req, res) {
 };
 
 /**
- * 数据查询
+ * 溯源查询
  * @param req
  * @param res
  * @return {Promise.<void>}
  */
-let query = async function (req,res) {
-    let peer = req.body.peer || "peer0.org1.example.com";
-    let chaincodeName = req.body.chaincodeName || "example";
-    let channelName = req.body.channelName || "mychannel";
-    let fcn = "query";
-    //数据类型
-    let objectType = req.body.objectType;
-    //查询起止时间
-    let start = req.body.start;
-    let end = req.body.end;
-    //主键
+let trace = async function (req, res){
+    let queryJson = require("../trace2.json");
     let id = req.body.id;
-    //区块ID
-    let blockId = req.body.blockId;
-    //设备ID
-    let deviceId = req.body.deviceId;
-    //默认查询器
-    let selector = {};
-    //默认查询条件，过滤索引数据
-    selector.timestamp = {"$gte": 1};
-    //构造查询条件
-    if(!reqUtils.isEmpty(objectType)){
-        selector.objectType = objectType;
-    }
-    if(!reqUtils.isEmpty(start) && !reqUtils.isEmpty(end)){
-        selector.timestamp = {"$gte": start,"$lte":end};
-    }else if(!reqUtils.isEmpty(start)){
-        selector.timestamp = {"$gte": start};
-    }else if (!reqUtils.isEmpty(end)){
-        selector.timestamp = {"$lte": end};
-    }
-    if(!reqUtils.isEmpty(id)){
-        selector.id = id;
-    }
-    if(!reqUtils.isEmpty(blockId)){
-        selector.blockId = blockId;
-    }
-    if(!reqUtils.isEmpty(deviceId)){
-        selector.deviceId = deviceId;
-    }
-    let args = {};
-    args.selector = selector;
-    args.use_index = ["_design/indexTimestampDoc","indexTimestamp"];
-    args.sort = [{"objectType":"asc"},{"timestamp": "asc"}];
-    args.fields = ["objectType","hash","id","timestamp","blockId","deviceId","transactionId"];
-    try {
-        let datas = await queryUtil.queryChaincode(peer,channelName,chaincodeName,args,fcn,req.username,req.orgname);
-        let ret = [];
-        if(!reqUtils.isEmpty(datas)){
-            datas = JSON.parse(datas);
-            for(let i = 0; i < datas.length ; i++){
-                ret.push(datas[i].Record);
-            }
-        }
-        res.send(reqUtils.getResponse("操作成功",200,ret));
-    }catch (error){
-        res.send(reqUtils.getErrorMsg(error.message));
-    }
+    richQuery(queryJson,id,{},[],req.username,req.orgname).then(function (message) {
+        return res.json(reqUtils.getResponse("操作成功!",200,message[queryJson.className]));
+    }).catch(err=>{
+        return res.json(reqUtils.getErrorMsg(err));
+    })
 };
 
 /**
- * HASH校验
- * @param req
- * @param res
- * @return {Promise.<void>}
+ * 富查询(溯源)
+ * @param queryJson
+ * @param id
+ * @param resultJson
+ * @param errors
+ * @param username
+ * @param orgname
+ * @param conditions
+ * @return {*}
  */
-let hashVerify = function (req,res) {
-    let peer = req.body.peer || "peer0.org1.example.com";
-    let chaincodeName = req.body.chaincodeName || "example";
-    let channelName = req.body.channelName || "mychannel";
-    let fcn = req.body.fcn || "query";
-    //数据类型
-    let objectType = req.body.objectType;
-    //查询起止时间
-    let start = req.body.start;
-    let end = req.body.end;
-    //数据hash
-    let hash = req.body.hash;
-    //区块ID
-    let blockId = req.body.blockId;
-    //设备ID
-    let deviceId = req.body.deviceId;
-    //参数校验
-    if(reqUtils.isEmpty(objectType)){
-        throw new errors.SystemError("objectType argument must be a non-empty string");
-    }
-    if(reqUtils.isEmpty(start)){
-        throw new errors.SystemError("start argument must be a non-empty string");
-    }
-    if(reqUtils.isEmpty(end)){
-        throw new errors.SystemError("end argument must be a non-empty string");
-    }
-    if(reqUtils.isEmpty(hash)){
-        throw new errors.SystemError("hash argument must be a non-empty string");
-    }
-    //默认查询器
-    let selector = {};
-    //默认查询条件，过滤索引数据
-    selector.timestamp = {"$gte": 1};
-    //构造查询条件
-    if(!reqUtils.isEmpty(objectType)){
-        selector.objectType = objectType;
-    }
-    if(!reqUtils.isEmpty(start) && !reqUtils.isEmpty(end)){
-        selector.timestamp = {"$gte": start,"$lte":end};
-    }else if(!reqUtils.isEmpty(start)){
-        selector.timestamp = {"$gte": start};
-    }else if (!reqUtils.isEmpty(end)){
-        selector.timestamp = {"$lte": end};
-    }
-    if(!reqUtils.isEmpty(blockId)){
-        selector.blockId = blockId;
-    }
-    if(!reqUtils.isEmpty(deviceId)){
-        selector.deviceId = deviceId;
-    }
-    let args = {};
-    args.selector = selector;
-    args.use_index = ["_design/indexTimestampDoc","indexTimestamp"];
-    args.sort = [{"objectType":"asc"},{"timestamp": "asc"}];
-    args.fields = ["objectType","hash","id","timestamp","blockId","deviceId","transactionId"];
-    queryUtil.queryChaincode(peer,channelName,chaincodeName,args,fcn,req.username,req.orgname).then(datas=>{
-        let ret = [];
-        let target;
-        if(!reqUtils.isEmpty(datas)){
-            datas = JSON.parse(datas);
-            let sha256 = crypto.createHash("sha256");
-            for(let i = 0; i < datas.length ; i++){
-                sha256.update(datas[i].Record["hash"]);
-                ret.push(datas[i].Record);
-            }
-            target = sha256.digest("hex");
-        }
-        if(hash === target){
-            res.send(reqUtils.getResponse("HASH校验成功",200,ret));
-        }else{
-            logger.error("original hash:%s,target hash:%s",hash,target);
-            res.send(reqUtils.getErrorMsg("HASH校验失败"));
-        }
-    }).catch(error=>{
-        res.send(reqUtils.getErrorMsg(error.message));
-    });
-};
-
-/**
- * 根据transactionId查询
- * @param req
- * @param res
- */
-let queryByTransactionId = function (req,res) {
-    //transactionId
-    let transactionId = req.body.transactionId;
-    let peer = req.body.peer || "peer0.org1.example.com";
-    let channelName = "mychannel";
-    //参数校验
-    if(reqUtils.isEmpty(transactionId)){
-        throw new errors.SystemError("transactionId argument must be a non-empty string");
-    }
-    //根据txIx查询transaction
-    queryUtil.getTransactionByID(peer, channelName, transactionId, req.username, req.orgname).then(message=>{
-        if (message && message.transactionEnvelope) {
-            //数据解析
-            let entity = message.transactionEnvelope.payload.data.actions[0].payload.action.proposal_response_payload.extension.results.ns_rwset[0].rwset.writes[1].value;
-            res.send(reqUtils.getResponse("查询成功",200,JSON.parse(entity)));
+function richQuery(queryJson,id,resultJson,errors,username,orgname,conditions) {
+    if (queryJson === undefined)
+        return "Error , queryJson is undefined";
+    if (id === undefined)
+        return "Error , query id is undefined";
+    //类名
+    let className = queryJson.className;
+    //构造查询语句
+    let condition = {};
+    if(conditions){
+        condition = conditions;
+    }else{
+        condition.className = className;
+        let searchField = queryJson.searchField;
+        if (searchField === undefined) {
+            condition.Key = id.toString();
         } else {
-            res.send(reqUtils.getErrorMsg("查询失败",404));
+            condition["data." + searchField] = id;
         }
-    }).catch(error=>{
-        logger.error("queryByTransactionId failed ! transactionId = %s,errorMsg=%s",transactionId,JSON.stringify(error));
-        res.send(reqUtils.getErrorMsg("查询失败",500));
-    });
-};
-
-/**
- * 格式化交易
- * @param txObj
- * @return {{txhash: *, validation_code: string, payload_proposal_hash: string, creator_msp_id: *, endorser_msp_id: Array, chaincodename: string, type: *, createdt: Date, read_set: *, write_set: *, channelname: *}}
- */
-function formatTransaction (txObj){
-    let txid = txObj.payload.header.channel_header.tx_id;
-    let validation_code = '';
-    let payload_proposal_hash = '';
-    let chaincode = '';
-    let rwset;
-    let readSet;
-    let writeSet;
-    let mspId = [];
-    let blockId;
-    let deviceId;
-    let timestamp;
-    let channelName = txObj.payload.header.channel_header.channel_id;
-    if (txid !== undefined && txid !== '') {
-        validation_code = myEnum.get(
-            parseInt(txObj.validationCode)
-        ).key;
     }
-    if (txObj.payload.data.actions !== undefined) {
-        payload_proposal_hash =
-            txObj.payload.data.actions[0].payload.action.proposal_response_payload
-                .proposal_hash;
+    console.log(condition);
+    return queryChaincode(username,orgname,condition,queryJson.chaincodeName)
+        .then((returnJson) => {
+            //单次查询结果放入整体查询结果中
+            let docs = returnJson;
+            if (docs.length > 0) {
+                if(queryJson.parentClass){
+                    if(!resultJson[className]){
+                        resultJson[className] = [];
+                    }
+                    for (let i = 0; i < docs.length; i++) {
+                        resultJson[className].push(docs[i]);
+                    }
 
-        chaincode =
-            txObj.payload.data.actions[0].payload.action.proposal_response_payload
-                .extension.chaincode_id.name;
-        rwset =
-            txObj.payload.data.actions[0].payload.action.proposal_response_payload
-                .extension.results.ns_rwset;
-        readSet = rwset.map(i => {
-            return {
-                chaincode: i.namespace,
-                set: i.rwset.reads
-            };
-        });
-        writeSet = rwset.map(i => {
-            return {
-                chaincode: i.namespace,
-                set: i.rwset.writes
-            };
-        });
-        try{
-            data = JSON.parse(writeSet[0].set[1].value);
-            blockId = data.blockId;
-            deviceId = data.deviceId;
-            timestamp = new Date(data.timestamp * 1000).toLocaleString();
-        }catch (error){
-            logger.error(error);
-        }
-        mspId = txObj.payload.data.actions[0].payload.action.endorsements.map(
-            i => {
-                return i.endorser.Mspid;
+                    for (let i = 0; i < docs.length; i++) {
+                        for(let j = 0 ; j < resultJson[queryJson.parentClass].length; j ++){
+                            let parent = resultJson[queryJson.parentClass][j];
+                            let doc = docs[i];
+                            if(!parent[className]){
+                                parent[className] = [];
+                            }
+                            if(parent[queryJson.sourceField] === doc[queryJson.searchField]){
+                                let exist = false;
+                                for(let j =0 ; j < parent[className].length ; j ++) {
+                                    if (parent[className][j].id === doc.id) {
+                                        exist = true;
+                                        break;
+                                    }
+                                }
+                                if (!exist) {
+                                    parent[className].push(doc);
+                                }
+                            }
+                        }
+                    }
+
+                }else{
+                    if(!resultJson[className]){
+                        resultJson[className] = [];
+                    }
+                    for (let i = 0; i < docs.length; i++) {
+                        resultJson[className].push(docs[i]);
+                    }
+                }
+            } else {
+                return resultJson;
             }
-        );
-    }
-    return  {
-        txhash: txObj.payload.header.channel_header.tx_id,
-        validation_code: validation_code,
-        payload_proposal_hash: payload_proposal_hash,
-        creator_msp_id: txObj.payload.header.signature_header.creator.Mspid,
-        endorser_msp_id: mspId,
-        chaincodename: chaincode,
-        type: txObj.payload.header.channel_header.typeString,
-        createdt: new Date(txObj.payload.header.channel_header.timestamp),
-        read_set: readSet,
-        write_set: writeSet,
-        channelname: channelName,
-        blockId:blockId,
-        deviceId:deviceId,
-        timestamp:timestamp
-    };
+            //进行后续查询
+            if (queryJson.children === undefined) {
+                return resultJson;
+            } else {
+                let promises = [];
+                let len = queryJson.children.length;
+                for (let i = 0; i < len; i++) {
+                    let child = queryJson.children[i];
+                    child.parentClass = className;
+                    let sourceField = child.sourceField;
+
+                    for(let j=0;j<docs.length;j++){
+                        let condition = child.condition;
+                        if(condition && child.className === "room"){
+                            condition = {};
+                            condition.className = child.className;
+                            condition["data.roomId"] = docs[j].roomId;
+                            let startTime = docs[j].receiveDate;
+                            let endTime = docs[j].sendDate;
+                             condition["data.createDate"] = {"$gte": startTime,"$lte": endTime};
+                        }
+                        promises.push(richQuery(child, docs[j][sourceField],resultJson,errors,username,orgname,condition));
+                    }
+                }
+                //所有异步查询结束后返回
+                return Promise.all(promises)
+                    .then(function () {
+                        if (errors.length === 0) {
+                            return resultJson;
+                        } else {
+                            return "Error," + errors.toString();
+                        }
+                    })
+            }
+        });
 }
 
 /**
- * 数据分页查询
+ * 智能合约查询方法(溯源)
+ * @param username
+ * @param orgname
+ * @param selector
+ * @param chaincodeName
+ * @param peer
+ * @param channelName
+ * @param fcn
+ * @return {Promise.<*>}
+ */
+let queryChaincode = async function(username,orgname,selector,chaincodeName,peer,channelName,fcn){
+    peer =  peer || "peer0.org1.example.com";
+    chaincodeName = chaincodeName || "trace";
+    channelName = channelName || "mychannel";
+    fcn = fcn || "query";
+    if (reqUtils.isEmpty(selector)){
+        return "Error , queryJson is undefined";
+    }
+
+    let args = {};
+    args.selector = selector;
+    try {
+        let datas = await queryUtil.queryChaincode(peer,channelName,chaincodeName,JSON.stringify(args),fcn,username,orgname);
+        let ret = [];
+        if(!reqUtils.isEmpty(datas)){
+            datas = JSON.parse(datas);
+            for(let i = 0; i < datas.length ; i++){
+                ret.push(datas[i].Record.data);
+            }
+        }
+        return ret;
+    }catch (error){
+        return error.message;
+    }
+};
+
+/**
+ * 获取总记录数
+ * @param username
+ * @param orgname
+ * @param selector
+ * @param chaincodeName
+ * @param peer
+ * @param channelName
+ * @param pageSize
+ * @param bookmark
+ * @param totalCount
+ * @return {Promise.<*>}
+ */
+let getTotalCount = async function(username,orgname,selector,chaincodeName,peer,channelName,pageSize,bookmark,totalCount){
+    peer =  peer || "peer0.org1.example.com";
+    chaincodeName = chaincodeName || "trace";
+    channelName = channelName || "mychannel";
+    let fcn = "queryTotalCount";
+    if (reqUtils.isEmpty(selector)){
+        return "Error , selector is undefined";
+    }
+
+    let args = {};
+    args.selector = selector;
+    try {
+        let datas = await queryUtil.queryChaincode(peer,channelName,chaincodeName,JSON.stringify(args),fcn,username,orgname,pageSize,bookmark);
+
+        let ret = [];
+        let response = reqUtils.getResponse("操作成功",200,ret);
+
+        if(!reqUtils.isEmpty(datas)){
+            let arrs = datas.split("_");
+            let paginationArr = JSON.parse(arrs[1]);
+            response.totalCount = parseInt(paginationArr[0].ResponseMetadata.RecordsCount);
+            response.bookmark = paginationArr[0].ResponseMetadata.Bookmark;
+            totalCount += response.totalCount;
+            if(response.totalCount < pageSize){
+                return totalCount;
+            }else{
+                return getTotalCount(username,orgname,selector,chaincodeName,peer,channelName,pageSize,response.bookmark,totalCount);
+            }
+        }
+    }catch (error){
+        return error.message;
+    }
+};
+
+/**
+ * 分页查询
  * @param req
  * @param res
  * @return {Promise.<void>}
  */
 let queryWithPagination = async function (req,res) {
-    let peers = req.body.peers || "peer0.org1.example.com";
-    let chaincodeName = req.params.chaincodeName || "example";
-    let channelName = req.params.channelName || "mychannel";
-    let fcn = req.body.fcn || "query";
-    //区块ID
-    let blockId = req.body.blockId;
-    //设备ID
-    let deviceId = req.body.deviceId;
-    //页码
-    let pageNo = req.body.pageNo || 1;
-    //分页大小
+    let peer = req.body.peer || "peer0.org1.example.com";
+    let chaincodeName = req.body.chaincodeName || "supervision";
+    let channelName = req.body.channelName || "mychannel";
+    let fcn = "queryWithPagination";
+    let selector = req.body.selector;
     let pageSize = req.body.pageSize || 10;
-    //数据长度
-    let total;
-    //交易IDs
-    let transactionIds = req.body.transactionIds;
-    //数据类型
-    let objectType = req.body.objectType;
-    //查询起止时间
-    let start = req.body.start;
-    let end = req.body.end;
+    let bookmark = req.body.bookmark || "";
 
-    //默认查询器
-    let selector = {};
-    //默认查询条件，过滤索引数据
-    selector.timestamp = {"$gte": 1};
-    //构造查询条件
-    if(!reqUtils.isEmpty(objectType)){
-        selector.objectType = objectType;
-    }
-    if(!reqUtils.isEmpty(start) && !reqUtils.isEmpty(end)){
-        selector.timestamp = {"$gte": start,"$lte":end};
-    }else if(!reqUtils.isEmpty(start)){
-        selector.timestamp = {"$gte": start};
-    }else if (!reqUtils.isEmpty(end)){
-        selector.timestamp = {"$lte": end};
-    }
-    if(!reqUtils.isEmpty(transactionIds)) {
-        if(typeof transactionIds === "string"){
-            transactionIds = JSON.parse(transactionIds);
-        }
-        if(transactionIds.length > 0){
-            selector.transactionId = {"$in": transactionIds};
-        }
-    }
-    if(!reqUtils.isEmpty(blockId)){
-        selector.blockId = blockId;
-    }
-    if(!reqUtils.isEmpty(deviceId)){
-        selector.deviceId = deviceId;
-    }
     let args = {};
     args.selector = selector;
-    args.use_index = ["_design/indexTimestampDoc","indexTimestamp"];
-    args.sort = [{"objectType":"asc"},{"timestamp": "asc"}];
-    args.fields = ["objectType","hash","id","timestamp","transactionId","blockId","deviceId"];
     try {
-        let datas = await queryUtil.queryChaincode(peers,channelName,chaincodeName,args,fcn,req.username,req.orgname);
-        let ret = [];
-        if(!reqUtils.isEmpty(datas)){
-            datas = JSON.parse(datas);
-            total = datas.length;
-            for(let i = 0; i < datas.length ; i++){
-                ret.push(datas[i].Record["transactionId"]);
-            }
-            //数据截取(用于分页)
-            ret = ret.slice((pageNo-1)*pageNo,pageNo * pageSize);
-        }
-        let response = await queryByTransactionIds(ret);
-        if(!response || response.status !== 200){
-            res.json(reqUtils.getErrorMsg("查询失败"));
-            return;
-        }
-        let rows = response.rows;
-        for(let i = 0; i< rows.length ; i ++){
-            for(let j = 0 ; j < datas.length ; j ++){
-                let data = datas[j].Record;
-                if(rows[i].txhash === data.transactionId){
-                    rows[i].blockId = data.blockId;
-                    rows[i].deviceId = data.deviceId;
-                    rows[i].timestamp = data.timestamp;
-                }
-            }
-        }
+        let datas = await queryUtil.queryChaincode(peer,channelName,chaincodeName,JSON.stringify(args),fcn,req.username,req.orgname,pageSize,bookmark);
 
-        rows = rows.sort(compare("createdt")).reverse();
-        res.json({
-            "code":  200,
-            "message": "查询成功",
-            "data": rows,
-            "total":total,
-            "pageNo":pageNo,
-            "pageSize":pageSize
-        });
+        let ret = [];
+        let response = reqUtils.getResponse("操作成功",200,ret);
+
+        if(!reqUtils.isEmpty(datas)){
+            let arrs = datas.split("_");
+            let dataArr = arrs[0];
+            let paginationArr = JSON.parse(arrs[1]);
+            response.bookmark = paginationArr[0].ResponseMetadata.Bookmark;
+            response.totalCount = await getTotalCount(req.username,req.orgname,selector,chaincodeName,peer,channelName,100000,"",0);
+            dataArr = JSON.parse(dataArr);
+            for(let i = 0; i < dataArr.length ; i++){
+                ret.push(dataArr[i].Record.data);
+            }
+        }
+        res.send(response);
     }catch (error){
         res.send(reqUtils.getErrorMsg(error.message));
     }
 };
 
-/**
- * JSON数据属性排序比较器
- * @param property
- * @return {Function}
- */
-function compare(property){
-    return function(a,b){
-        let value1 = a[property];
-        let value2 = b[property];
-        return value1 - value2;
-    }
-}
-
-let  queryByTransactionIds = async function (txIds){
-    return new Promise(function(resolve,reject) {
-        let headerOpt = {
-            "content-type": "application/json",
-        };
-        let params = {};
-        params.transactionIds = txIds;
-        let options = {
-            uri: config.explorerApiUrl + "/api/v1/txList",
-            method: 'POST',
-            json: true,
-            body: params,
-            headers: headerOpt
-        };
-        request(options, function (error, response, body) {
-            if(error){
-                reject(error);
-            }
-            resolve(body);
-        });
-    });
-};
-
-exports.queryByTransactionId = queryByTransactionId;
-exports.hashVerify = hashVerify;
 exports.save = save;
-exports.query = query;
 exports.queryWithPagination = queryWithPagination;
+exports.trace = trace;

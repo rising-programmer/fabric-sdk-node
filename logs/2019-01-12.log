@@ -1,0 +1,1 @@
+[2019-01-12 19:36:44.915] [ERROR] app - -------->>>>>> error {"name":"UnauthorizedError","message":"jwt expired","code":401,"status":401,"inner":{"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2019-01-11T13:58:16.000Z"}}

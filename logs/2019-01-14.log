@@ -1,0 +1,108 @@
+[2019-01-14 00:04:05.064] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-14 00:04:05.067] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-14 00:04:06.666] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-14 00:04:06.666] [INFO] app - ------->>>>>> request params {"id":"3"}
+[2019-01-14 00:04:06.668] [INFO] console - { className: 'saleterminal', 'data.productId': '3' }
+[2019-01-14 00:04:07.026] [INFO] console - [{"Key":"saleterminal3", "Record":{"className":"saleterminal","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-19 00:00:00","roomId":"8","sendDate":"2019-01-19 23:59:59"},"key":"3"}}]
+[2019-01-14 00:04:07.027] [INFO] console - { className: 'coldchaintransporter', 'data.id': '3' }
+[2019-01-14 00:04:07.072] [INFO] console - [{"Key":"coldchaintransporter3", "Record":{"className":"coldchaintransporter","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-18 00:00:00","roomId":"7","sendDate":"2019-01-18 23:59:59"},"key":"3"}}]
+[2019-01-14 00:04:07.073] [INFO] console - { className: 'room', 'data.roomId': '7' }
+[2019-01-14 00:04:07.077] [INFO] console - { className: 'coldstorage', 'data.id': '3' }
+[2019-01-14 00:04:07.156] [INFO] console - []
+[2019-01-14 00:04:07.158] [INFO] console - [{"Key":"coldstorage3", "Record":{"className":"coldstorage","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-17 00:00:00","roomId":"6","sendDate":"2019-01-17 23:59:59"},"key":"3"}}]
+[2019-01-14 00:04:07.158] [INFO] console - { className: 'room', 'data.roomId': '6' }
+[2019-01-14 00:04:07.203] [INFO] console - []
+[2019-01-14 00:06:01.429] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-14 00:06:01.431] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-14 00:06:04.259] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-14 00:06:04.260] [INFO] app - ------->>>>>> request params {"id":"3"}
+[2019-01-14 00:06:04.262] [INFO] console - { className: 'saleterminal', 'data.productId': '3' }
+[2019-01-14 00:06:04.611] [INFO] console - [{"Key":"saleterminal3", "Record":{"className":"saleterminal","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-19 00:00:00","roomId":"8","sendDate":"2019-01-19 23:59:59"},"key":"3"}}]
+[2019-01-14 00:06:04.611] [INFO] console - { className: 'coldchaintransporter', 'data.id': '3' }
+[2019-01-14 00:06:04.667] [INFO] console - [{"Key":"coldchaintransporter3", "Record":{"className":"coldchaintransporter","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-18 00:00:00","roomId":"7","sendDate":"2019-01-18 23:59:59"},"key":"3"}}]
+[2019-01-14 00:06:04.668] [INFO] console - { className: 'room', 'data.roomId': '7' }
+[2019-01-14 00:06:04.672] [INFO] console - { className: 'coldstorage', 'data.id': '3' }
+[2019-01-14 00:06:04.758] [INFO] console - []
+[2019-01-14 00:06:04.759] [INFO] console - [{"Key":"coldstorage3", "Record":{"className":"coldstorage","data":{"batchNumber":"ZJ007","id":"3","parentId":"3","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-17 00:00:00","roomId":"6","sendDate":"2019-01-17 23:59:59"},"key":"3"}}]
+[2019-01-14 00:06:04.759] [INFO] console - { className: 'room', 'data.roomId': '6' }
+[2019-01-14 00:06:04.762] [INFO] console - { className: 'splitworkshop', 'data.id': '3' }
+[2019-01-14 00:06:04.881] [INFO] console - []
+[2019-01-14 00:06:04.882] [INFO] console - [{"Key":"splitworkshop3", "Record":{"className":"splitworkshop","data":{"batchNumber":"ZJ007","id":"3","parentId":"1","parentProductId":"1","productId":"3","productName":"猪脚1-1","receiveDate":"2019-01-16 00:00:00","roomId":"5","sendDate":"2019-01-16 23:59:59"},"key":"3"}}]
+[2019-01-14 00:06:04.882] [INFO] console - { className: 'room', 'data.roomId': '5' }
+[2019-01-14 00:06:04.896] [INFO] console - { className: 'aciddrainageworkshop', 'data.id': '1' }
+[2019-01-14 00:06:04.994] [INFO] console - [{"Key":"aciddrainageworkshop1", "Record":{"className":"aciddrainageworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-15 00:00:00","roomId":"4","sendDate":"2019-01-15 23:59:59"},"key":"1"}}]
+[2019-01-14 00:06:04.994] [INFO] console - { className: 'room', 'data.roomId': '4' }
+[2019-01-14 00:06:04.998] [INFO] console - { className: 'freezingworkshop', 'data.id': '1' }
+[2019-01-14 00:06:05.005] [INFO] console - []
+[2019-01-14 00:06:05.081] [INFO] console - []
+[2019-01-14 00:06:05.082] [INFO] console - [{"Key":"freezingworkshop1", "Record":{"className":"freezingworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-14 00:00:00","roomId":"3","sendDate":"2019-01-14 23:59:59"},"key":"1"}}]
+[2019-01-14 00:06:05.083] [INFO] console - { className: 'room', 'data.roomId': '3' }
+[2019-01-14 00:06:05.086] [INFO] console - { className: 'slaughterhouse', 'data.id': '1' }
+[2019-01-14 00:06:05.296] [INFO] console - [{"Key":"slaughterhouse1", "Record":{"className":"slaughterhouse","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-13 00:00:00","roomId":"2","sendDate":"2019-01-13 23:59:59"},"key":"1"}}]
+[2019-01-14 00:06:05.296] [INFO] console - { className: 'room', 'data.roomId': '2' }
+[2019-01-14 00:06:05.299] [INFO] console - { className: 'farm', 'data.id': '1' }
+[2019-01-14 00:06:05.302] [INFO] console - []
+[2019-01-14 00:06:05.375] [INFO] console - []
+[2019-01-14 00:06:05.381] [INFO] console - []
+[2019-01-14 00:08:31.482] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-14 00:08:31.483] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-14 00:08:31.483] [INFO] console - { className: 'saleterminal', 'data.productId': '1' }
+[2019-01-14 00:08:31.576] [INFO] console - [{"Key":"saleterminal1", "Record":{"className":"saleterminal","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-19 00:00:00","roomId":"8","sendDate":"2019-01-19 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:31.577] [INFO] console - { className: 'coldchaintransporter', 'data.id': '1' }
+[2019-01-14 00:08:31.632] [INFO] console - [{"Key":"coldchaintransporter1", "Record":{"className":"coldchaintransporter","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-18 00:00:00","roomId":"7","sendDate":"2019-01-18 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:31.632] [INFO] console - { className: 'room', 'data.roomId': '7' }
+[2019-01-14 00:08:31.637] [INFO] console - { className: 'coldstorage', 'data.id': '1' }
+[2019-01-14 00:08:31.734] [INFO] console - [{"Key":"coldstorage1", "Record":{"className":"coldstorage","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-17 00:00:00","roomId":"6","sendDate":"2019-01-17 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:31.735] [INFO] console - { className: 'room', 'data.roomId': '6' }
+[2019-01-14 00:08:31.738] [INFO] console - { className: 'splitworkshop', 'data.id': '1' }
+[2019-01-14 00:08:31.752] [INFO] console - []
+[2019-01-14 00:08:32.147] [INFO] console - []
+[2019-01-14 00:08:32.155] [INFO] console - [{"Key":"splitworkshop1", "Record":{"className":"splitworkshop","data":{"batchNumber":"ZT007","id":"1","parentId":"1","parentProductId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-16 00:00:00","roomId":"5","sendDate":"2019-01-16 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:32.156] [INFO] console - { className: 'room', 'data.roomId': '5' }
+[2019-01-14 00:08:32.159] [INFO] console - { className: 'aciddrainageworkshop', 'data.id': '1' }
+[2019-01-14 00:08:32.245] [INFO] console - [{"Key":"aciddrainageworkshop1", "Record":{"className":"aciddrainageworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-15 00:00:00","roomId":"4","sendDate":"2019-01-15 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:32.245] [INFO] console - { className: 'room', 'data.roomId': '4' }
+[2019-01-14 00:08:32.250] [INFO] console - { className: 'freezingworkshop', 'data.id': '1' }
+[2019-01-14 00:08:32.253] [INFO] console - []
+[2019-01-14 00:08:32.319] [INFO] console - []
+[2019-01-14 00:08:32.328] [INFO] console - [{"Key":"freezingworkshop1", "Record":{"className":"freezingworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-14 00:00:00","roomId":"3","sendDate":"2019-01-14 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:32.328] [INFO] console - { className: 'room', 'data.roomId': '3' }
+[2019-01-14 00:08:32.330] [INFO] console - { className: 'slaughterhouse', 'data.id': '1' }
+[2019-01-14 00:08:32.451] [INFO] console - [{"Key":"slaughterhouse1", "Record":{"className":"slaughterhouse","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-13 00:00:00","roomId":"2","sendDate":"2019-01-13 23:59:59"},"key":"1"}}]
+[2019-01-14 00:08:32.452] [INFO] console - { className: 'room', 'data.roomId': '2' }
+[2019-01-14 00:08:32.463] [INFO] console - { className: 'farm', 'data.id': '1' }
+[2019-01-14 00:08:32.484] [INFO] console - []
+[2019-01-14 00:08:32.593] [INFO] console - []
+[2019-01-14 00:08:32.594] [INFO] console - []
+[2019-01-14 00:09:24.274] [INFO] app - ****************** SERVER STARTED ************************
+[2019-01-14 00:09:24.280] [INFO] app - ***************  http://localhost:4000  ******************
+[2019-01-14 00:10:14.722] [INFO] app -  ------>>>>>> new request for /api/v1/trace
+[2019-01-14 00:10:14.723] [INFO] app - ------->>>>>> request params {"id":"1"}
+[2019-01-14 00:10:14.724] [INFO] console - { className: 'saleterminal', 'data.productId': '1' }
+[2019-01-14 00:10:15.074] [INFO] console - [{"Key":"saleterminal1", "Record":{"className":"saleterminal","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-19 00:00:00","roomId":"8","sendDate":"2019-01-19 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.075] [INFO] console - { className: 'coldchaintransporter', 'data.id': '1' }
+[2019-01-14 00:10:15.127] [INFO] console - [{"Key":"coldchaintransporter1", "Record":{"className":"coldchaintransporter","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-18 00:00:00","roomId":"7","sendDate":"2019-01-18 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.127] [INFO] console - { className: 'room', 'data.roomId': '7' }
+[2019-01-14 00:10:15.132] [INFO] console - { className: 'coldstorage', 'data.id': '1' }
+[2019-01-14 00:10:15.201] [INFO] console - []
+[2019-01-14 00:10:15.208] [INFO] console - [{"Key":"coldstorage1", "Record":{"className":"coldstorage","data":{"batchNumber":"ZT007","id":"1","parentId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-17 00:00:00","roomId":"6","sendDate":"2019-01-17 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.208] [INFO] console - { className: 'room', 'data.roomId': '6' }
+[2019-01-14 00:10:15.211] [INFO] console - { className: 'splitworkshop', 'data.id': '1' }
+[2019-01-14 00:10:15.287] [INFO] console - []
+[2019-01-14 00:10:15.291] [INFO] console - [{"Key":"splitworkshop1", "Record":{"className":"splitworkshop","data":{"batchNumber":"ZT007","id":"1","parentId":"1","parentProductId":"1","productId":"1","productName":"猪头1-1","receiveDate":"2019-01-16 00:00:00","roomId":"5","sendDate":"2019-01-16 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.292] [INFO] console - { className: 'room', 'data.roomId': '5' }
+[2019-01-14 00:10:15.295] [INFO] console - { className: 'aciddrainageworkshop', 'data.id': '1' }
+[2019-01-14 00:10:15.451] [INFO] console - []
+[2019-01-14 00:10:15.451] [INFO] console - [{"Key":"aciddrainageworkshop1", "Record":{"className":"aciddrainageworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-15 00:00:00","roomId":"4","sendDate":"2019-01-15 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.452] [INFO] console - { className: 'room', 'data.roomId': '4' }
+[2019-01-14 00:10:15.455] [INFO] console - { className: 'freezingworkshop', 'data.id': '1' }
+[2019-01-14 00:10:15.625] [INFO] console - []
+[2019-01-14 00:10:15.637] [INFO] console - [{"Key":"freezingworkshop1", "Record":{"className":"freezingworkshop","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-14 00:00:00","roomId":"3","sendDate":"2019-01-14 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.637] [INFO] console - { className: 'room', 'data.roomId': '3' }
+[2019-01-14 00:10:15.646] [INFO] console - { className: 'slaughterhouse', 'data.id': '1' }
+[2019-01-14 00:10:15.731] [INFO] console - []
+[2019-01-14 00:10:15.735] [INFO] console - [{"Key":"slaughterhouse1", "Record":{"className":"slaughterhouse","data":{"batchNumber":"CS007","id":"1","parentId":"1","productId":"1","productName":"猪猪一号","receiveDate":"2019-01-13 00:00:00","roomId":"2","sendDate":"2019-01-13 23:59:59"},"key":"1"}}]
+[2019-01-14 00:10:15.735] [INFO] console - { className: 'room', 'data.roomId': '2' }
+[2019-01-14 00:10:15.738] [INFO] console - { className: 'farm', 'data.id': '1' }
+[2019-01-14 00:10:15.809] [INFO] console - []
+[2019-01-14 00:10:15.821] [INFO] console - [{"Key":"farm1", "Record":{"className":"farm","data":{"batchNumber":"CS007","createDate":"2019-01-13 00:00:00","id":"1","productId":"1","productName":"猪猪一号","providerId":"provider1"},"key":"1"}}]

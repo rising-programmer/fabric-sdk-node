@@ -1,0 +1,58 @@
+{
+  "chaincodeName":"trace",
+  "className":"room",
+  "data":[
+    {
+      "id":"1"          ,
+      "roomId":"1",
+      "createDate":"2019-01-13 00:00:00",
+      "temperature":"60" ,
+      "humidity":"12"
+    },{
+      "id":"2"          ,
+      "roomId":"2",
+      "createDate":"2019-01-13 00:00:00",
+      "temperature":"60" ,
+      "humidity":"12"
+    },{
+      "id":"3"          ,
+      "roomId":"3",
+      "createDate":"2019-01-14 00:00:00",
+      "temperature":"10" ,
+      "humidity":"12"
+    },{
+      "id":"4"          ,
+      "roomId":"4",
+      "createDate":"2019-01-15 00:00:00",
+      "temperature":"9" ,
+      "humidity":"13"
+    },{
+      "id":"5"          ,
+      "roomId":"5",
+      "createDate":"2019-01-16 00:00:00",
+      "temperature":"7" ,
+      "humidity":"12"
+    },{
+      "id":"6"          ,
+      "roomId":"6",
+      "createDate":"2019-01-17 00:00:00",
+      "temperature":"10" ,
+      "humidity":"12"
+    },{
+      "id":"7"          ,
+      "roomId":"7",
+      "createDate":"2019-01-18 00:00:00",
+      "temperature":"13" ,
+      "humidity":"12"
+    },{
+      "id":"8"          ,
+      "roomId":"8",
+      "createDate":"2019-01-19 00:00:00",
+      "temperature":"10" ,
+      "humidity":"12"
+    }
+  ],
+  "peersUrls":["peer0.org1.example.com"],
+  "username":"test2",
+  "orgname":"Org2"
+}

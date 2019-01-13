@@ -1,0 +1,90 @@
+{
+  "className":"farm",
+  "searchField" : "id",
+  "chaincodeName":"supervision",
+  "children": [{
+      "className": "slaughterhouse",
+      "sourceField": "id",
+      "searchField": "parentId",
+      "chaincodeName":"trace",
+      "children":[
+        {
+          "className": "room",
+          "sourceField": "roomId",
+          "searchField": "roomId",
+          "chaincodeName":"trace",
+          "condition":""
+        },
+        {
+          "className": "freezingworkshop",
+          "sourceField": "id",
+          "searchField": "parentId",
+          "chaincodeName":"trace",
+          "children":[
+            {
+              "className": "room",
+              "sourceField": "roomId",
+              "searchField": "roomId",
+              "chaincodeName":"trace",
+              "condition":""
+            },{
+            "className": "aciddrainageworkshop",
+            "sourceField": "id",
+            "searchField": "parentId",
+            "chaincodeName":"trace",
+            "children":[
+              {
+                "className": "room",
+                "sourceField": "roomId",
+                "searchField": "roomId",
+                "chaincodeName":"trace",
+                "condition":""
+              },{
+              "className": "splitworkshop",
+              "sourceField": "productId",
+              "searchField": "parentProductId",
+              "chaincodeName":"trace",
+              "children":[
+                {
+                  "className": "room",
+                  "sourceField": "roomId",
+                  "searchField": "roomId",
+                  "chaincodeName":"trace",
+                  "condition":""
+                },{
+                "className": "coldstorage",
+                "sourceField": "id",
+                "searchField": "parentId",
+                "chaincodeName":"trace",
+                "children":[
+                  {
+                    "className": "room",
+                    "sourceField": "roomId",
+                    "searchField": "roomId",
+                    "chaincodeName":"trace",
+                    "condition":""
+                  },{
+                  "className": "coldchaintransporter",
+                  "sourceField": "id",
+                  "searchField": "parentId",
+                  "chaincodeName":"trace",
+                  "children":[
+                    {
+                      "className": "room",
+                      "sourceField": "roomId",
+                      "searchField": "roomId",
+                      "chaincodeName":"trace",
+                      "condition":""
+                    },{
+                    "className": "saleterminal",
+                    "sourceField": "id",
+                    "searchField": "parentId",
+                    "chaincodeName":"trace"
+                  }]
+                }]
+              }]
+            }]
+          }]
+      }]
+   }]
+}

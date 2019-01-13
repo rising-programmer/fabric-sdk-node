@@ -90,10 +90,8 @@ app.use(function(req, res, next) {
 });
 
 app.post("/api/v1/save",sdkUtils.save);
-app.post("/api/v1/query",sdkUtils.query);
-app.post("/api/v1/hashVerify",sdkUtils.hashVerify);
-app.post("/api/v1/queryByTransactionId",sdkUtils.queryByTransactionId);
 app.post("/api/v1/queryWithPagination",sdkUtils.queryWithPagination);
+app.post("/api/v1/trace",sdkUtils.trace);
 
 app.use(function (err, req, res, next) {
     if (err.name === 'UnauthorizedError' && err.inner) {
@@ -244,6 +242,7 @@ app.post('/channels/:channelName/chaincodes', async function(req, res) {
     var fcn = req.body.fcn;
     var args = req.body.args;
     var upgrade = req.body.upgrade;
+    var endorsementPolicy = req.body.endorsementPolicy;
     logger.debug('peers  : ' + peers);
     logger.debug('channelName  : ' + channelName);
     logger.debug('chaincodeName : ' + chaincodeName);
@@ -252,6 +251,7 @@ app.post('/channels/:channelName/chaincodes', async function(req, res) {
     logger.debug('fcn  : ' + fcn);
     logger.debug('args  : ' + args);
     logger.debug('upgrade  : ' + upgrade);
+    logger.debug('endorsementPolicy  : ' + endorsementPolicy);
     if (!chaincodeName) {
         res.json(getErrorMessage('\'chaincodeName\''));
         return;
@@ -273,7 +273,7 @@ app.post('/channels/:channelName/chaincodes', async function(req, res) {
         return;
     }
 
-    let message = await instantiate.instantiateChaincode(peers, channelName, chaincodeName, chaincodeVersion, chaincodeType, fcn, args, req.username, req.orgname, upgrade);
+    let message = await instantiate.instantiateChaincode(peers, channelName, chaincodeName, chaincodeVersion, chaincodeType, fcn, args, req.username, req.orgname, upgrade,endorsementPolicy);
     res.send(message);
 });
 // Invoke transaction on chaincode on target peers
@@ -413,7 +413,7 @@ app.get('/chaincodes', async function(req, res) {
     var installType = req.query.type;
     logger.debug('================ GET INSTALLED CHAINCODES ======================');
 
-    let message = await query.getInstalledChaincodes(peer, null, 'installed', req.username, req.orgname)
+    let message = await query.getInstalledChaincodes(peer, null, installType, req.username, req.orgname)
     res.send(message);
 });
 // Query to fetch channels

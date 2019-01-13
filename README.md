@@ -75,7 +75,111 @@ curl -s -X POST \
 - message : more detailed message for response
 - token   : json web token
 
+### Data construct
 
+#### 养殖厂（farm）
+```
+Id          String 初始流转编号
+providerId  String 商家ID
+createDate  String 出厂日期
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+```
+
+#### 车间（workshop）
+```
+Id          String 
+temperature String 温度
+humidity    String 湿度
+roomId      String 车间ID
+createDate  String 创建时间
+```
+
+#### 屠宰厂（slaughterhouse）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
+
+#### 速冻车间（freezingworkshop）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
+
+#### 排酸车间（aciddrainageworkshop）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
+
+#### 分割车间（splitworkshop）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentProductId    String 商品父ID
+parentId    String 上轮流转编号
+```
+
+#### 冷库（coldstorage）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
+
+#### 冷链运输车（coldchaintransporter）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
+
+#### 销售终端（saleTerminal）
+```
+Id          String 
+roomId      String 车间ID
+receiveDate String 接收货物时间
+sendDate    String 转出货物时间
+batchNumber String 批次号
+productName String 商品名称
+productId   String 商品ID
+parentId    String 上轮流转编号
+```
 
 ### Network configuration considerations
 

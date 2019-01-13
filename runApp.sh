@@ -30,7 +30,7 @@ function dkrm(){
 function rmCache(){
     rm -rf ./fabric-client-kv-org*
     rm -rf /tmp/fabric-client-kv-org*
-   # rm -rf mount/*
+    rm -rf mount/*
 }
 
 function restartNetwork() {
@@ -65,8 +65,11 @@ installNodeModules
 export DIR=$PWD
 cd ./artifacts/channel/
 sh network_setup.sh updateNetworkConfiguration
+sh network_setup.sh init
 cd ${DIR}
 
 #杀掉node进程&启动node服务
 ps -e|grep app.js|awk '{print $1}' | xargs -n1 kill -9
 nohup node app.js  > app.log 2>&1 &
+sleep 5
+./init.sh

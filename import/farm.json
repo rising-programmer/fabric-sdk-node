@@ -1,0 +1,80 @@
+{
+  "chaincodeName":"supervision",
+  "className":"farm",
+  "data":[
+    {
+      "id":"1"          ,
+      "providerId":"provider1",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪一号" ,
+      "productId":"1"
+    },{
+      "id":"2"          ,
+      "providerId":"provider1",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪二号" ,
+      "productId":"2"
+    },{
+      "id":"3"          ,
+      "providerId":"provider1",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪三号" ,
+      "productId":"3"
+    },{
+      "id":"4"          ,
+      "providerId":"provider1",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪四号" ,
+      "productId":"4"
+    },{
+      "id":"5"          ,
+      "providerId":"provider1",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪五号" ,
+      "productId":"5"
+    },{
+      "id":"6"          ,
+      "providerId":"provider6",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪六号" ,
+      "productId":"6"
+    },{
+      "id":"7"          ,
+      "providerId":"provider7",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪七号" ,
+      "productId":"7"
+    },{
+      "id":"8"          ,
+      "providerId":"provider8",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪八号" ,
+      "productId":"8"
+    },{
+      "id":"9"          ,
+      "providerId":"provider9",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪九号" ,
+      "productId":"9"
+    },{
+      "id":"10"          ,
+      "providerId":"provider10",
+      "createDate":"2019-01-13 00:00:00",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪十号" ,
+      "productId":"10"
+    }
+  ],
+  "peersUrls":["peer0.org1.example.com","peer0.org2.example.com"],
+  "username":"test2",
+  "orgname":"Org2"
+}

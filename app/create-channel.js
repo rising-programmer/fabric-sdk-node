@@ -32,8 +32,6 @@ var createChannel = async function(channelName, channelConfigPath, username, org
 		// extract the channel config bytes from the envelope to be signed
 		var channelConfig = client.extractChannelConfig(envelope);
 
-		console.log("====>"+channelConfig);
-
 		//Acting as a client in the given organization provided with "orgName" param
 		// sign the channel config bytes as "endorsement", this is required by
 		// the orderer's channel creation policy

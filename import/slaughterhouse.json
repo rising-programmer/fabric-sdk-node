@@ -1,0 +1,101 @@
+{
+  "chaincodeName":"trace",
+  "parentChaincodeName":"supervision",
+  "className":"slaughterhouse",
+  "parentClassName":"farm",
+  "data":[
+    {
+      "id":"1"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪一号" ,
+      "productId":"1",
+      "parentId":"1"
+    },{
+      "id":"2"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪二号" ,
+      "productId":"2",
+      "parentId":"2"
+    },{
+      "id":"3"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪三号" ,
+      "productId":"3",
+      "parentId":"3"
+    },{
+      "id":"4"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪四号" ,
+      "productId":"4",
+      "parentId":"4"
+    },{
+      "id":"5"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪五号" ,
+      "productId":"5",
+      "parentId":"5"
+    },{
+      "id":"6"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪六号" ,
+      "productId":"6",
+      "parentId":"6"
+    },{
+      "id":"7"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪七号" ,
+      "productId":"7",
+      "parentId":"7"
+    },{
+      "id":"8"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪八号" ,
+      "productId":"8",
+      "parentId":"8"
+    },{
+      "id":"9"          ,
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪九号" ,
+      "productId":"9",
+      "parentId":"9"
+    },{
+      "id":"10"          ,
+      "roomId":"2",
+      "receiveDate":"2019-01-13 00:00:00",
+      "sendDate":"2019-01-13 23:59:59",
+      "batchNumber":"CS007" ,
+      "productName":"猪猪十号" ,
+      "productId":"10",
+      "parentId":"10"
+    }
+  ],
+  "peersUrls":["peer0.org3.example.com"],
+  "username":"test3",
+  "orgname":"Org3"
+}
