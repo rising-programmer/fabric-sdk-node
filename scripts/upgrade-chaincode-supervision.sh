@@ -44,7 +44,7 @@ function setSupervisionChaincodePath(){
 	case "$LANGUAGE" in
 		"golang")
 		CC_NAME="supervision"
-		CC_VERSION="v1"
+		CC_VERSION="v0"
 		CC_SRC_PATH="github.com/chaincode/go"
 		CC_META_PATH=""
 		;;

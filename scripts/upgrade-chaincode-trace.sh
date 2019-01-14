@@ -38,7 +38,7 @@ function setChaincodePath(){
 	case "$LANGUAGE" in
 		"golang")
 		CC_NAME="trace"
-		CC_VERSION="v6"
+		CC_VERSION="v0"
 		CC_SRC_PATH="github.com/chaincode/go"
 		CC_META_PATH="artifacts/META-INF"
 		;;

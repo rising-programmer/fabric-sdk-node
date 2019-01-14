@@ -69,9 +69,11 @@ func getQueryResultForQueryStringWithPagination(stub shim.ChaincodeStubInterface
 	if err != nil {
 		return nil, err
 	}
-	buffer.WriteString("_")
+	buffer.WriteString(",")
 	//添加分页元数据
 	bufferWithPaginationInfo := addPaginationMetadataToQueryResults(buffer, responseMetadata)
+	buffer.WriteString("}")
+
 
 	fmt.Printf("- getQueryResultForQueryString queryResult:\n%s\n", bufferWithPaginationInfo.String())
 
@@ -81,6 +83,9 @@ func getQueryResultForQueryStringWithPagination(stub shim.ChaincodeStubInterface
 // ===========格式化查询结果集================================================================================
 func constructQueryResponseFromIterator(resultsIterator shim.StateQueryIteratorInterface) (*bytes.Buffer, error) {
 	var buffer bytes.Buffer
+	buffer.WriteString("{")
+	buffer.WriteString("\"data\":")
+
 	buffer.WriteString("[")
 
 	bArrayMemberAlreadyWritten := false
@@ -92,12 +97,12 @@ func constructQueryResponseFromIterator(resultsIterator shim.StateQueryIteratorI
 		if bArrayMemberAlreadyWritten == true {
 			buffer.WriteString(",")
 		}
-		buffer.WriteString("{\"Key\":")
+		buffer.WriteString("{\"key\":")
 		buffer.WriteString("\"")
 		buffer.WriteString(queryResponse.Key)
 		buffer.WriteString("\"")
 
-		buffer.WriteString(", \"Record\":")
+		buffer.WriteString(", \"record\":")
 		buffer.WriteString(string(queryResponse.Value))
 		buffer.WriteString("}")
 		bArrayMemberAlreadyWritten = true
@@ -109,14 +114,14 @@ func constructQueryResponseFromIterator(resultsIterator shim.StateQueryIteratorI
 
 // ============添加分页元数据===============================================================================
 func addPaginationMetadataToQueryResults(buffer *bytes.Buffer, responseMetadata *pb.QueryResponseMetadata) *bytes.Buffer {
-	buffer.WriteString("[{\"ResponseMetadata\":{\"RecordsCount\":")
+	buffer.WriteString("\"responseMetadata\":{\"recordsCount\":")
 	buffer.WriteString("\"")
 	buffer.WriteString(fmt.Sprintf("%v", responseMetadata.FetchedRecordsCount))
 	buffer.WriteString("\"")
-	buffer.WriteString(", \"Bookmark\":")
+	buffer.WriteString(", \"bookmark\":")
 	buffer.WriteString("\"")
 	buffer.WriteString(responseMetadata.Bookmark)
-	buffer.WriteString("\"}}]")
+	buffer.WriteString("\"}")
 
 	return buffer
 }

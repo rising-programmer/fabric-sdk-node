@@ -67,8 +67,9 @@ func getTotalCountForQueryString(stub shim.ChaincodeStubInterface, queryString s
 	defer resultsIterator.Close()
 
 	var buffer bytes.Buffer
-
+	buffer.WriteString("{")
 	bufferWithPaginationInfo := addPaginationMetadataToQueryResults(&buffer, responseMetadata)
+	buffer.WriteString("}")
 
 	fmt.Printf("- getQueryResultForQueryString queryResult:\n%s\n", bufferWithPaginationInfo.String())
 

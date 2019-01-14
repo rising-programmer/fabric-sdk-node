@@ -276,10 +276,8 @@ let getTotalCount = async function(username,orgname,selector,chaincodeName,peer,
         let response = reqUtils.getResponse("操作成功",200,ret);
 
         if(!reqUtils.isEmpty(datas)){
-            let arrs = datas.split("_");
-            let paginationArr = JSON.parse(arrs[1]);
-            response.totalCount = parseInt(paginationArr[0].ResponseMetadata.RecordsCount);
-            response.bookmark = paginationArr[0].ResponseMetadata.Bookmark;
+            datas = JSON.parse(datas);
+            response.totalCount = parseInt(datas.responseMetadata.recordsCount);
             totalCount += response.totalCount;
             if(response.totalCount < pageSize){
                 return totalCount;
@@ -316,14 +314,11 @@ let queryWithPagination = async function (req,res) {
         let response = reqUtils.getResponse("操作成功",200,ret);
 
         if(!reqUtils.isEmpty(datas)){
-            let arrs = datas.split("_");
-            let dataArr = arrs[0];
-            let paginationArr = JSON.parse(arrs[1]);
-            response.bookmark = paginationArr[0].ResponseMetadata.Bookmark;
+            datas = JSON.parse(datas);
+            response.bookmark = datas.responseMetadata.bookmark;
             response.totalCount = await getTotalCount(req.username,req.orgname,selector,chaincodeName,peer,channelName,100000,"",0);
-            dataArr = JSON.parse(dataArr);
-            for(let i = 0; i < dataArr.length ; i++){
-                ret.push(dataArr[i].Record.data);
+            for(let i = 0; i < datas.data.length ; i++){
+                ret.push(datas.data[i].record.data);
             }
         }
         res.send(response);

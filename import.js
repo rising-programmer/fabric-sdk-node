@@ -12,14 +12,6 @@ if (!fs.existsSync(dirname)) {
     throw new Error("path not exist");
 }
 
-let files = fs.readdirSync(dirname);
-let size = files.length;
-
-console.log("dir size:",size);
-
-console.log(files[0]);
-
-
 /**
  * 获取token
  */
@@ -90,6 +82,7 @@ async function main(){
     let coldstorage = require(dirname + "/" + "coldstorage.json");
     let coldchaintransporter = require(dirname + "/" + "coldchaintransporter.json");
     let saleterminal = require(dirname + "/" + "saleterminal.json");
+    let room = require(dirname + "/" + "room.json");
     let message = await onechain(farm);
     console.log(message);
     message = await onechain(slaughterhouse);
@@ -105,6 +98,8 @@ async function main(){
     message = await onechain(coldchaintransporter);
     console.log(message);
     message = await onechain(saleterminal);
+    console.log(message);
+    message = await onechain(room);
     console.log(message);
 }
 
