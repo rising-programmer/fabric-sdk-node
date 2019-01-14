@@ -84,7 +84,7 @@ let save = function (req, res) {
  * @return {Promise.<void>}
  */
 let trace = async function (req, res){
-    let queryJson = require("../trace2.json");
+    let queryJson = require("../trace.json");
     let id = req.body.id;
     richQuery(queryJson,id,{},[],req.username,req.orgname).then(function (message) {
         return res.json(reqUtils.getResponse("操作成功!",200,message[queryJson.className]));

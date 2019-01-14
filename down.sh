@@ -10,7 +10,7 @@ function dkrm(){
 }
 
 docker rm -f $(docker ps -aq)
-#dkrm
+dkrm
 
 rm -rf ./mount/*
 
