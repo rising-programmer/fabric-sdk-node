@@ -51,7 +51,7 @@ function installPreDependence()
 	apt-get install -y git
 
 	echoColor "Start Install curl"
-	apt-get install curl
+	apt-get install curl -y
 
 	echoColor "Finish installed dependency items."
 	echoColor "-----------------------------------------------------------------"
