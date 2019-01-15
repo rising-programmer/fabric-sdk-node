@@ -354,10 +354,10 @@ echoColor " ___) |   | |    / ___ \  |  _ <    | |  "
 echoColor "|____/    |_|   /_/   \_\ |_| \_\   |_|  "
 
 #updateOS
-#installPreDependence
-#installGolang
-#installNode
-#installDocker
+installPreDependence
+installGolang
+installNode
+installDocker
 downloadImages
 #downloadBinaries
 
