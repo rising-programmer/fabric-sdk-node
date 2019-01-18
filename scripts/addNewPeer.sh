@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
 jq --version > /dev/null 2>&1
 if [ $? -ne 0 ]; then
@@ -9,10 +14,14 @@ fi
 
 starttime=$(date +%s)
 
+# Endorsement policy:
+ENDORSEMENT_POLICY_TRACE=$(cat ../endorsement-policy-trace.json | tr "\n" " ")
+ENDORSEMENT_POLICY_SUPERVISION=$(cat ../endorsement-policy-supervision.json | tr "\n" " ")
+
 # Print the usage message
 function printHelp () {
   echo "Usage: "
-  echo "  ./testAPIs.sh -l golang|node"
+  echo "  ./init.sh -l golang|node"
   echo "    -l <language> - chaincode language (defaults to \"golang\")"
 }
 # Language defaults to "golang"
@@ -35,14 +44,33 @@ function setChaincodePath(){
 	LANGUAGE=`echo "$LANGUAGE" | tr '[:upper:]' '[:lower:]'`
 	case "$LANGUAGE" in
 		"golang")
-		CC_SRC_PATH="github.com/example/go"
-		CC_META_PATH="artifacts/META-INF"
+		CC_NAME="trace"
 		CC_VERSION="v0"
+		CC_SRC_PATH="github.com/chaincode/go"
+		CC_META_PATH="artifacts/META-INF"
 		;;
 		"node")
-		CC_SRC_PATH="$PWD/artifacts/src/github.com/example/node"
-		CC_META_PATH="$PWD/artifacts/META-INF"
+		CC_SRC_PATH="$PWD/artifacts/src/github.com/chaoncode/node"
+		CC_META_PATH="$PWD/artifacts/src/github.com/chaoncode/node/META-INF/statedb/couchdb/indexes"
+		;;
+		*) printf "\n ------ Language $LANGUAGE is not supported yet ------\n"$
+		exit 1
+	esac
+}
+
+##set chaincode path
+function setSupervisionChaincodePath(){
+	LANGUAGE=`echo "$LANGUAGE" | tr '[:upper:]' '[:lower:]'`
+	case "$LANGUAGE" in
+		"golang")
+		CC_NAME="supervision"
 		CC_VERSION="v0"
+		CC_SRC_PATH="github.com/chaincode/go"
+		CC_META_PATH=""
+		;;
+		"node")
+		CC_SRC_PATH="$PWD/artifacts/src/github.com/chaoncode/node"
+		CC_META_PATH="$PWD/artifacts/src/github.com/chaoncode/node/META-INF/statedb/couchdb/indexes"
 		;;
 		*) printf "\n ------ Language $LANGUAGE is not supported yet ------\n"$
 		exit 1
@@ -63,8 +91,6 @@ echo
 echo "ORG1 token is $ORG1_TOKEN"
 echo
 
-echo
-echo
 echo "POST request Join channel on Org1"
 echo
 curl -s -X POST \
@@ -85,7 +111,26 @@ curl -s -X POST \
   -H "content-type: application/json" \
   -d "{
 	\"peers\": [\"peer1.org1.example.com\"],
-	\"chaincodeName\":\"example\",
+	\"chaincodeName\":\"$CC_NAME\",
+	\"chaincodePath\":\"$CC_SRC_PATH\",
+	\"metadataPath\":\"$CC_META_PATH\",
+	\"chaincodeType\": \"$LANGUAGE\",
+	\"chaincodeVersion\":\"$CC_VERSION\"
+}"
+echo
+echo
+
+setSupervisionChaincodePath
+
+echo "POST Install chaincode on Org1"
+echo
+curl -s -X POST \
+  http://localhost:4000/chaincodes \
+  -H "authorization: Bearer $ORG1_TOKEN" \
+  -H "content-type: application/json" \
+  -d "{
+	\"peers\": [\"peer1.org1.example.com\"],
+	\"chaincodeName\":\"$CC_NAME\",
 	\"chaincodePath\":\"$CC_SRC_PATH\",
 	\"metadataPath\":\"$CC_META_PATH\",
 	\"chaincodeType\": \"$LANGUAGE\",
