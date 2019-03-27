@@ -69,7 +69,8 @@ sh network_setup.sh updateNetworkConfiguration
 cd ${DIR}
 
 #杀掉node进程&启动node服务
-ps -e|grep app.js|awk '{print $1}' | xargs -n1 kill -9
+kill -9 $(ps -ef | grep app.js | grep -v grep | awk '{print $2}')
+sleep 1
 nohup node app.js  > app.log 2>&1 &
 sleep 5
 ./init.sh
