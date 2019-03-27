@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+
+  kafka1:
+    extends:
+      file: docker-orderer-kafka-base.yaml
+      service: kafka
+    container_name: kafka1
+    hostname: kafka1
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_DEFAULT_REPLICATION_FACTOR=3
+      - KAFKA_MIN_INSYNC_REPLICAS=2
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper0:2181,zookeeper1:2181,zookeeper2:2181
+    ports:
+      - 9092:9092
+    extra_hosts:
+      - "kafka0:10.122.144.44"
+      - "kafka1:10.122.144.45"
+      - "kafka2:10.122.144.46"
+      - "kafka3:10.122.144.47"
+      - "zookeeper0:10.122.144.44"
+      - "zookeeper1:10.122.144.45"
+      - "zookeeper2:10.122.144.46"
+
+

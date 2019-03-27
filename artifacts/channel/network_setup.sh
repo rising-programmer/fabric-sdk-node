@@ -159,12 +159,40 @@ function dcrm(){
 
 ## 启动orderer1节点
 function startOrderer1(){
-    sh network_setup.sh up -f docker-orderer-kafka.yaml
+    sh network_setup.sh up -f docker-orderer1.yaml
 }
 
 ## 启动orderer2节点
 function startOrderer2(){
     sh network_setup.sh up -f docker-orderer2.yaml
+}
+
+function startKafka0(){
+    sh network_setup.sh up -f docker-kafka0.yaml
+}
+
+function startKafka1(){
+    sh network_setup.sh up -f docker-kafka1.yaml
+}
+
+function startKafka2(){
+    sh network_setup.sh up -f docker-kafka2.yaml
+}
+
+function startKafka3(){
+    sh network_setup.sh up -f docker-kafka3.yaml
+}
+
+function startZookeeper0(){
+    sh network_setup.sh up -f docker-zookeeper0.yaml
+}
+
+function startZookeeper1(){
+    sh network_setup.sh up -f docker-zookeeper1.yaml
+}
+
+function startZookeeper2(){
+    sh network_setup.sh up -f docker-zookeeper2.yaml
 }
 
 ## 启动peer1节点和ca1节点
@@ -251,27 +279,23 @@ function startPeerForOrg9(){
 ## 启动服务器1上的服务
 function startServer1(){
    startOrderer1
+   startPeerForOrg1
 }
 
 ## 启动服务器2上的服务
 function startServer2(){
    startOrderer2
-   startPeerForOrg4
+   startPeerForOrg2
 }
 
 ## 启动服务器3上的服务
 function startServer3(){
-   startPeerForOrg1
+   startPeerForOrg3
 }
 
 ## 启动服务器4上的服务
 function startServer4(){
-   startPeerForOrg2
-}
-
-## 启动服务器5上的服务
-function startServer5(){
-   startPeerForOrg3
+   startPeerForOrg4
 }
 
 function init(){
@@ -279,12 +303,11 @@ startServer1
 startServer2
 startServer3
 startServer4
-startServer5
-startPeerForOrg5
-startPeerForOrg6
-startPeerForOrg7
-startPeerForOrg8
-startPeerForOrg9
+#startPeerForOrg5
+#startPeerForOrg6
+#startPeerForOrg7
+#startPeerForOrg8
+#startPeerForOrg9
 }
 
 # Parse commandline args
@@ -345,20 +368,13 @@ elif [ "${MODE}" == "createPeerTemplate" ]; then ##create peer yaml file
 elif [ "${MODE}" == "createCATemplate" ]; then ##create peer yaml file
   createCATemplate
 elif [ "${MODE}" == "startServer1" ];then ## start server 1
-    dcrm
     startServer1
 elif [ "${MODE}" == "startServer2" ];then ## start server 2
-    dcrm
     startServer2
 elif [ "${MODE}" == "startServer3" ];then ## start server 3
-    dcrm
     startServer3
 elif [ "${MODE}" == "startServer4" ];then ## start server 4
-    dcrm
     startServer4
-elif [ "${MODE}" == "startServer5" ];then ## start server 5
-    dcrm
-    startServer5
 elif [ "${MODE}" == "startPeer5" ];then ## start server 5
     startPeerForOrg5
 elif [ "${MODE}" == "startPeer6" ];then ## start server 5
@@ -367,6 +383,20 @@ elif [ "${MODE}" == "updateNetworkConfiguration" ];then
     updateNetworkConfiguration
 elif [ "${MODE}" == "init" ];then
     init
+elif [ "${MODE}" == "startZookeeper0" ];then
+    startZookeeper0
+elif [ "${MODE}" == "startZookeeper1" ];then
+    startZookeeper1
+elif [ "${MODE}" == "startZookeeper2" ];then
+    startZookeeper2
+elif [ "${MODE}" == "startKafka0" ];then
+    startKafka0
+elif [ "${MODE}" == "startKafka1" ];then
+    startKafka1
+elif [ "${MODE}" == "startKafka2" ];then
+    startKafka2
+elif [ "${MODE}" == "startKafka3" ];then
+    startKafka3
 else
   printHelp
   exit 1

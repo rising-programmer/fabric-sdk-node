@@ -2,8 +2,8 @@ version: '2'
 
 services:
 
-  orderer2.example.com:
-      container_name: orderer2.example.com
+  orderer1.example.com:
+      container_name: orderer1.example.com
       image: hyperledger/fabric-orderer:$IMAGE_TAG
       environment:
         - ORDERER_GENERAL_LOGLEVEL=ERROR
@@ -27,12 +27,12 @@ services:
         - 7050:7050
       volumes:
           - ./channel:/etc/hyperledger/configtx
-          - ./channel/crypto-config/ordererOrganizations/example.com/orderers/orderer2.example.com/:/etc/hyperledger/crypto/orderer
+          - ./channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/:/etc/hyperledger/crypto/orderer
           - ./channel/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/:/etc/hyperledger/crypto/peerOrg1
           - ./channel/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/:/etc/hyperledger/crypto/peerOrg2
           - ./channel/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/:/etc/hyperledger/crypto/peerOrg3
           - ./channel/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/:/etc/hyperledger/crypto/peerOrg4
-          - ../mount/orderer2/var/hyperledger/production:/var/hyperledger/production
+          - ../mount/orderer1/var/hyperledger/production:/var/hyperledger/production
       extra_hosts:
         - "kafka0:10.122.144.44"
         - "kafka1:10.122.144.45"

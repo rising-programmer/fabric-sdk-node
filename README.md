@@ -26,9 +26,72 @@ Once you have completed the above setup, you will have provisioned a local netwo
 * An Orderer genesis block (genesis.block) and channel configuration transaction (mychannel.tx) has been pre generated using the **configtxgen** tool from Hyperledger Fabric and placed within the artifacts folder. More details regarding the configtxgen tool are available [here](http://hyperledger-fabric.readthedocs.io/en/latest/build_network.html#configuration-transaction-generator).
 
 ### Set up network environment
+
+### Start zookeeper
+* 172.17.86.233
 ```
-cd fabric-node-sdk/artifacts/channel
-sh network_setup.sh init
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startZookeeper0
+```
+* 172.17.86.234
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startZookeeper1
+```
+* 172.17.86.235
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startZookeeper2
+```
+
+### Start kafka
+* 172.17.86.233
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startKafka0
+```
+* 172.17.86.234
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startKafka1
+```
+* 172.17.86.235
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startKafka2
+```
+* 172.17.86.236
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startKafka3
+```
+
+### Start Peer/Orderer
+* 172.17.86.233
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startServer1
+```
+
+* 172.17.86.234
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startServer2
+```
+* 172.17.86.235
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startServer3
+```
+* 172.17.86.236
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startServer4
+```
+* 172.17.86.237
+```
+cd trace_kingland/artifacts/channel
+sh network_setup.sh startServer5
 ```
 
 * This launches the required network on your machine
@@ -74,112 +137,6 @@ curl -s -X POST \
 - code : 200 means success, other representatives fail 
 - message : more detailed message for response
 - token   : json web token
-
-### Data construct
-
-#### 养殖厂（farm）
-```
-Id          String 初始流转编号
-providerId  String 商家ID
-createDate  String 出厂日期
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-```
-
-#### 车间（workshop）
-```
-Id          String 
-temperature String 温度
-humidity    String 湿度
-roomId      String 车间ID
-createDate  String 创建时间
-```
-
-#### 屠宰厂（slaughterhouse）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
-
-#### 速冻车间（freezingworkshop）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
-
-#### 排酸车间（aciddrainageworkshop）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
-
-#### 分割车间（splitworkshop）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentProductId    String 商品父ID
-parentId    String 上轮流转编号
-```
-
-#### 冷库（coldstorage）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
-
-#### 冷链运输车（coldchaintransporter）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
-
-#### 销售终端（saleTerminal）
-```
-Id          String 
-roomId      String 车间ID
-receiveDate String 接收货物时间
-sendDate    String 转出货物时间
-batchNumber String 批次号
-productName String 商品名称
-productId   String 商品ID
-parentId    String 上轮流转编号
-```
 
 ### Network configuration considerations
 

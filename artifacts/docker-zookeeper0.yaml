@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+
+  zookeeper0:
+    extends:
+      file: docker-orderer-kafka-base.yaml
+      service: zookeeper
+    container_name: zookeeper0
+    environment:
+      - ZOO_MY_ID=1
+      - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888 server.3=zookeeper2:2888:3888
+    ports:
+      - 2181:2181
+      - 2888:2888
+      - 3888:3888
+    extra_hosts:
+      - "kafka0:10.122.144.44"
+      - "kafka1:10.122.144.45"
+      - "kafka2:10.122.144.46"
+      - "kafka3:10.122.144.47"
+      - "zookeeper0:0.0.0.0"
+      - "zookeeper1:10.122.144.45"
+      - "zookeeper2:10.122.144.46"
+
