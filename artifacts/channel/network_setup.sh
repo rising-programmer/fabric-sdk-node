@@ -206,28 +206,28 @@ function startPeerForOrg1(){
 
 ## 启动peer2节点和ca2节点
 function startPeerForOrg2(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer2.yaml -o org2 -M Org2MSP -p peer0.org2.example.com -c couchdb2 -P 6984 -l 8051 -e 8053
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer2.yaml -o org2 -M Org2MSP -p peer0.org2.example.com -c couchdb2 -P 5984 -l 7051 -e 7053
     sh network_setup.sh up -f docker-compose-peer2.yaml
 
-    sh network_setup.sh createCATemplate -f docker-compose-ca-org2.yaml -o org2.example.com -P 8054
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org2.yaml -o org2.example.com -P 7054
     sh network_setup.sh up -f docker-compose-ca-org2.yaml
 }
 
 ## 启动peer3节点和ca3节点
 function startPeerForOrg3(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer3.yaml -o org3 -M Org3MSP -p peer0.org3.example.com -c couchdb3 -P 7984 -l 9051 -e 9053
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer3.yaml -o org3 -M Org3MSP -p peer0.org3.example.com -c couchdb3 -P 5984 -l 7051 -e 7053
     sh network_setup.sh up -f docker-compose-peer3.yaml
     
-    sh network_setup.sh createCATemplate -f docker-compose-ca-org3.yaml -o org3.example.com -P 9054
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org3.yaml -o org3.example.com -P 7054
     sh network_setup.sh up -f docker-compose-ca-org3.yaml
 }
 
 ## 启动peer4节点和ca4节点
 function startPeerForOrg4(){
-    sh network_setup.sh createPeerTemplate -f docker-compose-peer4.yaml -o org4 -M Org4MSP -p peer0.org4.example.com -c couchdb4 -P 8984 -l 10051 -e 10053
+    sh network_setup.sh createPeerTemplate -f docker-compose-peer4.yaml -o org4 -M Org4MSP -p peer0.org4.example.com -c couchdb4 -P 5984 -l 7051 -e 7053
     sh network_setup.sh up -f docker-compose-peer4.yaml
 
-    sh network_setup.sh createCATemplate -f docker-compose-ca-org4.yaml -o org4.example.com -P 10054
+    sh network_setup.sh createCATemplate -f docker-compose-ca-org4.yaml -o org4.example.com -P 7054
     sh network_setup.sh up -f docker-compose-ca-org4.yaml
 }
 
