@@ -72,5 +72,3 @@ cd ${DIR}
 kill -9 $(ps -ef | grep app.js | grep -v grep | awk '{print $2}')
 sleep 1
 nohup node app.js  > app.log 2>&1 &
-sleep 5
-./init.sh
