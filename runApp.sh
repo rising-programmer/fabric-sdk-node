@@ -65,7 +65,7 @@ installNodeModules
 export DIR=$PWD
 cd ./artifacts/channel/
 sh network_setup.sh updateNetworkConfiguration
-sh network_setup.sh init
+#sh network_setup.sh init
 cd ${DIR}
 
 #杀掉node进程&启动node服务
