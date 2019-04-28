@@ -1,0 +1,33 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+volumes:
+  orderer2.example.com:
+  orderer3.example.com:
+
+networks:
+  byfn:
+
+version: '2'
+
+services:
+
+  orderer1.example.com:
+      extends:
+        file: base.yaml
+        service: orderer-base
+      container_name: orderer1.example.com
+      volumes:
+          - ./channel/genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+          - ./channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp:/var/hyperledger/orderer/msp
+          - ./channel/crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/tls/:/var/hyperledger/orderer/tls
+          - ../mount/orderer1.example.com:/var/hyperledger/production/orderer
+      ports:
+      - 7050:7050
+#      networks:
+#        - byfn
+#      extra_hosts:
+#        - "orderer1.example.com:172.28.116.66"
+#        - "orderer2.example.com:172.28.116.66"
+#        - "orderer3.example.com:172.28.116.66"
