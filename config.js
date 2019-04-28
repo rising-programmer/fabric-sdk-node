@@ -16,10 +16,10 @@ hfc.setConfigSetting('Org1-connection-profile-path',path.join(__dirname, 'artifa
 hfc.setConfigSetting('Org2-connection-profile-path',path.join(__dirname, 'artifacts', 'org2.yaml'));
 hfc.setConfigSetting('Org3-connection-profile-path',path.join(__dirname, 'artifacts', 'org3.yaml'));
 hfc.setConfigSetting('Org4-connection-profile-path',path.join(__dirname, 'artifacts', 'org4.yaml'));
-hfc.setConfigSetting('Org5-connection-profile-path',path.join(__dirname, 'artifacts', 'org5.yaml'));
-hfc.setConfigSetting('Org6-connection-profile-path',path.join(__dirname, 'artifacts', 'org6.yaml'));
-hfc.setConfigSetting('Org7-connection-profile-path',path.join(__dirname, 'artifacts', 'org7.yaml'));
-hfc.setConfigSetting('Org8-connection-profile-path',path.join(__dirname, 'artifacts', 'org8.yaml'));
-hfc.setConfigSetting('Org9-connection-profile-path',path.join(__dirname, 'artifacts', 'org9.yaml'));
+// hfc.setConfigSetting('Org5-connection-profile-path',path.join(__dirname, 'artifacts', 'org5.yaml'));
+// hfc.setConfigSetting('Org6-connection-profile-path',path.join(__dirname, 'artifacts', 'org6.yaml'));
+// hfc.setConfigSetting('Org7-connection-profile-path',path.join(__dirname, 'artifacts', 'org7.yaml'));
+// hfc.setConfigSetting('Org8-connection-profile-path',path.join(__dirname, 'artifacts', 'org8.yaml'));
+// hfc.setConfigSetting('Org9-connection-profile-path',path.join(__dirname, 'artifacts', 'org9.yaml'));
 // some other settings the application might need to know
 hfc.addConfigFile(path.join(__dirname, 'config.json'));

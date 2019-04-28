@@ -34,6 +34,3 @@ services:
         - ../mount/peer0.org10.example.com/var/hyperledger/production:/var/hyperledger/production
     depends_on:
         - couchdb10
-    extra_hosts:
-        - "orderer1.example.com:172.16.10.18"
-        - "orderer2.example.com:172.16.10.18"

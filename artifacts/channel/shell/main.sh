@@ -18,7 +18,7 @@ export CORE_PEER_TLS_ENABLED=true
 export FABRIC_CFG_PATH=../config
 
 # orgname numberic
-export ORG_NAME_NUMBER=10
+export ORG_NAME_NUMBER=6
 # orgname
 export ORG_NAME="Org${ORG_NAME_NUMBER}"
 # orgname lowercase
@@ -131,7 +131,9 @@ function clearMaterials(){
 # Generate the needed certificates, the genesis block and start the network.
 function networkUp () {
 clearMaterials
-exit 1
+#fetchChannelConfig ${CHANNEL_NAME} config.json
+#scripts/step6org.sh
+#exit 1
    # generate yaml through template
     cp configtx-template.yaml configtx.yaml
     cp crypto-config-template.yaml crypto-config.yaml

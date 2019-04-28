@@ -68,5 +68,7 @@ func (t *SimpleChainCode) save(stub shim.ChaincodeStubInterface, args []string) 
 	if err != nil {
 		return shim.Error(err.Error())
 	}
+	stub.SetEvent("save",bytes)
+	//stub.SetStateValidationParameter()
 	return shim.Success(nil)
 }

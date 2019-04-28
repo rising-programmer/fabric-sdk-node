@@ -34,6 +34,3 @@ services:
         - ../mount/PEER_NAME/var/hyperledger/production:/var/hyperledger/production
     depends_on:
         - COUCHDB_NAME
-#    extra_hosts:
-#        - "orderer1.example.com:172.16.10.18"
-#        - "orderer2.example.com:172.16.10.18"

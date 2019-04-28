@@ -61,15 +61,14 @@ function installNodeModules() {
 }
 
 installNodeModules
-#rmCache
+rmCache
 export DIR=$PWD
 cd ./artifacts/channel/
 sh network_setup.sh updateNetworkConfiguration
 sh network_setup.sh init
 cd ${DIR}
-
 #杀掉node进程&启动node服务
 ps -e|grep app.js|awk '{print $1}' | xargs -n1 kill -9
 nohup node app.js  > app.log 2>&1 &
-sleep 5
-./init.sh
+#sleep 5
+#./init.sh

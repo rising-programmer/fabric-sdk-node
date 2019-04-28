@@ -45,7 +45,7 @@ fi
 # set peer env
 setGlobals 0 1
 
-# Fetch the config for the channel, writing it to config.json
+# Fetch the config for the channel, writing it to config_orderer2.json
 fetchChannelConfig ${CHANNEL_NAME} config.json
 
 # Modify the configuration to append the new org
@@ -53,7 +53,7 @@ set -x
 jq -s '.[0] * {"channel_group":{"groups":{"Application":{"groups": {"'${ORG_NAME}'MSP":.[1]}}}}}' config.json ${ORG_NAME_LOWERCASE}.json > modified_config.json
 set +x
 
-# Compute a config update, based on the differences between config.json and modified_config.json, write it as a transaction to ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
+# Compute a config update, based on the differences between config_orderer2.json and modified_config.json, write it as a transaction to ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
 createConfigUpdate ${CHANNEL_NAME} config.json modified_config.json ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
 
 echo
@@ -62,9 +62,12 @@ echo
 
 echo "Signing config transaction"
 echo
-for ((i=1; i<=$[ORG_NAME_NUMBER -1]; i++))
+#for ((i=1; i<=$[ORG_NAME_NUMBER -1]; i++))
+for ((i=1; i<=1; i++))
 do
-    signConfigtxAsPeerOrg $i ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
+    signConfigtxAsPeerOrg 1 ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
+    signConfigtxAsPeerOrg 2 ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
+#    signConfigtxAsPeerOrg 3 ${ORG_NAME_LOWERCASE}_update_in_envelope.pb
 done
 
 echo

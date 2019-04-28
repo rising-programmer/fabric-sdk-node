@@ -13,7 +13,7 @@
 # npm install --registry=https://registry.npm.taobao.org
 
 ## Default configurations
-export VERSION=1.4.0
+export VERSION=1.4.1
 export CA_VERSION=${VERSION}
 export ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')")
 export THIRD_PARTY_IMAGE_VERSION=0.4.7
@@ -354,12 +354,12 @@ echoColor " ___) |   | |    / ___ \  |  _ <    | |  "
 echoColor "|____/    |_|   /_/   \_\ |_| \_\   |_|  "
 
 #updateOS
-installPreDependence
-installGolang
-installNode
-installDocker
-downloadImages
-#downloadBinaries
+#installPreDependence
+#installGolang
+#installNode
+#installDocker
+#downloadImages
+downloadBinaries
 
 echoColor " _____   _   _   ____   "
 echoColor "| ____| | \ | | |  _ \  "

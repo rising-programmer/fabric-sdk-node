@@ -25,7 +25,7 @@ function printHelp() {
   echo "sh network_setup.sh createPeerTemplate -p peer0.org1.example.com -o org1 -M Org1Msp -c couchdb -P 5984 -l 7051 -e 7053 -f docker-composer-peer1.yaml"
   echo
 }
-IMAGETAG="1.4"
+IMAGETAG="2.0.0-alpha"
 
 function networkUp(){
     if [ -z ${COMPOSE_FILE} ];then
@@ -159,12 +159,17 @@ function dcrm(){
 
 ## 启动orderer1节点
 function startOrderer1(){
-    sh network_setup.sh up -f docker-orderer-kafka.yaml
+    sh network_setup.sh up -f docker-orderer1.yaml
 }
 
 ## 启动orderer2节点
 function startOrderer2(){
     sh network_setup.sh up -f docker-orderer2.yaml
+}
+
+## 启动orderer3节点
+function startOrderer3(){
+    sh network_setup.sh up -f docker-orderer3.yaml
 }
 
 ## 启动peer1节点和ca1节点
@@ -261,6 +266,7 @@ function startServer2(){
 
 ## 启动服务器3上的服务
 function startServer3(){
+   startOrderer3
    startPeerForOrg1
 }
 
@@ -280,11 +286,6 @@ startServer2
 startServer3
 startServer4
 startServer5
-startPeerForOrg5
-startPeerForOrg6
-startPeerForOrg7
-startPeerForOrg8
-startPeerForOrg9
 }
 
 # Parse commandline args

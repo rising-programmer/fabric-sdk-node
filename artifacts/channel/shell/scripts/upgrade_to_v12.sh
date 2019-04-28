@@ -42,7 +42,7 @@ addCapabilityToChannel() {
 
   setOrdererGlobals
 
-  # Get the current channel config, decode and write it to config.json
+  # Get the current channel config, decode and write it to config_orderer2.json
   fetchChannelConfig "$CH_NAME" config.json
 
   # Modify the correct section of the config based on capabilities group
@@ -50,7 +50,7 @@ addCapabilityToChannel() {
     jq -s '.[0] * {"channel_group":{"groups":{"Application": {"values": {"Capabilities": .[1]}}}}}' config.json ./scripts/capabilities.json >modified_config.json
   fi
 
-  # Create a config updated for this channel based on the differences between config.json and modified_config.json
+  # Create a config updated for this channel based on the differences between config_orderer2.json and modified_config.json
   # write the output to config_update_in_envelope.pb
   createConfigUpdate "$CH_NAME" config.json modified_config.json config_update_in_envelope.pb
 

@@ -18,6 +18,7 @@ OrdererOrgs:
     Specs:
       - Hostname: orderer1
       - Hostname: orderer2
+      - Hostname: orderer3
 # ---------------------------------------------------------------------------
 # "PeerOrgs" - Definition of organizations managing peer nodes
 # ---------------------------------------------------------------------------
@@ -99,61 +100,6 @@ PeerOrgs:
   # ---------------------------------------------------------------------------
   - Name: Org4
     Domain: org4.example.com
-    EnableNodeOUs: true
-    Template:
-      Count: 2
-    Users:
-      Count: 1
-
-  # ---------------------------------------------------------------------------
-  # Org5: See "Org1" for full specification
-  # ---------------------------------------------------------------------------
-  - Name: Org5
-    Domain: org5.example.com
-    EnableNodeOUs: true
-    Template:
-      Count: 2
-    Users:
-      Count: 1
-
-  # ---------------------------------------------------------------------------
-  # Org6: See "Org1" for full specification
-  # ---------------------------------------------------------------------------
-  - Name: Org6
-    Domain: org6.example.com
-    EnableNodeOUs: true
-    Template:
-      Count: 2
-    Users:
-      Count: 1
-
-  # ---------------------------------------------------------------------------
-  # Org7: See "Org1" for full specification
-  # ---------------------------------------------------------------------------
-  - Name: Org7
-    Domain: org7.example.com
-    EnableNodeOUs: true
-    Template:
-      Count: 2
-    Users:
-      Count: 1
-
-  # ---------------------------------------------------------------------------
-  # Org8: See "Org1" for full specification
-  # ---------------------------------------------------------------------------
-  - Name: Org8
-    Domain: org8.example.com
-    EnableNodeOUs: true
-    Template:
-      Count: 2
-    Users:
-      Count: 1
-
-  # ---------------------------------------------------------------------------
-  # Org9: See "Org1" for full specification
-  # ---------------------------------------------------------------------------
-  - Name: Org9
-    Domain: org9.example.com
     EnableNodeOUs: true
     Template:
       Count: 2

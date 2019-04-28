@@ -38,7 +38,7 @@ function setChaincodePath(){
 	case "$LANGUAGE" in
 		"golang")
 		CC_NAME="trace"
-		CC_VERSION="v0"
+		CC_VERSION="v2.2"
 		CC_SRC_PATH="github.com/chaincode/go"
 		CC_META_PATH="artifacts/META-INF"
 		;;
@@ -185,125 +185,125 @@ curl -s -X POST \
 }"
 echo
 echo
+#
+#echo "POST Install chaincode on Org3"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG3_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org3.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
+#
+#echo "POST Install chaincode on Org4"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG4_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org4.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
+#
+#echo "POST Install chaincode on Org5"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG5_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org5.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
+#
+#echo "POST Install chaincode on Org6"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG6_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org6.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
+#
+#echo "POST Install chaincode on Org7"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG7_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org7.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
+#
+#echo "POST Install chaincode on Org8"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG8_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org8.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
 
-echo "POST Install chaincode on Org3"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG3_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org3.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org4"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG4_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org4.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org5"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG5_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org5.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org6"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG6_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org6.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org7"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG7_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org7.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org8"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG8_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org8.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
-
-echo "POST Install chaincode on Org9"
-echo
-curl -s -X POST \
-  http://localhost:4000/chaincodes \
-  -H "authorization: Bearer $ORG9_TOKEN" \
-  -H "content-type: application/json" \
-  -d "{
-	\"peers\": [\"peer0.org9.example.com\"],
-	\"chaincodeName\":\"$CC_NAME\",
-	\"chaincodePath\":\"$CC_SRC_PATH\",
-	\"metadataPath\":\"$CC_META_PATH\",
-	\"chaincodeType\": \"$LANGUAGE\",
-	\"chaincodeVersion\":\"$CC_VERSION\"
-}"
-echo
-echo
+#echo "POST Install chaincode on Org9"
+#echo
+#curl -s -X POST \
+#  http://localhost:4000/chaincodes \
+#  -H "authorization: Bearer $ORG9_TOKEN" \
+#  -H "content-type: application/json" \
+#  -d "{
+#	\"peers\": [\"peer0.org9.example.com\"],
+#	\"chaincodeName\":\"$CC_NAME\",
+#	\"chaincodePath\":\"$CC_SRC_PATH\",
+#	\"metadataPath\":\"$CC_META_PATH\",
+#	\"chaincodeType\": \"$LANGUAGE\",
+#	\"chaincodeVersion\":\"$CC_VERSION\"
+#}"
+#echo
+#echo
 
 echo "POST instantiate chaincode on peer1 of Org1"
 echo
@@ -312,6 +312,7 @@ curl -s -X POST \
   -H "authorization: Bearer $ORG1_TOKEN" \
   -H "content-type: application/json" \
   -d "{
+  	\"peers\": [\"peer0.org1.example.com\"],
 	\"chaincodeName\":\"$CC_NAME\",
 	\"chaincodeVersion\":\"$CC_VERSION\",
 	\"chaincodeType\": \"$LANGUAGE\",
